@@ -1,5 +1,6 @@
 class Performance < ApplicationRecord
-  acts_as_tenant(:assembly)
+  # acts_as_tenant(:assembly)
+  belongs_to :assembly
 
   has_rich_text :description
 
