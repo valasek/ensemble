@@ -2,3 +2,12 @@
 #   record: name_of_fixture (ClassOfFixture)
 #   name: content
 #   body: <p>In a <i>million</i> stars!</p>
+
+assembly_one_production:
+  record: one (Assembly)
+  name: production
+  body: |
+    <div class="trix-content">
+      Divadelný súbor bol založený s cieľom rozvíjať amatérske divadlo,
+      uchovávať jeho históriu a sprístupňovať predstavenia verejnosti.
+    </div>

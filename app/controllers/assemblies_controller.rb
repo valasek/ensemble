@@ -8,8 +8,8 @@ class AssembliesController < ApplicationController
 
   def show
     @assembly = Assembly.find(params[:id])
-    @latest_performances = @assembly.performances.order(date: :desc).limit(10)
-    @latest_members = @assembly.members.order(created_at: :desc).limit(10)
+    @members_count = @assembly.members.count
+    @performances_count = @assembly.performances.count
   end
 
   def new

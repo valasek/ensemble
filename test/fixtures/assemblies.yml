@@ -2,6 +2,4 @@
 
 one:
   name: TD Bralen
-
-two:
-  name: Iny subor
+  subdomain: bralen

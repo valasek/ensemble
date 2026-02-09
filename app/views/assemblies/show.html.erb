@@ -1,127 +1,101 @@
-<div class="max-w-7xl mx-auto px-4 py-10 space-y-10">
+<div class="min-h-screen bg-base-100">
 
-  <!-- Assembly header -->
-  <header class="text-center space-y-3">
-    <h1 class="text-4xl font-bold tracking-tight">
-      <%= @assembly.name %>
-    </h1>
-    <p class="text-base-content/70 text-lg">
-      Prehľad predstavení a členov divadelného súboru
-    </p>
-  </header>
+  <!-- HERO -->
+  <section class="bg-base-200">
+    <div class="max-w-4xl mx-auto px-6 py-20 text-center space-y-8">
 
-  <!-- Main grid -->
-  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+      <!-- Name -->
+      <h1 class="text-4xl md:text-5xl font-bold">
+        Divadelný súbor <%= @assembly.name %>
+      </h1>
 
-    <!-- Performances -->
-    <section class="card bg-base-100 shadow">
-      <div class="card-body">
-        <h2 class="card-title flex justify-between items-center">
-          Posledné predstavenia
-          <span class="badge badge-primary">
-            
-          </span>
-        </h2>
-
-        <ul class="divide-y divide-base-200">
-          <% @latest_performances.each do |performance| %>
-            <li class="py-3">
-              <div class="font-semibold">
-                <%= performance.name %>
-              </div>
-              <div class="text-sm text-base-content/70">
-                <%= l(performance.date) %>
-                <% if performance.location.present? %>
-                  • <%= performance.location %>
-                <% end %>
-              </div>
-            </li>
-          <% end %>
-        </ul>
-
-        <div class="card-actions justify-end mt-4">
-          <%= link_to "Zobraziť všetky",
-                      assembly_performances_path(@assembly),
-                      class: "btn btn-sm btn-outline btn-primary" %>
+      <!-- Search -->
+      <div class="max-w-xl mx-auto">
+        <div class="join w-full shadow-sm">
+          <input
+            type="text"
+            placeholder="Vyhľadať členov, podujatia, archív…"
+            class="input input-bordered join-item w-full"
+            autocomplete="off"
+          >
+          <button class="btn btn-primary join-item">
+            Hľadať
+          </button>
         </div>
       </div>
+
+    </div>
+  </section>
+
+  <!-- CONTENT -->
+  <main class="max-w-4xl mx-auto px-6 py-16 space-y-12">
+
+    <!-- Description -->
+    <section class="prose max-w-none">
+      <!-- has_rich_text :production -->
+      <h2>O divadle</h2>
+      <p>
+        <%= @assembly.production %>
+      </p>
+      <p>
+        V kronike nájdete informácie o členoch, inscenáciách aj sprievodný
+        multimediálny obsah.
+      </p>
     </section>
 
-    <!-- Members -->
-    <section class="card bg-base-100 shadow">
-      <div class="card-body">
-        <h2 class="card-title flex justify-between items-center">
-          Najnovší členovia
-          <span class="badge badge-secondary">
-            
-          </span>
-        </h2>
+    <!-- Quick links -->
+    <section class="grid sm:grid-cols-2 gap-6">
 
-        <ul class="divide-y divide-base-200">
-          <% @latest_members.each do |member| %>
-            <li class="py-3 flex items-center gap-3">
-              <div class="avatar avatar-placeholder">
-                <div class="bg-neutral text-neutral-content w-10 rounded-full">
-                  <span class="text-sm font-bold">
-                    <%= member.name.first.upcase %>
-                  </span>
-                </div>
-              </div>
-              <div class="font-medium">
-                <%= member.name %>
-              </div>
-            </li>
-          <% end %>
-        </ul>
-
-        <div class="card-actions justify-end mt-4">
-          <%= link_to "Zobraziť všetkých",
-                      assembly_members_path(@assembly),
-                      class: "btn btn-sm btn-outline btn-secondary" %>
-        </div>
-      </div>
-    </section>
-
-    <!-- Administrator box -->
-    <aside class="card bg-base-100 shadow border border-base-200">
-      <div class="card-body space-y-4">
-        <h2 class="card-title">
-          Správca
-        </h2>
-
-        <% if @administrator.present? %>
-          <div class="flex items-center gap-4">
-            <div class="avatar avatar-placeholder">
-              <div class="bg-primary text-primary-content w-12 rounded-full">
-                <span class="font-bold">
-                  <%= @administrator.email.first.upcase %>
-                </span>
-              </div>
-            </div>
-
-            <div>
-              <div class="font-semibold">
-                <%= @administrator.email %>
-              </div>
-              <div class="text-sm text-base-content/70">
-                Správca súboru
-              </div>
-            </div>
+      <%= link_to assembly_members_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            Členovia
+            <span class="badge badge-outline badge-primary badge-sm">
+              <%= @assembly.members.count %>
+            </span>
+          </h3>
+          <p>Zoznam hercov, režisérov a tvorcov súboru</p>
+          <div class="card-actions justify-end">
+            <span class="btn btn-link">Zobraziť →</span>
           </div>
-        <% else %>
-          <p class="text-base-content/70">
-            Správca zatiaľ nie je priradený.
-          </p>
-        <% end %>
-
-        <div class="card-actions">
-          <%= mail_to @administrator&.email,
-                      "Zadať zmenu",
-                      class: "btn btn-primary btn-block",
-                      subject: "Žiadosť o zmenu v divadelnom súbore #{@assembly.name}" %>
         </div>
-      </div>
-    </aside>
+      <% end %>
 
-  </div>
+      <%= link_to assembly_performances_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            Podujatia
+            <span class="badge badge-outline badge-secondary badge-sm">
+              <%= @performances_count %>
+            </span>
+          </h3>
+          <p>Predstavenia, premiéry a archív inscenácií</p>
+          <div class="card-actions justify-end">
+            <span class="btn btn-link">Zobraziť →</span>
+          </div>
+        </div>
+      <% end %>
+    </section>
+
+  </main>
+
+  <!-- FOOTER / ADMIN -->
+  <footer class="border-t border-base-300">
+    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+
+      <div class="text-sm opacity-70">
+        Dáta spravuje:
+        <a href="#" class="link link-primary">
+          Rastislav Letenaj
+        </a>
+      </div>
+
+      <a href="#"
+         class="btn btn-sm btn-outline">
+        Kontaktovať správcu
+      </a>
+
+    </div>
+  </footer>
+
 </div>
