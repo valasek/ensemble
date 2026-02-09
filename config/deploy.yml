@@ -20,9 +20,9 @@ servers:
 #
 # Don't use this when deploying to multiple web servers (then you have to terminate SSL at your load balancer).
 #
-# proxy:
-#   ssl: true
-#   host: app.example.com
+proxy:
+  ssl: true
+  host: kronika.stanislavvalasek.com
 
 # Where you keep your container images.
 registry:
@@ -59,6 +59,8 @@ env:
     # RAILS_LOG_LEVEL: debug
 
     RAILS_ENV: production
+
+    RAILS_HOSTS: kronika.stanislavvalasek.com
 
 # Aliases are triggered with "bin/kamal <alias>". You can overwrite arguments on invocation:
 # "bin/kamal logs -r job" will tail logs from the first server in the job section.

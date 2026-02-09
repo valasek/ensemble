@@ -1,1 +1,60 @@
-Hello Divadelná Kronika
+<div class="max-w-5xl mx-auto px-4 py-12 space-y-12">
+
+  <!-- Hero / Intro -->
+  <section class="text-center space-y-4">
+    <h1 class="text-4xl font-bold tracking-tight">
+      Kronika divadiel a súborov
+    </h1>
+
+    <p class="text-lg text-base-content/70 max-w-2xl mx-auto">
+      Kronika divadiel a súborov, umožňujúca jednoduchú správu členov a predstavení
+      s multimediálnym obsahom.
+    </p>
+
+    <div class="pt-4">
+      <%= link_to "Zaregistrovať nový súbor",
+                  "#",
+                  class: "btn btn-primary btn-lg" %>
+    </div>
+  </section>
+
+  <!-- Divider -->
+  <div class="divider">Registrované súbory</div>
+
+  <!-- Assemblies list -->
+  <% if @assemblies.any? %>
+    <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <% @assemblies.each do |assembly| %>
+        <div class="card bg-base-100 border border-base-300 hover:shadow-lg transition">
+          <div class="card-body">
+            <h2 class="card-title">
+              <%= assembly.name %>
+            </h2>
+
+            <p class="text-sm text-base-content/60">
+              Divadelný súbor
+            </p>
+
+            <div class="card-actions justify-end pt-4">
+              <%= link_to "Otvoriť",
+                          assembly_path(assembly),
+                          class: "btn btn-outline btn-primary btn-sm" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </section>
+  <% else %>
+    <!-- Empty state -->
+    <div class="text-center py-12 space-y-4">
+      <p class="text-base-content/70">
+        Zatiaľ nie sú zaregistrované žiadne súbory.
+      </p>
+
+      <%= link_to "Vytvoriť prvý súbor",
+                  new_assembly_path,
+                  class: "btn btn-primary" %>
+    </div>
+  <% end %>
+
+</div>

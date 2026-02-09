@@ -1,0 +1,22 @@
+<footer class="footer bg-base-100 border-t border-base-300 p-4 sm:p-6">
+  <div class="w-full flex flex-wrap items-center justify-between gap-y-3">
+    <!-- left -->
+    <aside class="min-w-0 text-left">
+      <p class="text-sm sm:text-base">
+        <%= image_tag "favicon.ico", class: "inline w-4 h-4 sm:w-5 sm:h-5" %>
+        Kronika je navrhnutá, vytvorená a podporovaná 
+        <%= link_to "Stanislavom Valáškom", "https://www.stanislavvalasek.com", class: "link" %>.
+        <span class="block sm:inline">Vytvorené s ❤️ na <%= link_to "Slovensku", "https://slovakia.travel", class: "link" %></span>
+      </p>
+    </aside>
+
+    <!-- right -->
+    <aside class="text-left sm:text-right">
+      <%= link_to "Status", "https://stats.uptimerobot.com/tjN875xKdi", class: "text-sm sm:text-base link" %>
+      /
+      <%= link_to "Licencia", ensemble_license_path, class: "text-sm sm:text-base link" %>
+      /
+      <span class="text-sm sm:text-base">© <%= Date.current.year %> Stanislav Valasek</span>
+    </aside>
+  </div>
+</footer>
