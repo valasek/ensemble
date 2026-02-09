@@ -11,3 +11,27 @@ two:
   name: Spev
   location: Praha
   assembly: one
+
+three:
+  date: 2020-02-08
+  name: Slnko v horách
+  location: Tokio
+  assembly: one
+
+four:
+  date: 2019-02-09
+  name: Účinkovanie vo vzduchu
+  location: Bratislava
+  assembly: one
+
+five:
+  date: 2010-02-09
+  name: Show v New Yorku
+  location: New York
+  assembly: one
+
+six:
+  date: 2009-02-09
+  name: Bali a tancujúce ženy
+  location: Bali
+  assembly: one

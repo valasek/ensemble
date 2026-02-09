@@ -8,6 +8,48 @@ assembly_one_production:
   name: production
   body: |
     <div class="trix-content">
-      Divadelný súbor bol založený s cieľom rozvíjať amatérske divadlo,
-      uchovávať jeho históriu a sprístupňovať predstavenia verejnosti.
+      Divadelný súbor bol založený s cieľom rozvíjať <b>amatérske divadlo</b>,
+      uchovávať jeho históriu a sprístupňovať predstavenia verejnosti.<br/>
+      <br/>
+      Odkaz: <a href="https://www.tdbralen.com/">www.tdbralen.com</a>
+    </div>
+
+performance_one_description:
+  record: one (Performance)
+  name: description
+  body: |
+    <div class="trix-content">
+      <p>Tanec je divadelná hra, ktorá sa zameriava na pohyb a rytmus. Je to forma umenia, ktorá využíva telo ako nástroj na vyjadrenie emócií a príbehov. Tanec môže byť interpretovaný rôznymi štýlmi, od baletu po hip-hop, a môže byť prezentovaný na javisku alebo v uliciach.</p>
+    </div>
+
+performance_two_description:
+  record: two (Performance)
+  name: description
+  body: |
+    <div class="trix-content">
+      <p>Tanec je divadelná hra, ktorá sa zameriava na pohyb a rytmus. Je to forma umenia, ktorá využíva telo ako nástroj na vyjadrenie emócií a príbehov. Tanec môže byť interpretovaný rôznymi štýlmi, od baletu po hip-hop, a môže byť prezentovaný na javisku alebo v uliciach.</p>
+    </div>
+
+performance_three_description:
+  record: three (Performance)
+  name: description
+  body: |
+    <div class="trix-content">
+      <p>Tanec je divadelná hra, ktorá sa zameriava na pohyb a rytmus. Je to forma umenia, ktorá využíva telo ako nástroj na vyjadrenie emócií a príbehov. Tanec môže byť interpretovaný rôznymi štýlmi, od baletu po hip-hop, a môže byť prezentovaný na javisku alebo v uliciach.</p>
+    </div>
+
+performance_four_description:
+  record: four (Performance)
+  name: description
+  body: |
+    <div class="trix-content">
+      <p>Tanec je divadelná hra, ktorá sa zameriava na pohyb a rytmus. Je to forma umenia, ktorá využíva telo ako nástroj na vyjadrenie emócií a príbehov. Tanec môže byť interpretovaný rôznymi štýlmi, od baletu po hip-hop, a môže byť prezentovaný na javisku alebo v uliciach.</p>
+    </div>
+
+performance_five_description:
+  record: five (Performance)
+  name: description
+  body: |
+    <div class="trix-content">
+      <p>Tanec je divadelná hra, ktorá sa zameriava na pohyb a rytmus. Je to forma umenia, ktorá využíva telo ako nástroj na vyjadrenie emócií a príbehov. Tanec môže byť interpretovaný rôznymi štýlmi, od baletu po hip-hop, a môže byť prezentovaný na javisku alebo v uliciach.</p>
     </div>
