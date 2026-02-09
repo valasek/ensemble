@@ -5,10 +5,8 @@
 # below each fixture, per the syntax in the comments below
 #
 one:
-  name: Stano
   email: user@example.com
   
 two:
-  name: Rasto
   email: user2@example.com
   
