@@ -1,5 +1,5 @@
 class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
-  skip_before_action :set_tenant
+  # skip_before_action :set_tenant
 
   def google_oauth2
     @user = User.from_omniauth(request.env["omniauth.auth"])

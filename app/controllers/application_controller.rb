@@ -5,5 +5,5 @@ class ApplicationController < ActionController::Base
   # Changes to the importmap will invalidate the etag for HTML responses
   stale_when_importmap_changes
 
-  set_current_tenant_by_subdomain(:assembly, :subdomain)
+  # set_current_tenant_by_subdomain(:assembly, :subdomain)
 end

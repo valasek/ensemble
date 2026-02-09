@@ -45,7 +45,7 @@ gem "image_processing", "~> 1.2"
 # My inserted gems
 gem "devise"
 gem "omniauth-google-oauth2"
-gem "acts_as_tenant" # Multitenancy support
+# gem "acts_as_tenant" # Multitenancy support
 gem "avo"           # Admin panel
 gem "kaminari"      # Pagination
 gem "stackprof"     # Sentry
