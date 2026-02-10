@@ -8,6 +8,8 @@ image: ensemble
 servers:
   web:
     - 162.55.185.37
+  options:
+      network: kamal
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -111,6 +113,8 @@ accessories:
         - MEILI_MASTER_KEY
     directories:
       - data:/meili_data
+    options:
+      network: kamal
     cmd: meilisearch --http-addr 0.0.0.0:7700
 # accessories:
 #   db:

@@ -36,9 +36,10 @@ end
 
 # Deploy accessory only
 kamal accessory boot meilisearch
+kamal accessory reboot meilisearch
 
 # Reindex after deployment
-kamal app exec 'bin/rails search:reindex'
+kamal app exec 'bin/rails runner 'Performance.reindex!'
 
 # Check logs
 kamal app logs
