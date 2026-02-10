@@ -105,7 +105,7 @@ builder:
 accessories:
   meilisearch:
     image: getmeili/meilisearch:v1
-    host: kronika.stanislavvalasek.com
+    host: 162.55.185.37
     env:
       secret:
         - MEILI_MASTER_KEY
