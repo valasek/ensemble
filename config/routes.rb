@@ -12,6 +12,8 @@ Rails.application.routes.draw do
     resources :performances
   end
 
+  post "search/proxy", to: "search#proxy"
+
   # public pages
   get "ensemble/home"
   get "ensemble/changelog"

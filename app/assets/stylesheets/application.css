@@ -8,3 +8,142 @@
  *
  * Consider organizing styles into separate files for maintainability.
  */
+
+/* Search Results Container - iba display logic */
+.search-results {
+  display: none;
+  
+}
+
+.search-results.visible {
+  display: block;
+}
+
+.search-result {
+  display: block;
+  padding: 16px 20px;
+  text-decoration: none;
+  color: oklch(var(--bc));
+  transition: all 0.2s ease;
+  background: oklch(var(--b1));
+}
+
+.search-result:last-child {
+  border-bottom: none;
+}
+
+.search-result:hover,
+.search-result.active {
+  background: oklch(var(--b2));
+  transform: translateX(4px); /* Subtle posun pri hover */
+}
+
+.search-result.active {
+  outline: 2px solid oklch(var(--p));
+  outline-offset: -2px;
+}
+
+/* Search Result Components */
+.search-result-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.search-result-type {
+  font-size: 20px;
+  flex-shrink: 0;
+  opacity: 0.8;
+  transition: transform 0.2s;
+}
+
+.search-result:hover .search-result-type {
+  transform: scale(1.2);
+}
+
+.search-result-title {
+  flex: 1;
+  font-size: 18px;
+  font-weight: 700;
+  margin: 0;
+  line-height: 1.3;
+}
+
+.search-result-excerpt {
+  font-size: 14px;
+  color: oklch(var(--bc) / 0.6);
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.search-result mark {
+  background: oklch(var(--p));
+  color: oklch(var(--pc));
+  padding: 0; /* Žiadny padding */
+  border-radius: 2px;
+  font-weight: 700;
+  box-shadow: 0 0 0 2px oklch(var(--p) / 0.2);
+  text-decoration: underline;
+  text-decoration-color: oklch(var(--pc) / 0.5);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 2px;
+}
+
+.search-result-category {
+  display: inline-block;
+  padding: 6px 12px;
+  background: oklch(var(--b3));
+  color: oklch(var(--bc) / 0.7);
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid oklch(var(--bc) / 0.1);
+  margin-top: 8px;
+}
+
+.search-result + .search-result::before {
+  content: '';
+  display: block;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    oklch(var(--bc) / 0.15) 15%,
+    oklch(var(--bc) / 0.15) 85%,
+    transparent
+  );
+  margin: 0 0 0 0;
+}
+
+.no-results,
+.error {
+  padding: 32px;
+  text-align: center;
+  color: oklch(var(--bc) / 0.6);
+}
+
+.error {
+  color: oklch(var(--er));
+}
+
+/* Scrollbar */
+.search-results::-webkit-scrollbar {
+  width: 10px;
+}
+
+.search-results::-webkit-scrollbar-track {
+  background: oklch(var(--b2));
+  border-radius: 5px;
+}
+
+.search-results::-webkit-scrollbar-thumb {
+  background: oklch(var(--bc) / 0.3);
+  border-radius: 5px;
+  border: 2px solid oklch(var(--b2));
+}
+
+.search-results::-webkit-scrollbar-thumb:hover {
+  background: oklch(var(--bc) / 0.5);
+}

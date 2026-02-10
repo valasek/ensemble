@@ -15,9 +15,34 @@ All source code in this repository is released under the **[O'Saasy](https://osa
 - 📝 Attribution and copyright notice must be included
 - ⚠️ No liability and no warranty
 
+# Reindex all Performances
+rails runner 'Performance.reindex!'
+rails runner 'Member.reindex!'
+
+# Or in a Rake task
+# lib/tasks/search.rake
+namespace :search do
+  desc "Reindex all searchable models"
+  task reindex: :environment do
+    Article.reindex!
+    # Add other models as needed
+    puts "Reindexing complete!"
+  end
+end
+
 ## How to deploy
 
 `kamal deploy`
+
+# Deploy accessory only
+kamal accessory boot meilisearch
+
+# Reindex after deployment
+kamal app exec 'bin/rails search:reindex'
+
+# Check logs
+kamal app logs
+kamal accessory logs meilisearch
 
 And optional:
 
@@ -78,6 +103,12 @@ curl -sLo app/assets/tailwind/daisyui.js https://github.com/saadeghi/daisyui/rel
 
 Clean up unused images and containers
 `kamal prune`
+
+# JS packages
+
+Update:
+pin "instantsearch.js", to: "https://cdn.jsdelivr.net/npm/instantsearch.js@4.87.1/dist/instantsearch.production.min.js"
+pin "algoliasearch", to: "https://cdn.jsdelivr.net/npm/algoliasearch@5.48.1/dist/algoliasearch-lite.umd.js"
 
 ### Show list of rake tasks
 

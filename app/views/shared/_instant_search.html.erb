@@ -1,0 +1,37 @@
+<div class="max-w-xl mx-auto relative"
+     data-controller="search"
+     data-search-url-value="/search/proxy"
+     data-action="click@window->search#handleClickOutside">
+
+  <!-- Search box -->
+  <label class="w-full shadow-sm input input-primary input-xl">
+    <svg class="h-[1em] opacity-50" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+      <g
+        stroke-linejoin="round"
+        stroke-linecap="round"
+        stroke-width="2.5"
+        fill="none"
+        stroke="currentColor"
+      >
+        <circle cx="11" cy="11" r="8"></circle>
+        <path d="m21 21-4.3-4.3"></path>
+      </g>
+    </svg>
+    <input type="search"
+           required
+           autocomplete="off"
+           placeholder="Vyhľadávaj podujatia a členov …"
+           data-search-target="input"
+           data-action="input->search#search keydown->search#handleKeydown">
+  </label>
+
+  <!-- Stats -->
+  <div class="text-sm text-base-content/60 my-2 min-h-[20px]"
+       data-search-target="stats"></div>
+
+  <!-- Results - PRIDANÉ TAILWIND CLASSES -->
+  <div class="relative">
+    <div class="search-results absolute top-0 left-0 right-0 z-50 bg-base-100 border border-base-300 rounded-lg shadow-2xl max-h-[500px] overflow-y-auto"
+         data-search-target="results"></div>
+  </div>
+</div>

@@ -40,7 +40,9 @@ registry:
 env:
   secret:
     - RAILS_MASTER_KEY
+    - MEILISEARCH_API_KEY
   clear:
+    MEILISEARCH_URL: http://meilisearch:7700
     # Run the Solid Queue Supervisor inside the web server's Puma process to do jobs.
     # When you start using multiple servers, you should split out job processing to a dedicated machine.
     SOLID_QUEUE_IN_PUMA: true
@@ -57,6 +59,7 @@ env:
 
     # Log everything from Rails
     # RAILS_LOG_LEVEL: debug
+    RAILS_LOG_TO_STDOUT: true
 
     RAILS_ENV: production
 
@@ -99,6 +102,18 @@ builder:
 #   user: app
 
 # Use accessory services (secrets come from .kamal/secrets).
+accessories:
+  meilisearch:
+    image: getmeili/meilisearch:v1
+    host: kronika.stanislavvalasek.com
+    env:
+      secret:
+        - MEILI_MASTER_KEY
+    directories:
+      - data:/meili_data
+    options:
+      network: "private"
+    cmd: meilisearch --http-addr 0.0.0.0:7700
 # accessories:
 #   db:
 #     image: mysql:8.0
