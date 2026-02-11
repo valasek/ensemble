@@ -27,6 +27,7 @@ def load_data
   print "  loaded #{assemblies_lookup.size} assemblies ... \n"
 
   members_lookup = {}
+  print "  loading members ... "
   CSV.foreach(Rails.root.join("db/data/members.csv"), headers: true) do |row|
     assembly = assemblies_lookup[row["assembly_code"]]
     member = Member.create!(
@@ -38,6 +39,7 @@ def load_data
   print "  loaded #{members_lookup.size} members ... \n"
 
   members_of_assemblies_count = 0
+  print "  loading relations ... "
   CSV.foreach(Rails.root.join("db/data/member_of_assemblies.csv"), headers: true) do |row|
     # print "  loading record #{row} ... \n"
     assembly = assemblies_lookup[row["assembly_code"]]
