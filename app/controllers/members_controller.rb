@@ -4,7 +4,7 @@ class MembersController < ApplicationController
 
   # GET /members
   def index
-    @members = @assembly.members
+    @members = @assembly.members.sorted_by_name
   end
 
   # GET /members/1

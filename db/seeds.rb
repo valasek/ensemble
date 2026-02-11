@@ -24,7 +24,7 @@ def load_data
     )
     assemblies_lookup[row["assembly_code"]] = assembly
   end
-  print "  loaded #{assemblies_lookup.size} assemblies ... \n"
+  print "  loaded #{assemblies_lookup.size} assemblies DONE \n"
 
   members_lookup = {}
   print "  loading members ... "
@@ -36,7 +36,7 @@ def load_data
     )
     members_lookup[row["member_code"]] = member
   end
-  print "  loaded #{members_lookup.size} members ... \n"
+  print "  loaded #{members_lookup.size} members DONE \n"
 
   members_of_assemblies_count = 0
   print "  loading relations ... "
@@ -56,7 +56,7 @@ def load_data
       print "  \nSKIP: skipping record #{row} with error #{e}"
     end
   end
-  print "  \nloaded #{members_of_assemblies_count} members of assemblies ... \n"
+  print "  \nloaded #{members_of_assemblies_count} members of assemblies DONE \n"
 end
 
 def index_data

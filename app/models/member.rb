@@ -6,6 +6,8 @@ class Member < ApplicationRecord
 
   validates :name, presence: true
 
+  scope :sorted_by_name, -> { order("LOWER(name)") }
+
   meilisearch do
     attribute :name
 
