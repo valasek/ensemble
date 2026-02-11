@@ -44,15 +44,19 @@ def load_data
     # print "  loading record #{row} ... \n"
     assembly = assemblies_lookup[row["assembly_code"]]
     member = members_lookup[row["member_code"]]
-    MemberOfAssembly.create!(
-      member: member,
-      assembly: assembly,
-      year: row["year"],
-      group: row["group"],
-    )
-    members_of_assemblies_count += 1
+    begin
+      MemberOfAssembly.create!(
+        member: member,
+        assembly: assembly,
+        year: row["year"],
+        group: row["group"],
+      )
+      members_of_assemblies_count += 1
+    rescue ActiveRecord::RecordInvalid => e
+      print "  \nSKIP: skipping record #{row} with error #{e}"
+    end
   end
-  print "  loaded #{members_of_assemblies_count} members of assemblies ... \n"
+  print "  \nloaded #{members_of_assemblies_count} members of assemblies ... \n"
 end
 
 def index_data
