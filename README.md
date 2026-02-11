@@ -16,8 +16,11 @@ All source code in this repository is released under the **[O'Saasy](https://osa
 - ⚠️ No liability and no warranty
 
 # Reindex all Performances
+rails runner 'Member.clear_index!'
+rails runner 'Performance.clear_index!'
 rails runner 'Performance.reindex!'
 rails runner 'Member.reindex!'
+
 
 # Or in a Rake task
 # lib/tasks/search.rake
