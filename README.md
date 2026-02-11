@@ -35,6 +35,7 @@ end
 `kamal deploy`
 
 # Deploy accessory only
+kamal accessory remove meilisearch
 kamal accessory boot meilisearch
 kamal accessory reboot meilisearch
 

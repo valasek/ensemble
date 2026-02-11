@@ -27,7 +27,7 @@ services:
   meilisearch:
     image: getmeili/meilisearch:v1
     environment:
-      - MEILI_MASTER_KEY=development_key
+      - MEILISEARCH_API_KEY=development_key
       - MEILI_ENV=development
     volumes:
       - meilisearch-data:/meili_data

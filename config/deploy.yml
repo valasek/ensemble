@@ -7,9 +7,8 @@ image: ensemble
 # Deploy to these servers.
 servers:
   web:
-    - 162.55.185.37
-  options:
-      network: kamal
+    hosts:
+      - 162.55.185.37
   # job:
   #   hosts:
   #     - 192.168.0.1
@@ -110,11 +109,9 @@ accessories:
     host: 162.55.185.37
     env:
       secret:
-        - MEILI_MASTER_KEY
+        - MEILISEARCH_API_KEY
     directories:
       - data:/meili_data
-    options:
-      network: kamal
     cmd: meilisearch --http-addr 0.0.0.0:7700
 # accessories:
 #   db:
