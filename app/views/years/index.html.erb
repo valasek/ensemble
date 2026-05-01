@@ -20,9 +20,14 @@
               options_for_select(@years),
               prompt: "— Vyberte rok —",
               id: "year-select",
-              class: "select select-bordered w-full" %>
+              class: "select select-bordered w-full",
+              data: {
+                controller: "year-redirect",
+                action: "change->year-redirect#change",
+                year_redirect_url_value: assembly_years_path(@assembly)
+              } %>
       </label>
-      <p id="year-select-hint" class="text-sm opacity-50">Vyberte rok pre zobrazenie detailov</p>
+      <p class="text-sm opacity-50">Vyberte rok pre zobrazenie detailov</p>
     </section>
 
     <section>
@@ -40,12 +45,3 @@
   </main>
 
 </div>
-
-<script>
-  document.getElementById("year-select").addEventListener("change", function () {
-    const year = this.value;
-    if (year) {
-      window.location.href = "<%= assembly_years_path(@assembly) %>/" + year;
-    }
-  });
-</script>
