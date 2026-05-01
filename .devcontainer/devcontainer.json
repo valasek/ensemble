@@ -20,16 +20,13 @@
     "KAMAL_REGISTRY_PASSWORD": "$KAMAL_REGISTRY_PASSWORD"
   },
 
+  // Mount Windows SSH keys (${localEnv:USERPROFILE} = C:\Users\<you> on Windows + Docker Desktop)
+  "mounts": [
+    "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+  ],
+
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
-  // "forwardPorts": [3000],
   "forwardPorts": [3000, 7700],
-
-  // Configure tool-specific properties.
-  // "customizations": {},
-
-  // Uncomment to connect as root instead. More info: https://containers.dev/implementors/json_reference/#remoteUser.
-  // "remoteUser": "root",
-
 
   // Use 'postCreateCommand' to run commands after the container is created.
   "postCreateCommand": "bin/setup --skip-server"
