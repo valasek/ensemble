@@ -52,6 +52,7 @@ gem "stackprof"     # Sentry
 gem "sentry-ruby"   # Sentry
 gem "sentry-rails"  # Sentry
 gem "meilisearch-rails" # Search engine
+gem "ransack"         # Search engine
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem

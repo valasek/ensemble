@@ -31,4 +31,16 @@ class Member < ApplicationRecord
     filterable_attributes [ :assembly_name ]
     sortable_attributes [ :name ]
   end
+
+  def avo_title
+    name
+  end
+
+  def self.ransackable_attributes(auth_object = nil)
+    [ "name" ]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    [ "assembly" ]
+  end
 end

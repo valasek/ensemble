@@ -12,4 +12,8 @@ class Assembly < ApplicationRecord
   validates :subdomain,
             presence: true, uniqueness: { case_sensitive: false }, format: { with: /\A[a-z0-9-]+\z/ },
             exclusion: { in: %w[www admin support mail help], message: "%{value} is reserved." }
+
+  def self.ransackable_attributes(auth_object = nil)
+    [ "name", "subdomain" ]
+  end
 end

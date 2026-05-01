@@ -6,7 +6,7 @@ class Avo::Resources::Assembly < Avo::BaseResource
   # }
 
   def fields
-    field :id, as: :id
+    # field :id, as: :id
     field :name, as: :text
     field :subdomain, as: :text
     field :production, as: :trix

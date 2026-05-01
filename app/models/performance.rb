@@ -58,4 +58,16 @@ class Performance < ApplicationRecord
 
     attributes_to_highlight [ "name", "description" ]
   end
+
+  def avo_title
+    name
+  end
+
+  def self.ransackable_attributes(auth_object = nil)
+    [ "name", "date", "location" ]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    [ "assembly" ]
+  end
 end

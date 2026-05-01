@@ -41,6 +41,7 @@ Avo.configure do |config|
 
   ## == Localization ==
   # config.locale = 'en-US'
+  config.locale = :sk
 
   ## == Resource options ==
   # config.resource_row_controls_config = {

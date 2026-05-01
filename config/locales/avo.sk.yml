@@ -1,0 +1,149 @@
+---
+sk:
+  avo:
+    Ensemble: Kronika
+    action_ran_successfully: Action ran successfully!
+    actions: Akcie
+    add_filter: Add filter
+    and_x_other_resources: and %{count} other resources
+    applied: applied
+    are_you_sure: Si si istý?
+    are_you_sure_detach_item: Are you sure you want to detach this %{item}.
+    are_you_sure_you_want_to_run_this_option: Are you sure you want to run this action?
+    attach: Attach
+    attach_and_attach_another: Attach & Attach another
+    attach_item: Attach %{item}
+    attachment_class_attached: "%{attachment_class} attached."
+    attachment_class_detached: "%{attachment_class} detached."
+    attachment_destroyed: Attachment destroyed
+    attachment_failed: Failed to attach %{attachment_class}
+    cancel: Zrušiť
+    choose_a_country: Choose a country
+    choose_an_option: Choose an option
+    choose_item: Choose %{item}
+    clear_value: Clear value
+    click_to_reveal_filters: Click to reveal filters
+    close: Zavrieť
+    close_modal: Close modal
+    confirm: Potvrdiť
+    copy: Kopírovať
+    create_new_item: Create new %{item}
+    created_at_timestamp: Created at %{created_at}
+    dashboard: Prehľad
+    dashboards: Dashboardy
+    default_scope: Všetky
+    delete: vymazať
+    delete_file: Vymazať súbor
+    delete_item: Vymazať %{item}
+    detach_item: Odpojiť %{item}
+    details: detaily
+    download: Stiahnuť
+    download_file: Stiahnuť súbor
+    download_item: Stiahnuť %{item}
+    edit: upraviť
+    edit_item: upraviť %{item}
+    empty_dashboard_message: Add cards to this dashboard
+    failed: Failed
+    failed_to_find_attachment: Failed to find attachment
+    failed_to_load: Failed to load
+    'false': 'False'
+    file:
+      one: file
+      other: files
+    filter_by: Filter by
+    filters: Filters
+    go_back: Go back
+    grid_view: Grid view
+    hide_content: Hide content
+    home: Domov
+    key_value_field:
+      add_row: Add row
+      delete_row: Delete row
+      key: Key
+      reorder_row: Reorder row
+      value: Value
+    less_content: Less content
+    list_is_empty: List is empty
+    loading: Loading
+    media_library:
+      title: Media Library
+    more: More
+    more_content: More content
+    more_records_available: There are more records available.
+    nested:
+      add_new_item: Pridať novú %{item}
+    new: new
+    next_page: Ďaľšia strana
+    no_cancel: Nie, zrušiť
+    no_cards_present: No cards present
+    no_item_found: Žiadne záznamy nenájdené
+    no_options_available: No options available
+    no_related_item_found: No related record found
+    not_authorized: You are not authorized to perform this action.
+    number_of_items:
+      one: jeden %{item}
+      other: "%{count} %{item}"
+      zero: žiadne %{item}
+    oops_nothing_found: Oops! Nothing found...
+    order:
+      higher: Move record higher
+      lower: Move record lower
+      reorder_record: Reorder record
+      to_bottom: Move record to bottom
+      to_top: Move record to top
+    per_page: na stránke
+    prev_page: Predchádzajúca strana
+    records_selected_from_all_pages_html: All records selected from all pages
+    remove_selection: Remove selection
+    reset: reset
+    reset_filters: Reset filtrov
+    resource_created: Záznam vytvorený
+    resource_destroyed: Záznam zmazaný
+    resource_updated: Záznam aktualizovaný
+    resources: Dáta
+    run: Spustiť
+    save: Uložiť
+    search:
+      cancel_button: Zrušiť
+      placeholder: Vyhľadať
+    select_all: Vybrať všetko
+    select_all_matching: Select all matching
+    select_item: Vyber položku
+    show_content: Zobraziť obsah
+    sign_out: Odhlásiť sa
+    sort_asc: Zoradiť vzostupne
+    sort_desc: Zoradiť zostupne
+    sort_reset: Reset zoradenia
+    switch_to_view: Prepnúť na %{view_type} zobrazenie
+    table_view: Tabuľkové zobrazenie
+    this_field_has_attachments_disabled: Toto pole nemá povolené prílohy.
+    tools: Nástroje
+    'true': 'True'
+    type_to_search: Type to search.
+    unauthorized: Unauthorized
+    undo: undo
+    updated_at_timestamp: Aktualizované %{updated_at}
+    view: Pozrieť
+    view_item: pozrieť %{item}
+    visit_record_on_external_path: Visit record on external path
+    was_successfully_created: was successfully created
+    was_successfully_updated: was successfully updated
+    x_items_more:
+      one: one more item
+      other: "%{count} more items"
+      zero: no more items
+    x_records_selected_from_a_total_of_x_html: <span class="font-bold text-gray-700">%{selected}</span> records selected on this page from a total of <span class="font-bold text-gray-700">%{count}</span>
+    x_records_selected_from_all_pages_html: <span class="font-bold text-gray-700">%{count}</span> records selected from all pages
+    x_records_selected_from_page_html: <span class="font-bold text-gray-700">%{selected}</span> records selected on this page
+    yes_confirm: Yes, I'm sure
+    you_cant_upload_new_resource: You can't upload files into the Trix editor until you save the resource.
+    you_havent_set_attachment_key: You haven't set an `attachment_key` to this Trix field.
+    you_missed_something_check_form: You might have missed something. Please check the form.
+    field_translations:
+      member: "Člen"
+      subdomain: Doména
+      assembly: "Súbor"
+      year: "Rok"
+      group: "Skupina"
+      name: "Názov"
+      
