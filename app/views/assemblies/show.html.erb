@@ -21,7 +21,21 @@
       </p>
     </section>
 
-    <section class="grid sm:grid-cols-2 gap-6">
+    <section class="grid sm:grid-cols-3 gap-6">
+      <%= link_to assembly_members_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
+        <div class="card-body">
+          <h3 class="card-title flex items-center gap-2">
+            Prehľad po rokoch
+            <span class="badge badge-outline badge-primary badge-sm">
+              <%= @assembly.member_of_assemblies.distinct.count(:year) %>
+            </span>
+          </h3>
+          <p>Zobraziť členov a podujatia vo vybranom roku</p>
+          <div class="card-actions justify-end">
+            <span class="btn btn-link">Zobraziť →</span>
+          </div>
+        </div>
+      <% end %>
       <%= link_to assembly_members_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
@@ -58,12 +72,12 @@
 
       <div class="text-sm opacity-70">
         Dáta spravuje:
-        <a href="#" class="link link-primary">
+        <a href="" class="link link-primary">
           Rastislav Letenaj
         </a>
       </div>
 
-      <a href="#"
+      <a href=""
          class="btn btn-sm btn-outline">
         Kontaktovať správcu
       </a>
