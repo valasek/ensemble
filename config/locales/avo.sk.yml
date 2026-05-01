@@ -19,7 +19,7 @@ sk:
     attachment_failed: Failed to attach %{attachment_class}
     cancel: Zrušiť
     choose_a_country: Choose a country
-    choose_an_option: Choose an option
+    choose_an_option: Vyber jednu z možností
     choose_item: Choose %{item}
     clear_value: Clear value
     click_to_reveal_filters: Click to reveal filters
@@ -27,7 +27,7 @@ sk:
     close_modal: Close modal
     confirm: Potvrdiť
     copy: Kopírovať
-    create_new_item: Create new %{item}
+    create_new_item: Vytvoriť nový %{item}
     created_at_timestamp: Created at %{created_at}
     dashboard: Prehľad
     dashboards: Dashboardy
@@ -52,7 +52,7 @@ sk:
       other: files
     filter_by: Filter by
     filters: Filters
-    go_back: Go back
+    go_back: Späť
     grid_view: Grid view
     hide_content: Hide content
     home: Domov
@@ -146,4 +146,19 @@ sk:
       year: "Rok"
       group: "Skupina"
       name: "Názov"
-      
+    resource_translations:
+      assembly:
+        one: "Súbor"
+        other: "Súbory"
+      member:
+        one: "Člen"
+        other: "Členovia"
+      user:
+        one: "Užívateľ"
+        other: "Užívatelia"
+      performance:
+        one: "Predstavenie"
+        other: "Predstavenia"
+      member_of_assembly:
+        one: "Člen v skupinách"
+        other: "Členovia v skupinách"

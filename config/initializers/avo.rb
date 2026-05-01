@@ -103,7 +103,7 @@ Avo.configure do |config|
 
   ## == Customization ==
   config.click_row_to_view_record = true
-  # config.app_name = 'Avocadelicious'
+  config.app_name = "Kronika"
   # config.timezone = 'UTC'
   # config.currency = 'USD'
   # config.hide_layout_when_printing = false
