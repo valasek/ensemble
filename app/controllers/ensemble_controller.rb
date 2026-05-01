@@ -4,4 +4,7 @@ class EnsembleController < ApplicationController
     @assembly = Assembly.first
     redirect_to assembly_path(@assembly) if @assembly.present?
   end
+  def changelog
+     @changelog = Changelog.all
+  end
 end
