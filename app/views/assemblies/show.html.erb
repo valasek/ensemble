@@ -1,7 +1,7 @@
 <div class="min-h-screen bg-base-100">
 
   <section>
-    <div class="max-w-4xl mx-auto px-6 py-15 text-center space-y-8">
+    <div class="max-w-4xl mx-auto px-6 pt-15 text-center space-y-8">
       <h1 class="text-4xl md:text-5xl font-bold">
         <%= @assembly.name %>
       </h1>
@@ -10,17 +10,6 @@
   </section>
 
   <main class="max-w-4xl mx-auto px-6 space-y-12">
-    <section class="prose max-w-none">
-      <h2>O divadle</h2>
-      <p>
-        <%= @assembly.production %>
-      </p>
-      <p>
-        V kronike nájdete informácie o členoch, inscenáciách aj sprievodný
-        multimediálny obsah.
-      </p>
-    </section>
-
     <section class="grid sm:grid-cols-3 gap-6">
       <%= link_to assembly_years_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
         <div class="card-body">
@@ -65,15 +54,26 @@
         </div>
       <% end %>
     </section>
+     <section class="prose max-w-none">
+      <h2>O divadle</h2>
+      <p>
+        <%= @assembly.production %>
+      </p>
+      <p>
+        V kronike nájdete informácie o členoch, inscenáciách aj sprievodný
+        multimediálny obsah.
+      </p>
+    </section>
   </main>
 
   <footer>
-    <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+    <div class="max-w-4xl mx-auto px-6 pt-15 py-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
       <div></div>
       <div class="text-sm opacity-70">
         Dáta spravuje:
         <b>Rastislav Letenaj</b>
       </div>
+      <div></div>
     </div>
   </footer>
 
