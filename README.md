@@ -4,6 +4,16 @@
 
 ## Roadmap
 
+Su k nim nahrane i skupiny v rokoch ale este sa nezobrazuji. Neviem ako ich zmysluplne zobrazit :-)
+Idem hladat cesty, ako tam dostat podujatia
+Potom pridam zobrazenie po rokoch
+
+clenovia - odkedy, dokedy
+kto v danom roku v súbore
+
+predstavenie má typ
+Rok 2000
+
 ...
 
 ## License

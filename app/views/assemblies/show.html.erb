@@ -1,26 +1,16 @@
 <div class="min-h-screen bg-base-100">
 
-  <!-- HERO -->
-  <section class="bg-base-200">
-    <div class="max-w-4xl mx-auto px-6 py-20 text-center space-y-8">
-
-      <!-- Name -->
+  <section>
+    <div class="max-w-4xl mx-auto px-6 py-15 text-center space-y-8">
       <h1 class="text-4xl md:text-5xl font-bold">
         <%= @assembly.name %>
       </h1>
-
-      <!-- Search -->
       <%= render "shared/instant_search" %>
-
     </div>
   </section>
 
-  <!-- CONTENT -->
-  <main class="max-w-4xl mx-auto px-6 py-16 space-y-12">
-
-    <!-- Description -->
+  <main class="max-w-4xl mx-auto px-6 space-y-12">
     <section class="prose max-w-none">
-      <!-- has_rich_text :production -->
       <h2>O divadle</h2>
       <p>
         <%= @assembly.production %>
@@ -31,9 +21,7 @@
       </p>
     </section>
 
-    <!-- Quick links -->
     <section class="grid sm:grid-cols-2 gap-6">
-
       <%= link_to assembly_members_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
@@ -48,7 +36,6 @@
           </div>
         </div>
       <% end %>
-
       <%= link_to assembly_performances_path(@assembly), class: "card bg-base-200 hover:bg-base-300 transition" do %>
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
@@ -64,11 +51,9 @@
         </div>
       <% end %>
     </section>
-
   </main>
 
-  <!-- FOOTER / ADMIN -->
-  <footer class="border-t border-base-300">
+  <footer>
     <div class="max-w-4xl mx-auto px-6 py-6 flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
 
       <div class="text-sm opacity-70">
