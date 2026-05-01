@@ -38,7 +38,7 @@
               </td>
               <td>
                 <%= link_to assembly_member_path(@assembly, member), class: "block w-full" do %>
-                  <%= member.member_of_assemblies.pluck(:year).sort.join(", ") %>
+                  <%= render "members/year_timeline", years: member.member_of_assemblies.pluck(:year).sort %>
                 <% end %>
               </td>
             </tr>
