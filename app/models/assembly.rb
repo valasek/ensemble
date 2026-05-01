@@ -3,6 +3,7 @@ class Assembly < ApplicationRecord
   has_many :members, dependent: :destroy
   has_many :member_of_assemblies, dependent: :destroy
   has_many :performances, dependent: :destroy
+  has_many :assembly_years, dependent: :destroy
 
   has_rich_text :production
 

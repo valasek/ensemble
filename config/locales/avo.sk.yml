@@ -146,6 +146,7 @@ sk:
       year: "Rok"
       group: "Skupina"
       name: "Názov"
+      description: "Popis"
     resource_translations:
       assembly:
         one: "Súbor"
@@ -162,3 +163,6 @@ sk:
       member_of_assembly:
         one: "Člen v skupinách"
         other: "Členovia v skupinách"
+      assembly_year:
+        one: "Rok"
+        other: "Roky"

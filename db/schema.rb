@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_02_11_214549) do
+ActiveRecord::Schema[8.1].define(version: 2026_05_01_211238) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -56,6 +56,15 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_11_214549) do
     t.datetime "updated_at", null: false
     t.index ["name"], name: "index_assemblies_on_name", unique: true
     t.index ["subdomain"], name: "index_assemblies_on_subdomain", unique: true
+  end
+
+  create_table "assembly_years", force: :cascade do |t|
+    t.integer "assembly_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "year", null: false
+    t.index ["assembly_id", "year"], name: "index_assembly_years_on_assembly_id_and_year", unique: true
+    t.index ["assembly_id"], name: "index_assembly_years_on_assembly_id"
   end
 
   create_table "member_of_assemblies", force: :cascade do |t|
@@ -109,6 +118,7 @@ ActiveRecord::Schema[8.1].define(version: 2026_02_11_214549) do
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
+  add_foreign_key "assembly_years", "assemblies"
   add_foreign_key "member_of_assemblies", "assemblies"
   add_foreign_key "member_of_assemblies", "members"
   add_foreign_key "members", "assemblies"

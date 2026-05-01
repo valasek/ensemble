@@ -12,6 +12,12 @@
 
   <main class="max-w-4xl mx-auto px-6 space-y-12 pb-16">
 
+    <% if @assembly_year&.description&.present? %>
+      <section class="prose prose-lg max-w-none">
+        <%= @assembly_year.description %>
+      </section>
+    <% end %>
+
     <section>
       <h2 class="text-2xl font-semibold mb-4">
         Členovia

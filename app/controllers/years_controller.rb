@@ -13,6 +13,7 @@ class YearsController < ApplicationController
       redirect_to assembly_years_path(@assembly), alert: "Rok nebol nájdený." and return
     end
 
+    @assembly_year = @assembly.assembly_years.find_by(year: @year)
     member_ids = @assembly.member_of_assemblies.where(year: @year).pluck(:member_id)
     @members = @assembly.members.where(id: member_ids).sorted_by_name
     @performances = @assembly.performances.where("strftime('%Y', date) = ?", @year.to_s).order(date: :asc)
