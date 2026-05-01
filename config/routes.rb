@@ -10,6 +10,7 @@ Rails.application.routes.draw do
     resources :members
     resources :member_of_ensembles
     resources :performances
+    resources :years, only: [ :index, :show ]
   end
 
   post "search/proxy", to: "search#proxy"

@@ -1,0 +1,51 @@
+<div class="min-h-screen bg-base-100">
+
+  <section>
+    <div class="max-w-4xl mx-auto px-6 py-15 text-center space-y-8">
+      <h1 class="text-4xl md:text-5xl font-bold">
+        Prehľad po rokoch
+      </h1>
+      <p class="text-lg opacity-70"><%= @assembly.name %></p>
+    </div>
+  </section>
+
+  <main class="max-w-4xl mx-auto px-6 space-y-10 pb-16">
+
+    <section class="flex flex-col items-center gap-4">
+      <label class="form-control w-full max-w-sm">
+        <div class="label">
+          <span class="label-text text-base font-medium">Vybrať rok</span>
+        </div>
+        <%= select_tag :year,
+              options_for_select(@years),
+              prompt: "— Vyberte rok —",
+              id: "year-select",
+              class: "select select-bordered w-full" %>
+      </label>
+      <p id="year-select-hint" class="text-sm opacity-50">Vyberte rok pre zobrazenie detailov</p>
+    </section>
+
+    <section>
+      <h2 class="text-xl font-semibold mb-4">Všetky roky</h2>
+      <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-3">
+        <% @years.each do |year| %>
+          <%= link_to assembly_year_path(@assembly, year),
+                class: "btn btn-outline btn-primary" do %>
+            <%= year %>
+          <% end %>
+        <% end %>
+      </div>
+    </section>
+
+  </main>
+
+</div>
+
+<script>
+  document.getElementById("year-select").addEventListener("change", function () {
+    const year = this.value;
+    if (year) {
+      window.location.href = "<%= assembly_years_path(@assembly) %>/" + year;
+    }
+  });
+</script>
