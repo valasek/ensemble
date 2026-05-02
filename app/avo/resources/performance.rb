@@ -1,5 +1,5 @@
 class Avo::Resources::Performance < Avo::BaseResource
-  # self.includes = []
+  self.includes = [ :assembly ]
   # self.attachments = []
   self.search = {
     query: -> { query.ransack(name_cont: params[:q]).result(distinct: false) }

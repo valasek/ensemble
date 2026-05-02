@@ -6,6 +6,10 @@ class Performance < ApplicationRecord
 
   has_rich_text :description
 
+  def self.meilisearch_import
+    includes(:assembly, :rich_text_description)
+  end
+
   validates :name, :date, presence: true
 
   meilisearch do

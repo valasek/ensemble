@@ -32,6 +32,10 @@ class Member < ApplicationRecord
     sortable_attributes [ :name ]
   end
 
+  def self.meilisearch_import
+    includes(:assembly)
+  end
+
   def avo_title
     name
   end
