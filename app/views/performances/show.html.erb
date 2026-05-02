@@ -1,4 +1,49 @@
-<div>
-  <h1 class="font-bold text-4xl">Performances#show</h1>
-  <p>Find me in app/views/performances/show.html.erb</p>
+<div class="min-h-screen bg-base-100">
+
+  <section>
+    <div class="max-w-3xl mx-auto px-6 py-15 space-y-6">
+
+      <div class="flex items-center gap-4">
+        <%= link_to assembly_performances_path(@assembly), class: "btn btn-ghost btn-sm" do %>
+          &larr; Späť
+        <% end %>
+      </div>
+
+      <div class="card">
+        <div class="card-body gap-4">
+
+          <h1 class="card-title text-3xl font-bold"><%= @performance.name %></h1>
+
+          <div class="flex flex-wrap gap-4 text-sm text-base-content/70">
+            <span>
+              <span class="font-semibold text-base-content">Dátum:</span>
+              <%= @performance.date.strftime("%d. %m. %Y") %>
+              <% if @performance.end_date.present? && @performance.end_date != @performance.date %>
+                – <%= @performance.end_date.strftime("%d. %m. %Y") %>
+              <% end %>
+            </span>
+            <% if @performance.location.present? %>
+              <span>
+                <span class="font-semibold text-base-content">Miesto:</span>
+                <%= @performance.location %>
+              </span>
+            <% end %>
+            <span>
+              <span class="font-semibold text-base-content">Súbor:</span>
+              <%= @assembly.name %>
+            </span>
+          </div>
+
+          <% if @performance.description.present? %>
+            <div class="prose max-w-none">
+              <%= @performance.description %>
+            </div>
+          <% end %>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
 </div>

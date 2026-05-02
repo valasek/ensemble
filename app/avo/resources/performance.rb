@@ -8,6 +8,7 @@ class Avo::Resources::Performance < Avo::BaseResource
   def fields
     # field :id, as: :id
     field :date, as: :date
+    field :end_date, as: :date
     field :name, as: :text
     field :location, as: :text
     field :description, as: :trix

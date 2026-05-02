@@ -31,7 +31,10 @@
         </thead>
         <tbody>
           <% @performances.each do |performance| %>
-            <tr class="hover:bg-base-300">
+            <tr class="hover:bg-base-300 cursor-pointer"
+                data-controller="row-link"
+                data-action="click->row-link#navigate"
+                data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
               <td class="font-medium">
                 <b><%= performance.name %></b>
               </td>

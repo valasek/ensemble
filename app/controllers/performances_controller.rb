@@ -1,6 +1,6 @@
 class PerformancesController < ApplicationController
-  before_action :set_performance, only: %i[ show edit update destroy ]
   before_action :set_assembly
+  before_action :set_performance, only: %i[ show edit update destroy ]
 
   # GET /performances
   def index
@@ -56,6 +56,6 @@ class PerformancesController < ApplicationController
     end
 
     def performance_params
-      params.require(:performance).permit(:date, :name, :location, :description)
+      params.require(:performance).permit(:date, :end_date, :name, :location, :description)
     end
 end

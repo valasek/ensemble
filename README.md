@@ -4,8 +4,7 @@
 
 ## Roadmap
 
-Podujatie má typ
-Rok 2000
+Podujatie má type, institution
 
 ...
 
