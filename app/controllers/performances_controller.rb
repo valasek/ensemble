@@ -28,7 +28,7 @@ class PerformancesController < ApplicationController
     @performance = @assembly.performances.build(performance_params)
 
     if @performance.save
-      redirect_to @performance, notice: "Performance was successfully created."
+      redirect_to assembly_performance_url(@assembly, @performance), notice: "Performance was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
@@ -37,7 +37,7 @@ class PerformancesController < ApplicationController
   # PATCH/PUT /performances/1
   def update
     if @performance.update(performance_params)
-      redirect_to @performance, notice: "Performance was successfully updated.", status: :see_other
+      redirect_to assembly_performance_url(@assembly, @performance), notice: "Performance was successfully updated.", status: :see_other
     else
       render :edit, status: :unprocessable_entity
     end
@@ -46,7 +46,7 @@ class PerformancesController < ApplicationController
   # DELETE /performances/1
   def destroy
     @performance.destroy!
-    redirect_to performances_url, notice: "Performance was successfully destroyed.", status: :see_other
+    redirect_to assembly_performances_url(@assembly), notice: "Performance was successfully destroyed.", status: :see_other
   end
 
   private

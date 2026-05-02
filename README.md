@@ -5,9 +5,7 @@
 ## Roadmap
 
 Podujatie má type, institution
-Fix tests, add more meaningfull tests
 Pridať Administráciu za užívateľské prihlásenie
-
 
 ...
 

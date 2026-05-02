@@ -28,7 +28,7 @@ class MembersController < ApplicationController
     @member = @assembly.members.build(member_params)
 
     if @member.save
-      redirect_to @member, notice: "Member was successfully created."
+      redirect_to assembly_member_url(@assembly, @member), notice: "Member was successfully created."
     else
       render :new, status: :unprocessable_entity
     end
@@ -37,7 +37,7 @@ class MembersController < ApplicationController
   # PATCH/PUT /members/1
   def update
     if @member.update(member_params)
-      redirect_to @member, notice: "Member was successfully updated.", status: :see_other
+      redirect_to assembly_member_url(@assembly, @member), notice: "Member was successfully updated.", status: :see_other
     else
       render :edit, status: :unprocessable_entity
     end
@@ -46,7 +46,7 @@ class MembersController < ApplicationController
   # DELETE /members/1
   def destroy
     @member.destroy!
-    redirect_to members_url, notice: "Member was successfully destroyed.", status: :see_other
+    redirect_to assembly_members_url(@assembly), notice: "Member was successfully destroyed.", status: :see_other
   end
 
   private

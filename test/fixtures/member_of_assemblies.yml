@@ -10,11 +10,6 @@ two:
   year: 2021
   assembly: one
 
-one:
-  member: one
-  year: 2020
-  assembly: one
-
 three:
   member: two
   year: 2000

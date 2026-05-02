@@ -33,12 +33,12 @@
           <% @members.each do |member| %>
             <tr class="hover:bg-base-300 cursor-pointer">
               <td class="font-medium">
-                <%= link_to assembly_member_path(@assembly, member), class: "font-medium hover:underline block w-full" do %>
+                <%= link_to assembly_member_path(@assembly, member), data: { turbo_frame: "_top" }, class: "font-medium hover:underline block w-full" do %>
                   <b><%= member.name %></b>
                 <% end %>
               </td>
               <td>
-                <%= link_to assembly_member_path(@assembly, member), class: "block w-full" do %>
+                <%= link_to assembly_member_path(@assembly, member), data: { turbo_frame: "_top" }, class: "block w-full" do %>
                   <%= render "members/year_timeline", years: member.member_of_assemblies.map(&:year).sort %>
                 <% end %>
               </td>

@@ -1,38 +1,60 @@
 require "test_helper"
 
 class AssembliesControllerTest < ActionDispatch::IntegrationTest
+  setup do
+    @assembly = assemblies(:one)
+    @user = users(:one)
+    sign_in @user
+  end
+
   test "should get index" do
-    get assemblies_index_url
+    get assemblies_url
     assert_response :success
   end
 
   test "should get show" do
-    get assemblies_show_url
+    get assembly_url(@assembly)
     assert_response :success
   end
 
   test "should get new" do
-    get assemblies_new_url
+    get new_assembly_url
     assert_response :success
   end
 
-  test "should get create" do
-    get assemblies_create_url
-    assert_response :success
+  test "should create assembly" do
+    assert_difference("Assembly.count") do
+      post assemblies_url, params: { assembly: { name: "New Ensemble", subdomain: "new-ensemble" } }
+    end
+    assert_redirected_to assembly_url(Assembly.last)
+  end
+
+  test "should not create assembly with invalid params" do
+    assert_no_difference("Assembly.count") do
+      post assemblies_url, params: { assembly: { name: "", subdomain: "" } }
+    end
+    assert_response :unprocessable_entity
   end
 
   test "should get edit" do
-    get assemblies_edit_url
+    get edit_assembly_url(@assembly)
     assert_response :success
   end
 
-  test "should get update" do
-    get assemblies_update_url
-    assert_response :success
+  test "should update assembly" do
+    patch assembly_url(@assembly), params: { assembly: { name: "Updated Name", subdomain: @assembly.subdomain } }
+    assert_redirected_to assembly_url(@assembly)
   end
 
-  test "should get destroy" do
-    get assemblies_destroy_url
-    assert_response :success
+  test "should not update assembly with invalid params" do
+    patch assembly_url(@assembly), params: { assembly: { name: "", subdomain: "" } }
+    assert_response :unprocessable_entity
+  end
+
+  test "should destroy assembly" do
+    assert_difference("Assembly.count", -1) do
+      delete assembly_url(@assembly)
+    end
+    assert_redirected_to assemblies_url
   end
 end
