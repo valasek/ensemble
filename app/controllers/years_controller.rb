@@ -4,6 +4,23 @@ class YearsController < ApplicationController
   # GET /assemblies/:assembly_id/years
   def index
     @years = @assembly.member_of_assemblies.distinct.pluck(:year).sort.reverse
+
+    members_by_year = @assembly.member_of_assemblies
+                               .where(year: @years)
+                               .group(:year)
+                               .count("DISTINCT member_id")
+
+    performances_by_year = @assembly.performances
+                                    .group("strftime('%Y', date)")
+                                    .count
+                                    .transform_keys(&:to_i)
+
+    @year_stats = @years.index_with do |year|
+      {
+        members: members_by_year[year] || 0,
+        performances: performances_by_year[year] || 0
+      }
+    end
   end
 
   # GET /assemblies/:assembly_id/years/:id

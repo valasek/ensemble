@@ -6,7 +6,6 @@
 
 Podujatie má type, institution
 Fix tests, add more meaningfull tests
-Do rokov pridať počet členov a podujatí
 Pridať Administráciu za užívateľské prihlásenie
 
 
