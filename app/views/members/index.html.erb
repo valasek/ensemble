@@ -6,7 +6,7 @@
 
       <!-- Name -->
       <h1 class="text-4xl md:text-5xl font-bold">
-        Členovia <%= @assembly.name %>
+        Členovia
       </h1>
 
       <!-- Search -->
@@ -19,6 +19,7 @@
     </div>
   </section>
 
+  <%= turbo_frame_tag "members-table" do %>
   <section class="space-y-6 p-4">
     <div class="overflow-x-auto rounded-box">
       <table class="table table-zebra">
@@ -38,7 +39,7 @@
               </td>
               <td>
                 <%= link_to assembly_member_path(@assembly, member), class: "block w-full" do %>
-                  <%= render "members/year_timeline", years: member.member_of_assemblies.pluck(:year).sort %>
+                  <%= render "members/year_timeline", years: member.member_of_assemblies.map(&:year).sort %>
                 <% end %>
               </td>
             </tr>
@@ -47,7 +48,9 @@
       </table>
     </div>
 
+    <%= paginate @members %>
   </section>
+  <% end %>
 
 
 </div>

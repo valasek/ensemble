@@ -1,22 +1,40 @@
 <nav class="navbar bg-base-200 shadow-sm">
-  <%# Mobile: hamburger dropdown %>
-  <div class="navbar-center lg:hidden">
-    <div class="dropdown">
-      <div tabindex="0" role="button" class="btn btn-ghost">
+  <%# Left: Assembly name as brand logo %>
+  <div class="navbar-start">
+    <% if defined?(@assembly) && @assembly.present? %>
+      <%= link_to root_path, class: "btn btn-ghost flex items-center gap-2 px-3 group" do %>
+        <%= image_tag "favicon.ico", class: "w-7 h-7 rounded-md", alt: @assembly.name %>
+        <span class="text-lg font-bold tracking-tight group-hover:text-primary transition-colors"><%= @assembly.name %></span>
+      <% end %>
+    <% else %>
+      <%= link_to root_path, class: "btn btn-ghost flex items-center gap-2 px-3" do %>
+        <%= image_tag "favicon.ico", class: "w-7 h-7 rounded-md", alt: "Kronika" %>
+        <span class="text-lg font-bold tracking-tight">Kronika</span>
+      <% end %>
+    <% end %>
+  </div>
+
+  <%# Center: empty %>
+  <div class="navbar-center"></div>
+
+  <%# Right: Administration + mobile hamburger %>
+  <div class="navbar-end gap-2">
+    <%# Desktop %>
+    <div class="hidden lg:flex">
+      <%= link_to "Administrácia", "/admin", class: "btn btn-ghost btn-sm" %>
+    </div>
+
+    <%# Mobile: hamburger dropdown %>
+    <div class="dropdown dropdown-end lg:hidden">
+      <div tabindex="0" role="button" class="btn btn-ghost btn-sm">
         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </div>
-      <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-40 p-2 shadow">
+      <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-44 p-2 shadow">
         <li><%= link_to "Domov", root_path %></li>
         <li><%= link_to "Administrácia", "/admin" %></li>
       </ul>
     </div>
-  </div>
-
-  <%# Desktop: centered menu with Home left, Admin right %>
-  <div class="navbar-center hidden lg:flex gap-4">
-    <%= link_to "Domov", root_path, class: "btn btn-ghost" %>
-    <%= link_to "Administrácia", "/admin", class: "btn btn-ghost" %>
   </div>
 </nav>

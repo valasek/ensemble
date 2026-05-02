@@ -1,10 +1,14 @@
 2026:
+  - date: 2026-05-02
+    items:
+      - "Zobrazenie podujatí s podporou importu"
+      - "Zrýchlenie zobrazenia členov i podujatí s možnosťou stránkovania"
   - date: 2026-05-01
     items:
-      - "Vyhľadávanie a zobrazenie členov a podujatí po rokoch"
+      - "Vyhľadávanie a zobrazenie členov i podujatí po rokoch"
   - date: 2026-04-24
     items:
       - "Bezpečnosť: Aktualizácia používaného SW na najnovšiu verziu"
-  - date: 2026-04-1
+  - date: 2026-04-01
     items:
       - "Prvá verzia Kroniky"

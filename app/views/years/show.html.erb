@@ -5,7 +5,6 @@
       <h1 class="text-4xl md:text-5xl font-bold">
         Rok <%= @year %>
       </h1>
-      <p class="text-lg opacity-70"><%= @assembly.name %></p>
       <%= link_to "← Späť na prehľad rokov", assembly_years_path(@assembly), class: "btn btn-ghost btn-sm" %>
     </div>
   </section>
@@ -13,71 +12,108 @@
   <main class="max-w-4xl mx-auto px-6 space-y-12 pb-16">
 
     <% if @assembly_year&.description&.present? %>
-      <section class="prose prose-lg max-w-none">
-        <%= @assembly_year.description %>
+      <section data-controller="expand">
+        <div class="relative">
+          <div data-expand-target="content"
+               class="prose prose-lg max-w-none overflow-hidden"
+               style="max-height: 280px;">
+            <%= @assembly_year.description %>
+          </div>
+          <div data-expand-target="overlay"
+               class="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-base-100 to-transparent pointer-events-none rounded-b">
+          </div>
+        </div>
+        <div class="flex justify-center mt-2 gap-4">
+          <button data-expand-target="expandBtn"
+                  data-action="click->expand#expand"
+                  class="btn btn-ghost btn-sm text-primary gap-1">
+            Čítať viac
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4">
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+          <button data-expand-target="collapseBtn"
+                  data-action="click->expand#collapse"
+                  class="btn btn-ghost btn-sm text-primary gap-1 hidden">
+            Zobraziť menej
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-4 h-4 rotate-180">
+              <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
       </section>
     <% end %>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-4">
-        Členovia
-        <span class="badge badge-outline badge-primary badge-sm ml-2"><%= @members.size %></span>
-      </h2>
-      <% if @members.any? %>
-        <div class="overflow-x-auto rounded-box">
-          <table class="table table-zebra">
-            <thead>
-              <tr>
-                <th>Meno</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @members.each do |member| %>
-                <tr class="hover:bg-base-300">
-                  <td class="font-medium">
-                    <%= link_to member.name, assembly_member_path(@assembly, member), class: "link link-primary" %>
-                  </td>
+      <details>
+        <summary class="text-2xl font-semibold mb-4 cursor-pointer list-none flex items-center gap-2 group">
+          Členovia
+          <span class="badge badge-outline badge-primary badge-sm ml-2"><%= @members.size %></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 ml-auto text-primary transition-transform duration-300 group-open:rotate-180">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </summary>
+        <% if @members.any? %>
+          <div class="overflow-x-auto rounded-box mt-4">
+            <table class="table table-zebra">
+              <thead>
+                <tr>
+                  <th>Meno</th>
                 </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-      <% else %>
-        <p class="opacity-50">Žiadni členovia pre tento rok.</p>
-      <% end %>
+              </thead>
+              <tbody>
+                <% @members.each do |member| %>
+                  <tr class="hover:bg-base-300">
+                    <td class="font-medium">
+                      <%= link_to member.name, assembly_member_path(@assembly, member), class: "link link-primary" %>
+                    </td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        <% else %>
+          <p class="opacity-50 mt-4">Žiadni členovia pre tento rok.</p>
+        <% end %>
+      </details>
     </section>
 
     <section>
-      <h2 class="text-2xl font-semibold mb-4">
-        Podujatia
-        <span class="badge badge-outline badge-secondary badge-sm ml-2"><%= @performances.size %></span>
-      </h2>
-      <% if @performances.any? %>
-        <div class="overflow-x-auto rounded-box">
-          <table class="table table-zebra">
-            <thead>
-              <tr>
-                <th>Názov</th>
-                <th>Dátum</th>
-                <th>Miesto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @performances.each do |performance| %>
-                <tr class="hover:bg-base-300">
-                  <td class="font-medium">
-                    <%= link_to performance.name, assembly_performance_path(@assembly, performance), class: "link link-primary" %>
-                  </td>
-                  <td><%= performance.date.strftime("%d. %m. %Y") %></td>
-                  <td><%= performance.location %></td>
+      <details>
+        <summary class="text-2xl font-semibold mb-4 cursor-pointer list-none flex items-center gap-2 group">
+          Podujatia
+          <span class="badge badge-outline badge-secondary badge-sm ml-2"><%= @performances.size %></span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 ml-auto text-secondary transition-transform duration-300 group-open:rotate-180">
+            <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
+          </svg>
+        </summary>
+        <% if @performances.any? %>
+          <div class="overflow-x-auto rounded-box mt-4">
+            <table class="table table-zebra">
+              <thead>
+                <tr>
+                  <th>Názov</th>
+                  <th>Dátum</th>
+                  <th>Miesto</th>
                 </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
-      <% else %>
-        <p class="opacity-50">Žiadne podujatia pre tento rok.</p>
-      <% end %>
+              </thead>
+              <tbody>
+                <% @performances.each do |performance| %>
+                  <tr class="hover:bg-base-300">
+                    <td class="font-medium">
+                      <%= link_to performance.name, assembly_performance_path(@assembly, performance), class: "link link-primary" %>
+                    </td>
+                    <td><%= performance.date.strftime("%d. %m. %Y") %></td>
+                    <td><%= performance.location %></td>
+                  </tr>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        <% else %>
+          <p class="opacity-50 mt-4">Žiadne podujatia pre tento rok.</p>
+        <% end %>
+      </details>
     </section>
 
   </main>

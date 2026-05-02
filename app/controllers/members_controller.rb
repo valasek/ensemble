@@ -4,7 +4,10 @@ class MembersController < ApplicationController
 
   # GET /members
   def index
-    @members = @assembly.members.sorted_by_name
+    @members = @assembly.members
+                         .includes(:member_of_assemblies)
+                         .sorted_by_name
+                         .page(params[:page]).per(15)
   end
 
   # GET /members/1

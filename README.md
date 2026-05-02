@@ -17,15 +17,23 @@ All source code in this repository is released under the **[O'Saasy](https://osa
 - 📝 Attribution and copyright notice must be included
 - ⚠️ No liability and no warranty
 
-# Reindex all Performances
+# Import Bralen data
+
+`kamal app exec 'bin/rails performances:import ASSEMBLY=bralen'`
+
+
+# Reindex all Tables
+```sh
 rails runner 'Member.clear_index!'
 rails runner 'Performance.clear_index!'
 rails runner 'Performance.reindex!'
 rails runner 'Member.reindex!'
-
+```
 
 # Or in a Rake task
 # lib/tasks/search.rake
+
+```rb
 namespace :search do
   desc "Reindex all searchable models"
   task reindex: :environment do
@@ -34,6 +42,7 @@ namespace :search do
     puts "Reindexing complete!"
   end
 end
+```
 
 ## How to deploy
 

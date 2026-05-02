@@ -4,7 +4,10 @@ class PerformancesController < ApplicationController
 
   # GET /performances
   def index
-    @performances = @assembly.performances.order(date: :desc)
+    @performances = @assembly.performances
+                              .includes(:rich_text_description)
+                              .order(date: :desc)
+                              .page(params[:page]).per(15)
   end
 
   # GET /performances/1
