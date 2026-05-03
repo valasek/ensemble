@@ -20,8 +20,41 @@
 
   <%= turbo_frame_tag "performances-table" do %>
   <section class="space-y-6 p-4">
-    <div class="overflow-x-auto rounded-box">
-      <table class="table table-zebra">
+
+    <!-- MOBILE: stacked cards -->
+    <div class="md:hidden space-y-3">
+      <% @performances.each do |performance| %>
+        <a href="<%= assembly_performance_path(@assembly, performance) %>"
+           class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
+          <div class="card-body p-4 gap-1">
+            <h2 class="card-title text-base"><%= performance.name %></h2>
+            <p class="text-sm text-base-content/60">
+              <% if performance.end_date.present? %>
+                <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
+              <% else %>
+                <%= performance.date.strftime("%d. %m. %Y") %>
+              <% end %>
+              <% if performance.location.present? %>
+                &middot; <%= performance.location %>
+              <% end %>
+            </p>
+            <% if performance.description.present? %>
+              <div class="text-sm mt-1 line-clamp-2 text-base-content/80"><%= performance.description %></div>
+            <% end %>
+          </div>
+        </a>
+      <% end %>
+    </div>
+
+    <!-- DESKTOP: table -->
+    <div class="hidden md:block overflow-x-auto rounded-box">
+      <table class="table table-zebra w-full">
+        <colgroup>
+          <col class="w-1/5">
+          <col class="w-1/6">
+          <col class="w-1/6">
+          <col class="w-5/12">
+        </colgroup>
         <thead>
           <tr>
             <th>Názov</th>
@@ -39,14 +72,22 @@
               <td class="font-medium">
                 <b><%= performance.name %></b>
               </td>
-              <td>
-                <%= performance.date.strftime("%d. %m. %Y") %>
+              <td class="whitespace-nowrap">
+                <% if performance.end_date.present? %>
+                  <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
+                <% else %>
+                  <%= performance.date.strftime("%d. %m. %Y") %>
+                <% end %>
               </td>
               <td>
                 <%= performance.location %>
               </td>
               <td>
-                <%= performance.description %>
+                <div class="max-h-[4.5rem] overflow-hidden text-sm
+                            [mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)]
+                            [-webkit-mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)]">
+                  <%= performance.description %>
+                </div>
               </td>
             </tr>
           <% end %>
