@@ -25,6 +25,7 @@
     <div class="md:hidden space-y-3">
       <% @performances.each do |performance| %>
         <a href="<%= assembly_performance_path(@assembly, performance) %>"
+           data-turbo-frame="_top"
            class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
           <div class="card-body p-4 gap-1">
             <h2 class="card-title text-base"><%= performance.name %></h2>
