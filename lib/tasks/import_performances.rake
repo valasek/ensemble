@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # ============================================================
-# Podujatia PDF import pipeline
+# Performances PDF import pipeline
 # ============================================================
 #
 # Workflow (run in order):
@@ -55,14 +55,14 @@ namespace :performances do
   desc "Parse extracted text files → YAML review files in db/data/parsed/"
   task parse: :environment do
     txts = Dir[EXTRACTED_DIR.join("*.txt")]
-    abort "No text files found in #{EXTRACTED_DIR}. Run podujatia:extract first." if txts.empty?
+    abort "No text files found in #{EXTRACTED_DIR}. Run performances:extract first." if txts.empty?
 
     txts.each do |txt|
       basename = File.basename(txt, ".txt")
       out_file = PARSED_DIR.join("#{basename}.yml")
 
       puts "  Parsing: #{File.basename(txt)}"
-      result = PodujatiaParser.parse_file(txt)
+      result = PerformanceParser.parse_file(txt)
 
       require "yaml"
       File.write(out_file, result.to_yaml)
@@ -78,17 +78,30 @@ namespace :performances do
   # ----------------------------------------------------------
   desc "Import reviewed YAML files into the DB. Set ASSEMBLY=<subdomain> env var."
   task import: :environment do
+    require "cgi"
+
+    # Convert plain text to Trix-compatible HTML (div-per-line, matching what the
+    # rich text editor produces). Leading spaces are converted to &nbsp; to preserve
+    # indentation, since browsers collapse regular whitespace inside block elements.
+    plain_to_html = ->(text) do
+      text.to_s.strip.split("\n").map do |line|
+        escaped = CGI.escapeHTML(line)
+        escaped.gsub!(/\A( +)/) { "&nbsp;" * $1.length }
+        escaped.empty? ? "<div><br></div>" : "<div>#{escaped}</div>"
+      end.join
+    end
+
     subdomain = ENV["ASSEMBLY"].presence
     abort "Set the ASSEMBLY env var to the assembly subdomain, e.g. ASSEMBLY=bralen" unless subdomain
 
     assembly = Assembly.find_by!(subdomain: subdomain)
     ymls     = Dir[PARSED_DIR.join("*.yml")]
-    abort "No YAML files found in #{PARSED_DIR}. Run podujatia:parse first." if ymls.empty?
+    abort "No YAML files found in #{PARSED_DIR}. Run performances:parse first." if ymls.empty?
 
     require "yaml"
-    total_years = 0
-    total_perfs = 0
-    skipped     = 0
+    total_years   = 0
+    total_created = 0
+    total_updated = 0
 
     ymls.each do |yml|
       puts "\nImporting #{File.basename(yml)} ..."
@@ -98,13 +111,13 @@ namespace :performances do
 
       # --- AssemblyYear + rich-text description ---
       ay = AssemblyYear.find_or_create_by!(assembly: assembly, year: year)
-      if data["year_description"].present? && ay.description.to_plain_text.blank?
-        ay.description = data["year_description"]
+      if data["year_description"].present?
+        ay.description = plain_to_html.call(data["year_description"])
         ay.save!
         total_years += 1
-        puts "  Set description for year #{year}"
+        puts "  Updated description for year #{year}"
       else
-        puts "  Year #{year}: description already set or not present, skipping."
+        puts "  Year #{year}: no description in YAML, skipping."
       end
 
       # --- Performances ---
@@ -114,32 +127,34 @@ namespace :performances do
 
         date_to   = p["date_to"].present? ? (Date.parse(p["date_to"]) rescue nil) : nil
         name      = p["name"].to_s.strip
+        next if name.blank?
+
         location  = p["location"].to_s.strip
         desc_text = p["description"].to_s.strip
 
-        # Idempotency: skip if same (assembly, date, name) already exists
-        if Performance.exists?(assembly: assembly, date: date_from, name: name)
-          skipped += 1
+        perf = Performance.find_or_initialize_by(assembly: assembly, date: date_from, name: name)
+        is_new = perf.new_record?
+
+        perf.end_date  = date_to
+        perf.location  = location.presence
+        perf.description = desc_text.present? ? plain_to_html.call(desc_text) : nil
+        unless perf.save
+          puts "  WARNING: skipping invalid record (#{date_from} / #{name.inspect}): #{perf.errors.full_messages.join(', ')}"
           next
         end
 
-        perf = Performance.new(
-          assembly: assembly,
-          date:     date_from,
-          end_date: date_to,
-          name:     name,
-          location: location.presence
-        )
-        perf.description = desc_text if desc_text.present?
-        perf.save!
-        total_perfs += 1
+        if is_new
+          total_created += 1
+        else
+          total_updated += 1
+        end
       end
     end
 
     puts "\n=== Import complete ==="
-    puts "  AssemblyYears updated : #{total_years}"
-    puts "  Performances imported : #{total_perfs}"
-    puts "  Skipped (duplicates)  : #{skipped}"
+    puts "  AssemblyYears updated  : #{total_years}"
+    puts "  Performances created   : #{total_created}"
+    puts "  Performances updated   : #{total_updated}"
     puts "\nRemember to reindex Meilisearch:"
     puts "  bin/rails runner 'Performance.clear_index!; Performance.reindex!'"
   end
@@ -148,7 +163,7 @@ end
 # ============================================================
 # Parser class (kept here for locality; move to lib/ if grows large)
 # ============================================================
-class PodujatiaParser
+class PerformanceParser
   EN_DASH = "\u2013"
   D = "[#{EN_DASH}\\-]"   # matches hyphen or en-dash
 
@@ -190,17 +205,31 @@ class PodujatiaParser
     @year  = year
   end
 
-  def parse
-    performances        = []
-    year_desc_lines     = []
-    header_collected    = false
-    current             = nil
+  PODUJATIA_RE = /\APODUJATIA\s*\z/
 
-    @lines.each do |line|
+  def parse
+    performances    = []
+    current         = nil
+
+    # Split on the "PODUJATIA" sentinel line.
+    # Everything before it is the year description; everything after is performance records.
+    split_idx = @lines.index { |l| PODUJATIA_RE.match?(l.strip) }
+
+    if split_idx
+      year_desc_lines   = @lines[0...split_idx]
+      performance_lines = @lines[(split_idx + 1)..]
+    else
+      # Fallback: no sentinel found — use original heuristic (first date line boundary)
+      year_desc_lines   = []
+      performance_lines = @lines
+    end
+
+    year_desc_lines = year_desc_lines.reject { |l| ARTIFACT_LINE_RE.match?(l) }
+
+    performance_lines.each do |line|
       # Lines indented more than 10 chars are embedded program details, not headers
       indent = line.match(/\A( *)/)[1].length
       if indent <= 10 && (parsed = match_date_line(line))
-        header_collected = true
         performances << finalize(current) if current
 
         name, location = split_header(parsed[:rest].to_s.strip)
@@ -214,8 +243,6 @@ class PodujatiaParser
         }
       elsif current
         current["desc_lines"] << line unless ARTIFACT_LINE_RE.match?(line)
-      elsif !header_collected && line.strip.present? && !ARTIFACT_LINE_RE.match?(line)
-        year_desc_lines << line
       end
     end
 

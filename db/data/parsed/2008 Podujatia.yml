@@ -1,0 +1,247 @@
+---
+year: 2008
+year_description: |-
+  ROK 2008
+                                    (33. rok existencie)
+
+  Najdôležitejšie podujatia tohto roku:
+
+  15.3. 2008                 Konkurz “Nový začiatok”, AKS
+
+  31.3. 2008                 Nový začiatok, AKS
+                             Prvý tréning – od tohto dátumu opäť existuje Bralene po 9
+  mesačnej odmlke
+
+  13.9. 2008                 Konkurz, AKS
+                             Prišlo 18 záujemcov z ktorých sme dali 5 do súboru a 13
+  do prípravky
+
+  23.11. 2008               Večer moderného tanca, DK ZH, Bratislava
+                            1. predstavenie nového Bralenu (“Otec Smútok, “Exil” a
+  premiéra “Cesta je nádej”, ako hosť vystúpil TD Maximvs D. Strnada z Brna
+
+  13.12. 2008                Konkurz do súboru a prípravky, AKS
+                             Prišlo 17 dievčat z ktorých išlo 7 do Súboru a 10 do
+  Prípravky
+
+
+
+
+                                                                                Strana 1
+performances:
+- date_from: '2008-03-15'
+  date_to:
+  raw_header: Konkurz “Nový začiatok”, AKS
+  name: Konkurz “Nový začiatok”
+  location: AKS
+  description: |-
+    Prišlo 37 záujemcov, ktorých sme rozdelili 17 do Prípravky
+    a 20 do Súboru.
+- date_from: '2008-03-18'
+  date_to:
+  raw_header: Bývalí členovia Bralenu v ElleDanse, Dom T&D, Blava
+  name: Bývalí členovia Bralenu v ElleDanse, Dom T&D
+  location: Blava
+  description: |-
+    Takmer všetci bývalí členovia súboru vytvorili nový súbor
+    v ElleDanse a vytvorili program Dance come back, ktorý odpremiérovali 30.3. 2008
+- date_from: '2008-03-30'
+  date_to:
+  raw_header: Prvé stretnutie novoprijatých členov
+  name: Prvé stretnutie novoprijatých členov
+  location:
+  description:
+- date_from: '2008-03-31'
+  date_to:
+  raw_header: Nový začiatok, AKS
+  name: Nový začiatok
+  location: AKS
+  description: |-
+    Prvý tréning – od tohto dátumu opäť Bralen obnovil svoju
+    činnosť po 9 mesiacačnej odmlke.
+- date_from: '2008-04-02'
+  date_to:
+  raw_header: Prvý repertoárový tréning, AKS
+  name: Prvý repertoárový tréning
+  location: AKS
+  description: začali sme učiť tanec “Cesta je nádej”
+- date_from: '2008-04-12'
+  date_to: '2008-04-13'
+  raw_header: Súťaž IDO, Boby centrum, Brno, ČR
+  name: Súťaž IDO, Boby centrum, Brno
+  location: ČR
+  description: |-
+    R. Letenaj a J. Letenajová boli členovia poroty na súťaži v
+    disciplínach IDO v Brne u Radima Sameka
+- date_from: '2008-04-19'
+  date_to: '2008-04-20'
+  raw_header: WW – weekend workshop, Olomouc, ČR
+  name: WW – weekend workshop, Olomouc
+  location: ČR
+  description: |-
+    R. Letenaj a J. Letenajová viedli tréningy (Pilates, Limón,
+    jazz) pre tanečníkov z Moravy a Čiech v TD Sisslon u Hanky Dezortovej
+- date_from: '2008-05-04'
+  date_to:
+  raw_header: Súťaž IDO, Boby centrum, Brno, ČR
+  name: Súťaž IDO, Boby centrum, Brno
+  location: ČR
+  description: |-
+    R. Letenaj a J. Kekeňáková boli členovia poroty na súťaži
+    v disciplínach IDO v Brne u Radima Sameka
+- date_from: '2008-05-25'
+  date_to:
+  raw_header: M. Valentíková mala prvý repertoárový tréning so
+  name: M. Valentíková mala prvý repertoárový tréning so
+  location:
+  description: súborom, AKS
+- date_from: '2008-06-04'
+  date_to:
+  raw_header: Repertoárový tréning, AKS
+  name: Repertoárový tréning
+  location: AKS
+  description: |-
+    Na tomto tréningu sme začali učiť “Otec Smútok”
+
+                                                                                   Strana 2
+- date_from: '2008-06-21'
+  date_to:
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    zamerané na “Otec smútok” a “Cesta je nádej”. R.
+    Letenaj odučil 2x jazz, H. Vašková variácie. Lucia Halušková – kostýmerka, sa prišla
+    pozrieť na tance, interpretov, aby mohla urobiť návrh kostýmov.
+- date_from: '2008-06-27'
+  date_to:
+  raw_header: Posledný tréning v sezóne, AKS
+  name: Posledný tréning v sezóne
+  location: AKS
+  description: ukončenie a zhodnotenie sezóny
+- date_from: '2008-08-03'
+  date_to: '2008-08-09'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH
+  location: Bratislava
+  description: |-
+    1. beh Letnej školy tanca. Učili: C. Perera, M. Klimešová,
+    J. Letenajová, S. Beláková. Bolo 55 účastníkov
+- date_from: '2008-08-11'
+  date_to: '2008-08-16'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH
+  location: Bratislava
+  description: |-
+    2. beh Letnej školy tanca. Učili: J. Alegado, R. Letenaj, J.
+    Letenajová, M. Klimešová a S. Beláková. Bolo 88 účastníkov.
+- date_from: '2008-08-18'
+  date_to: '2008-08-22'
+  raw_header: Setkání s tancem, Mladočov, ČR
+  name: Setkání s tancem, Mladočov
+  location: ČR
+  description: Letná škola tanca u Mauerovcov. Učili J&R Letenaj
+- date_from: '2008-09-08'
+  date_to:
+  raw_header: Začiatok sezóny v TDB a štúdiu Pilates, AKS
+  name: Začiatok sezóny v TDB a štúdiu Pilates
+  location: AKS
+  description:
+- date_from: '2008-09-10'
+  date_to:
+  raw_header: Prvý repertoárový tréning so súborom, AKS
+  name: Prvý repertoárový tréning so súborom
+  location: AKS
+  description:
+- date_from: '2008-09-13'
+  date_to:
+  raw_header: Konkurz, AKS
+  name: Konkurz
+  location: AKS
+  description: |-
+    Prišlo 18 záujemcov z ktorých sme dali 5 do súboru a 18
+    do prípravky
+- date_from: '2008-09-21'
+  date_to:
+  raw_header: Stretnutie všetkých členov súboru aj prípravky
+  name: Stretnutie všetkých členov súboru aj prípravky
+  location:
+  description:
+- date_from: '2008-09-22'
+  date_to:
+  raw_header: Prvé tréningy s novoprijatými členmi
+  name: Prvé tréningy s novoprijatými členmi
+  location:
+  description:
+- date_from: '2008-10-10'
+  date_to: '2008-10-12'
+  raw_header: Sústredenie ZUŠ, Turzovka Košice
+  name: Sústredenie ZUŠ
+  location: Turzovka Košice
+  description: J&R Letenaj u Zuzany Molčanovej na Turzovke
+- date_from: '2008-10-18'
+  date_to:
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: nácvik “Cesta je nádej”, “Otec Smútok” a “Exil”
+- date_from: '2008-10-24'
+  date_to: '2008-10-26'
+  raw_header: WW – weekend workshop, Olomouc, ČR
+  name: WW – weekend workshop, Olomouc
+  location: ČR
+  description: |-
+    J&R Letenaj viedli tréningy (Pilates, Limón, jazz) pre
+    tanečníkov z Moravy a Čiech v Sisslon u Hanky Dezortovej
+
+                                                                                   Strana 3
+- date_from: '2008-10-27'
+  date_to:
+  raw_header: Prvý tréning s J. Alegadom s novým súborom, AKS
+  name: Prvý tréning s J. Alegadom s novým súborom
+  location: AKS
+  description: 1 tréning s Prípravkou a 1 so súborom a Verejnosťou
+- date_from: '2008-11-08'
+  date_to: '2008-11-09'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    zbehávka premiéry “Exil”, “Cesta je nádej”, “Otec
+    Smútok”
+- date_from: '2008-11-23'
+  date_to:
+  raw_header: Večer moderného tanca, DK ZH, Bratislava
+  name: Večer moderného tanca, DK ZH
+  location: Bratislava
+  description: |-
+    1. predstavenie nového Bralenu (“Otec Smútok, “Exil” a
+    premiéra “Cesta je nádej”, ako hosť vystúpil TD Maximvs D. Strnada z Brna
+
+                                Večer moderného tanca
+                              23.11. 2008, DK ZH, Bratislava
+
+         1. Když tančím s Beethovenem             tancuje: TD Maximvs
+         2. Exil                                  tancuje: TD Bralen
+         3. Karneval zvířat                       tancuje: TD Maximvs
+                              - prestávka -
+         4. Otec Smútok, matka Nádej              tancuje: TD Bralen
+         5. Yemyá                                 tancuje: TD Maximvs
+         6. Nádej je cesta, cesta je nádej        tancuje: TD Bralen
+- date_from: '2008-12-13'
+  date_to:
+  raw_header: Konkurz do súboru a prípravky, AKS
+  name: Konkurz do súboru a prípravky
+  location: AKS
+  description: |-
+    Prišlo 17 dievčat z ktorých išlo 7 do Súboru a 10 do
+    Prípravky
+- date_from: '2008-12-19'
+  date_to:
+  raw_header: Posedenie pod jedličkou
+  name: Posedenie pod jedličkou
+  location:
+  description: |-
+    zhodnotenie roka a Vianočné prázdniny
+
+                                                                                  Strana 4

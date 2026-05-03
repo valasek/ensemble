@@ -3,7 +3,24 @@ year: 1997
 year_description: |-
   ROK 1997
                                       (22. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  8.1. 1997           Sústredenie s Liborom Vaculíkom, AKS
+                      Libor Vaculík začal stavať novú choreogra u “V mlhách”
+
+  25.-26.1. 1997      Sústredenie s Cristinou Pererovou, AKS
+                      Začala stavať novú choreogra u “Undertime”
+
+  5.5.-26.6. 1997     J. Kekeňáková, New York, USA
+                      Janka Kekeňáková v Marta Graham School
+
+  24.11. 1997         2x premiéra Búrka, SND, Bratislava
+                      Premiérový program Bralenu, o 16:00 a o 19:00 hod. (Undertime,
+  Búrka a V mlhách)
+
+  17.12. 1997         Program Búrka , DK Zrkadlový háj
+                      Repríza programu
 performances:
 - date_from: '1987-05-03'
   date_to: '1987-05-04'
@@ -612,15 +629,6 @@ performances:
   name: Rekonkurzy v 1. a 2. ročníku
   location:
   description:
-- date_from: '1997-12-17'
-  date_to:
-  raw_header: Program Búrka , DK Zrkadlový háj
-  name: Program Búrka
-  location: DK Zrkadlový háj
-  description: |-
-    Repríza programu
-
-                             PODUJATIA
 - date_from: '1997-12-17'
   date_to:
   raw_header: Repríza programu Búrka , DK Zrkadlový háj, Bratislava

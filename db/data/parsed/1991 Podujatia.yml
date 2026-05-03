@@ -3,7 +3,39 @@ year: 1991
 year_description: |-
   ROK 1991
                                               (16. rok existencie)
+
        Najdôležitejšie podujatia tohto roku:
+
+       19.1. 1991          Tanečné konfrontácie, DK Ružinov, Bratislava
+                           TD Bralen na spoločnom predstavení bratislavských súborov
+       moderného tanca Allegro, Alfa, Auriga, A Dato a Nasty, uviedol premiéru novej
+       choreogra e Rastislava Letenaja, “Tracy”
+
+       2.3.-2.4. 1991    Kurz u Joa Alegada, Francúzsko
+                         K. Vlniešková a M. Paulíkova absolvovali tréningy s Joe Alegadom
+       počas jeho mesačného pôsobenia vo Francúzsku
+
+       10.5.-24.5. 1991     Zájazd do U.S.A.
+
+       30.5. 1991            TD Bralen - hosť I. ročníka medzinárodnej choreogra ckej
+                             súťaže v Pordenone, Taliansko
+       "Ani nie po dvoch dňoch, čo sa TD Bralen vrátilo zo zájazdu po východnom pobreží
+       U.S.A., opäť balilo rekvizity a kostými na ďalšiu cestu.
+
+       1.7. 1991             Memoriál Robina Howarda, SND, Bratislava
+                             V Londýne sa memoriál konal v apríli 1990. V Prahe, v rámci festivalu
+       Tanec '91, 22. 6. 1991 v divadle "K" sa konal spomienkový večer pri príležitosti druhého
+       výročia smrti tejto významnej osobnosti.
+
+       26.6. 1991           XXVI. Večer moderného tanca, DK Ovsište, Bratislava
+                            so švajčiarskou tanečnou skupinou Sinopia
+
+       5.10. 1991           Celoštátna choreogra cká súťaž, SND, Bratislava
+                            nesúťažné vystúpenie Bralenu na Celoštátnej choreogra ckej súťaži,
+       SND, Bratislava
+
+       15.-17.11. 1991      IV. Medzinárodný festival moderného tanca SIovnaft '91, DK
+                            Ovsište, Bratislava
 performances:
 - date_from: '1991-01-19'
   date_to:
@@ -91,7 +123,7 @@ performances:
   location: Francúzsko
   description: |-
     K. Vlniešková a M. Paulíkova absolvovali tréningy s Joe Alegadom
-         počas jeho mesačného pôsobenia vo Francúzsku
+    počas jeho mesačného pôsobenia vo Francúzsku
 - date_from: '1991-03-10'
   date_to:
   raw_header: Inštruktáž, Zlín

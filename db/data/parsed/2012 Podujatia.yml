@@ -1,0 +1,325 @@
+---
+year: 2012
+year_description: |-
+  ROK 2012
+                                    (37. rok existencie)
+
+  Najdôležitejšie podujatia tohto roku:
+
+  2.3. 2012                 Tercius Vesper Maximvs, Mahenovo divadlo, Brne
+                            Spoločný program Bralenu a TD Maximvs. Tancovali sme:
+  “Doktor čas” a “Tres canciones” – premiéra nového obsadenia
+
+  17.3. 2012              Sústredenie, AKS
+                          Tréningy s francúzskym pedagógom žijúcim v Rakúsku
+  Mustaphom Barkatim. Boli tri tréningy pre Súbor a Prípravku.
+
+  3.6. 2012                   Večer moderného tanca v DK ZH, Bratislava
+                              Spoločné vystúpenie TD Bralen, TD Maximvs a TK EJ
+  s choreogra ami Mirky Staškovej a Bibiany Lanczovej. TD Bralen tancoval: “Tak mi
+  treba”, “To je moja stolička” a “Tres canciones”.
+
+  9.6. 2012               Prvé sústredenie detskej prípravky, AKS
+                          s hosťujúcimi pedagógmi: Luciou Števkovou a Magdou
+  Thierovou. Poobede mali tréning s Rasťom Letenajom a potom bolo stretnutie rodičov
+  s vyhodnotením sezóny
+
+  6.- 17.8. 2012            Letná škola tanca v TD Bralen
+                            Nakoľko Slovnaft nám tesne pred podujatím (11.6.) zvýšil
+  prenájom telocvične z 10€/ deň na 300€/ deň a ubytovanie na internáte z 2,6€/ noc na
+  25€/ noc boli sme nútení po 22. ročníkoch LŠT v Slovnafte zrušiť.
+
+  2.12. 2012                 Večer moderného tanca, DK Zrkadlový háj, Bratislava
+                             Naše samostatné predstavenie pred “skoro” plným hľadiskom.
+  Uviedli sme premiéru choreogra e “Facebook” a okrem nej: “Otec Smútok”, “Tak mi
+  treba”, “Cesta je nádej” a “Tres canciones”.
+performances:
+- date_from: '2012-01-09'
+  date_to:
+  raw_header: Otvorenie nového roku v TDB a Pilates štúdiu
+  name: Otvorenie nového roku v TDB a Pilates štúdiu
+  location:
+  description:
+- date_from: '2012-01-14'
+  date_to:
+  raw_header: Oresná prehliadka, Moravské divadlo, Olomouc, ČR
+  name: Oresná prehliadka, Moravské divadlo, Olomouc
+  location: ČR
+  description: |-
+    Okresná prehliadka tanečných odborov ZUŠ v Moravskom
+    divadle v Olomouci. R. Letenaj bol členom poroty.
+- date_from: '2012-01-27'
+  date_to:
+  raw_header: Konkurz, AKS
+  name: Konkurz
+  location: AKS
+  description: |-
+    Prišlo 5 dievčat. Z toho 1 bola zaradená do súboru a 4 do
+    prípravky
+- date_from: '2012-02-11'
+  date_to: '2012-02-12'
+  raw_header: Weekend workshop, Zlín, ČR
+  name: Weekend workshop, Zlín
+  location: ČR
+  description: J&R. Letenaj učili u Evy Nejedlej
+- date_from: '2012-02-17'
+  date_to: '2012-02-18'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description:
+- date_from: '2012-02-25'
+  date_to:
+  raw_header: 2. Námornícký ples, Zlín, ČR
+  name: 2. Námornícký ples, Zlín
+  location: ČR
+  description: |-
+    Robili sme “To je moja stolička” a “Tak mi treba” (poslednú
+    časť). Boli: H. Vašková, M. Šeďová, A. Valaseková a A. Izsak.
+- date_from: '2012-03-02'
+  date_to:
+  raw_header: Tercius Vesper Maximvs, Mahenovo divadlo, Brne
+  name: Tercius Vesper Maximvs, Mahenovo divadlo
+  location: Brne
+  description: |-
+    Spoločný program Bralenu a TD Maximvs. Tancovali sme:
+    “Doktor čas” a “Tres canciones” – premiéra nového obsadenia
+
+                                    Tercius Vesper Maximvs
+                               2.3. 2012, Mahenovo divadlo, Brno
+
+         1. Sama                                   tancuje: TD Maximvs, Brno
+         2. Primavera                              tancuje: Bohemia balet, Praha
+         3. Doktor čas                             tancuje: TD Bralen
+         4. Yemayá                                 tancuje: TD Maximvs, Brno
+         5. Jakstohoven                            tancuje: Bohemia balet, Praha
+                           - prestávka -
+         6. Dolcenera                              tancuje: TD Maximvs, Brno
+         7. Lunedda                                tancuje: Bohemia balet, Praha
+         8. Tres canciones                         tancuje: TD Bralen
+         9. Quod sumus hoc eritis                  tancuje: TD Maximvs, Brno
+- date_from: '2012-03-10'
+  date_to:
+  raw_header: Majstrovstvách Slovenska v ST, Trnava
+  name: Majstrovstvách Slovenska v ST
+  location: Trnava
+  description: |-
+    Tancovali sme choreogra u “To je moja stolička” (Valaseková,
+    Piktorová a Iszak)
+- date_from: '2012-03-17'
+  date_to:
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    Tréningy s francúzskym pedagógom žijúcim v Rakúsku
+    Mustaphom Barkatim. Boli tri tréningy pre Súbor a Prípravku.
+- date_from: '2012-04-28'
+  date_to:
+  raw_header: Svadba Zuzany Jahnovej-Aksamitovej, Nitra
+  name: Svadba Zuzany Jahnovej-Aksamitovej
+  location: Nitra
+  description: |-
+    Našej bývalá členku a súčasná sponzorka z rmy Rauch.
+    Svadba bola v Nitre v hoteli Zlatý kľúčik. Z braleňákov boli J&R Letenaj
+- date_from: '2012-05-16'
+  date_to: '2012-05-17'
+  raw_header: Akadémia ZŠ, DK Ružinov, Bratislava
+  name: Akadémia ZŠ, DK Ružinov
+  location: Bratislava
+  description: |-
+    Dve vystúpenia detí z detskej prípravky Na Akadémii ZŠ na
+    Mierovej ulici s tancom “Blchy”
+- date_from: '2012-06-02'
+  date_to:
+  raw_header: Vystúpenie detí k MDD v Materskej škole Šťastná ul.
+  name: Vystúpenie detí k MDD v Materskej škole Šťastná ul.
+  location:
+  description: s tancami “Blchy”a “Pomáda”. Zabezpečila p. Krkošková
+- date_from: '2012-06-03'
+  date_to:
+  raw_header: Večer moderného tanca v DK ZH, Bratislava
+  name: Večer moderného tanca v DK ZH
+  location: Bratislava
+  description: |-
+    Spoločné vystúpenie TD Bralen, TD Maximvs a TK EJ
+    s choreogra ami Mirky Staškovej a Bibiany Lanczovej. TD Bralen tancoval: “Tak mi
+    treba”, “To je moja stolička” a “Tres canciones”.
+
+                                     Večer moderného tanca
+                              3.6. 2012, DK Zrkadlový háj, Bratislava
+
+          1. Tak mi treba                          tancuje: TD Bralen
+          2. The rests                             tancuje: TD Maximvs, Brno
+          3. Rebelové                              tancuje: žiaci TK EJ, Bratislava
+          4. Bang, bang dance                      tancuje: žiaci TK EJ, Bratislava
+          5. Yemayá                                tancuje: TD Maximvs, Brno
+                               - prestávka -
+          6. To je moja stolička                   tancuje: TD Bralen
+          7. Piate koleso na voze                  tancuje: žiaci TK EJ, Bratislava
+          8. Quod sumus hoc eritis                 tancuje: TD Maximvs
+          9. Tres canciones                        tancuje: TD Bralen
+- date_from: '2012-06-09'
+  date_to:
+  raw_header: Prvé sústredenie detskej prípravky, AKS
+  name: Prvé sústredenie detskej prípravky
+  location: AKS
+  description: |-
+    s hosťujúcimi pedagógmi: Luciou Števkovou a Magdou
+    Thierovou. Poobede mali tréning s Rasťom Letenajom a potom bolo stretnutie rodičov
+    s vyhodnotením sezóny
+- date_from: '2012-06-20'
+  date_to:
+  raw_header: Vystúpenie našich detí v MŠ Šťastná ulica, Bratislava
+  name: Vystúpenie našich detí v MŠ Šťastná ulica
+  location: Bratislava
+  description: |-
+    k ukončeniu školského roka s tancom “Blchy”. Aj toto
+    predstavenie zabezpečila p. Krkošková
+- date_from: '2012-06-25'
+  date_to:
+  raw_header: Carpe Diem, Východočeské divadlo Pardubice, ČR
+  name: Carpe Diem, Východočeské divadlo Pardubice
+  location: ČR
+  description: |-
+    Vystúpenie TD Bralen ako hosťa v rámci výročného programu
+    TD Monsignore Carpe Diem v mestskom divadle v Pardubiciach. Tance: “Košela” (časť z
+    Doktor čas) a “To je moja stolička”.
+- date_from: '2012-06-27'
+  date_to:
+  raw_header: Ukončenie 37. sezóny v TD Bralen
+  name: Ukončenie 37. sezóny v TD Bralen
+  location:
+  description:
+- date_from: '2012-08-06'
+  date_to: '2012-08-17'
+  raw_header: Letná škola tanca v TD Bralen
+  name: Letná škola tanca v TD Bralen
+  location:
+  description: |-
+    Nakoľko Slovnaft nám tesne pred podujatím (11.6.) zvýšil
+    prenájom telocvične z 10€/ deň na 300€/ deň a ubytovanie na internáte z 2,6€/ noc na
+    25€/ noc boli sme nútení po 22. ročníkoch LŠT v Slovnafte zrušiť.
+- date_from: '2012-08-19'
+  date_to: '2012-08-24'
+  raw_header: Setkání s tancem, Mladočov, ČR
+  name: Setkání s tancem, Mladočov
+  location: ČR
+  description: |-
+    Letná škola tanca v Mladočove. Učili J&R Letenaj, H.
+    Vašková. Rasťo mal viac ako 100 ľudí. Boli aj Braleňáci cvičiť: M. Šeďová, L. Hostačná, A.
+    Vrbičanová, B. Hallová a L. Balážová.
+- date_from: '2012-09-03'
+  date_to:
+  raw_header: Začiatok sezóny, AKS
+  name: Začiatok sezóny
+  location: AKS
+  description: Prvý týždeň sme cvičili podľa starého harmonogramu.
+- date_from: '2012-09-10'
+  date_to:
+  raw_header: Nový harmonogram, AKS
+  name: Nový harmonogram
+  location: AKS
+  description: |-
+    V novom harmonograme tréningov jazz učí M. Stašková,
+    modernu J. Letenajová, Tatov jazz R. Letenaj a Balet M. Zubáková.
+- date_from: '2012-09-18'
+  date_to:
+  raw_header: Konkurz, AKS
+  name: Konkurz
+  location: AKS
+  description: |-
+    Prišlo 11 dievčat, ktoré boli zaradené do Prípravky. Pomáhala
+    nám A. Vrbičanová.
+- date_from: '2012-09-30'
+  date_to:
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: Príprava na nasledujúce predstavenie.
+- date_from: '2012-10-04'
+  date_to:
+  raw_header: 15. výročie Trenčianskej Univerzity, DA, Trenčín
+  name: 15. výročie Trenčianskej Univerzity, DA
+  location: Trenčín
+  description: |-
+    Vystúpenie v rámci programu v Dome Armády. Tancovali sme
+    “La Massu” a “Stoličku”.
+- date_from: '2012-10-05'
+  date_to:
+  raw_header: Dance Life Expo. BVV, Brno, ČR
+  name: Dance Life Expo. BVV, Brno
+  location: ČR
+  description: |-
+    Vystúpenie na najväčšom tanečnom veletrhu na Brnenskom
+    výstavišti v spoločnom programe s TD Maximvs. Bralen uvádzal “Tres canciones”, “Tak
+    mi treba” a “Cesta je nádej”.
+- date_from: '2012-10-28'
+  date_to:
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: Príprava na decembrový VMT
+- date_from: '2012-11-10'
+  date_to: '2012-11-11'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    Príprava na decembrový VMT. Po tomto sústredeni z TD Bralen
+    odišla Jana Franzoni.
+- date_from: '2012-12-02'
+  date_to:
+  raw_header: Večer moderného tanca, DK Zrkadlový háj, Bratislava
+  name: Večer moderného tanca, DK Zrkadlový háj
+  location: Bratislava
+  description: |-
+    Naše samostatné predstavenie pred “skoro” plným hľadiskom.
+    Uviedli sme premiéru choreogra e “Facebook” a okrem nej: “Otec Smútok”, “Tak mi
+    treba”, “Cesta je nádej” a “Tres canciones”.
+
+                                        Večer moderného tanca
+                                 2.12. 2012, DK Zrkadlový háj, Bratislava
+
+         1. Otec Smútok, matka Nádej                   tancuje: TD Bralen
+         2. Tak mi treba                               tancuje: TD Bralen
+         3. Cesta je nádej, nádej je cesta             tancuje: TD Bralen
+                               - prestávka -
+         4. Facebook (premiéra)                        tancuje: TD Bralen
+               1.- Úvodný klavír
+               2.- Smiech
+               3.- Stretnutie
+               4.- Trio Almaz
+               5.- Zumba 1
+               6.- Zrkadlo
+               7.- Vražda
+               8.- Hotelová hala
+               9.- Rozhovor
+               10.- Smútok
+               11.- Zumba 2
+               12.- Disco girl
+               13.- Foto
+               14.- Písmenká
+               15.- Jazzík
+               16.- Záverečný klavír
+         5. Tres canciones                             tancuje: TD Bralen
+- date_from: '2012-12-09'
+  date_to:
+  raw_header: Mikulášske predstavenie, Cultus v Prievoze, Bratislava
+  name: Mikulášske predstavenie, Cultus v Prievoze
+  location: Bratislava
+  description: Naše deti z prípravky zatancovali v rámci programu “Pomádu”.
+- date_from: '2012-12-12'
+  date_to:
+  raw_header: Otvorená hodina, AKS
+  name: Otvorená hodina
+  location: AKS
+  description: Janka mala Limóna v Súbore.
+- date_from: '2012-12-14'
+  date_to:
+  raw_header: Otvorené hodiny, AKS
+  name: Otvorené hodiny
+  location: AKS
+  description: |-
+    V detskej prípravke mali hodiny D. Štefanová a R. Letenaj so
+    súborom M. Zubáková Balet

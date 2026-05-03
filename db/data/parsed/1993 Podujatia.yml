@@ -3,7 +3,38 @@ year: 1993
 year_description: |-
   ROK 1993
                                       (18. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  15. - 17.1. 1993  Riaditeľ LCDT Peter Sarah v Bratislave
+                    Návšteva Bralenu generálnym riaditeľom London Contemporary
+  Dance Trust (LCDT), Petra Saraha. Predmetom jeho návštevy bolo prejednanie zmluvy
+  medzi LCDT a TDB.
+
+  13.3. 1993          Ustanovujúca schôdza Združenia občanov - Tanečné divadlo
+                      BRALEN - AKS
+
+  27.3. 1993           Zrekonštruovaná sála TD Bralen
+                       Prvý tréning TDB v rekonštruovanej sále v Apollo klube Slovnaft. R.
+  Letenaj začal stavať novú choreogra u “Kvartet”
+
+  12. - 15.4. 1993    Prijatie tanečnej skupiny z USA
+                      TDB prijalo súbor moderného tanca Carolyn Dutra Dancers z U.S.A.
+
+  25. - 28.6. 1993    Prijatie tanečnej skupiny z USA
+                      TDB prijalo ďalšiu americkú tanečnú skupinu Movement Laboratory, s
+  ktorou uskutočnilo spoločné predstavenie v DK Ovsište.
+
+  26.7. - 6.8. 1993 Braleňáci v LCDT, Londýn, GB
+                    štyria pedagódovia TDB (O. Letenajová, D. Puobišová, D. Štefanova,
+  J. Kekeňáková) absolvovali tanečný kurz v londýnskej škole súčasného tanca
+
+  15. - 17.11. 1993   V. Medzinárodný festival moderného tanca BRALEN ´93, DK
+                      Zrkadlový háj.
+
+  18.12. 1993        Uvedenie premiérového programu TD Bralen, DK Zrkadlový háj.
+                     Program    pozostával z “Ave Mária”, “Po schodoch”, “Kvartet”,
+  “Všetko bude Inak”, “No a čo”
 performances:
 - date_from: '1993-01-08'
   date_to: '1993-01-10'
@@ -136,6 +167,14 @@ performances:
     z U.S.A.
 - date_from: '1993-04-12'
   date_to: '1993-04-15'
+  raw_header: O. Letenajová učila v Nemecku
+  name: O. Letenajová učila v Nemecku
+  location:
+  description: |-
+    O. Letenajová v profesionálnom nemeckom tanečnom súbore
+    Jurgena Goëweho v Neustrelitzi v Nemecku.
+- date_from: '1993-04-12'
+  date_to: '1993-04-15'
   raw_header: Prijatie tanečnej skupiny z USA
   name: Prijatie tanečnej skupiny z USA
   location:
@@ -147,14 +186,6 @@ performances:
     ktorých úroveň nám kritika i diváci veľmi vyčítali. Právom, aj keď my sme si skupinu
     nevybrali, ale nám ju dodali Friendship Ambasadors a nemohli sme ich neprijať.
     Harmonogram pobytu:
-- date_from: '1993-04-12'
-  date_to: '1993-04-15'
-  raw_header: O. Letenajová učila v Nemecku
-  name: O. Letenajová učila v Nemecku
-  location:
-  description: |-
-    O. Letenajová v profesionálnom nemeckom tanečnom súbore
-    Jurgena Goëweho v Neustrelitzi v Nemecku.
 - date_from: '1993-04-12'
   date_to:
   raw_header: pondelok          15:00 príchod skupiny
@@ -302,14 +333,6 @@ performances:
     tanca Tempo v Pardubiciach. Organizovala Eva Gabrielová - vedúca TS Tempo Perníci
 - date_from: '1993-06-25'
   date_to: '1993-06-28'
-  raw_header: Prijatie tanečnej skupiny z USA
-  name: Prijatie tanečnej skupiny z USA
-  location:
-  description: |-
-    TDB prijalo ďalšiu americkú tanečnú skupinu Movement Laboratory, s
-    ktorou uskutočnilo spoločné predstavenie v DK Ovsište.
-- date_from: '1993-06-25'
-  date_to: '1993-06-28'
   raw_header: Prijatie tanečnej skupiny ML z USA
   name: Prijatie tanečnej skupiny ML z USA
   location:
@@ -432,6 +455,12 @@ performances:
          J. Kekeňáková (6x jazz) viedli Letnú školu tanca pre pedagógov a interpretov českých
          súborov moderného tanca v Chudčiciach pri Brne.
 - date_from: '1993-07-26'
+  date_to: '1993-07-31'
+  raw_header: Sústredenie skupiny B, AKS
+  name: Sústredenie skupiny B
+  location: AKS
+  description: R. Letenaj viedol sústredenie B skupiny
+- date_from: '1993-07-26'
   date_to: '1993-08-06'
   raw_header: Braleňáci v LCDT, Londýn, GB
   name: Braleňáci v LCDT, Londýn
@@ -440,12 +469,6 @@ performances:
     štyria pedagódovia TDB (O. Letenajová, D. Puobišová, D. Štefanova,
          J. Kekeňáková) absolvovali tanečný kurz v londýnskej škole súčasného tanca, London
          Contemporary Dance School v Anglicku.
-- date_from: '1993-07-26'
-  date_to: '1993-07-31'
-  raw_header: Sústredenie skupiny B, AKS
-  name: Sústredenie skupiny B
-  location: AKS
-  description: R. Letenaj viedol sústredenie B skupiny
 - date_from: '1993-08-01'
   date_to: '1993-08-06'
   raw_header: LŠT, Veľké Bílovice
@@ -686,21 +709,6 @@ performances:
   name: Vystúpenie pre rmu Max Factor, Reduta
   location: Bratislava
   description:
-- date_from: '1993-12-18'
-  date_to:
-  raw_header: Uvedenie premiérového programu TD Bralen, DK Zrkadlový háj.
-  name: Uvedenie premiérového programu TD Bralen
-  location: DK Zrkadlový háj.
-  description: |-
-    Program    pozostával z “Ave Mária”, “Po schodoch”, “Kvartet”,
-    “Všetko bude Inak”, “No a čo”
-
-                             PODUJATIA
-    7.12.92 -25.1.1993 Spolupráca s rakúskym choreografom Mariom Gasse
-                         ktorá spočívala v naštudovaní jeho choreogra e "Metamorfózy" a jej
-    uvedení vo viedenskom divadle Aygenblick. Na projekte sa zúčastnili štyria interpreti TD
-    Bralen, ktorí absolvovali okrem technických nácvikov aj 10 predstavení spoločne s
-    rakúskymi tanečníkmi.
 - date_from: '1993-12-18'
   date_to:
   raw_header: Uvedenie premiérového programu TD Bralen “Po schodoch”

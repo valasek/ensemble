@@ -7,9 +7,7 @@
 Podujatie má type a institution
 Pridať Administráciu za užívateľské prihlásenie
 Pridať export a import
-Preklad Adminu
 MCP server
-
 
 ...
 
@@ -24,7 +22,13 @@ All source code in this repository is released under the **[O'Saasy](https://osa
 
 # Import Bralen data
 
+bin/rails performances:extract
+bin/rails performances:parse
+
+
 `kamal app exec 'bin/rails performances:import ASSEMBLY=bralen'`
+
+Details are in /lib/tasks/import_performances.rake
 
 
 # Reindex all Tables

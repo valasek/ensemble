@@ -3,7 +3,50 @@ year: 1992
 year_description: |-
   ROK 1992
                                          (17. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  14.3. 1992          XXX. VMT, DK Ovsište, Bratislava
+                      Spoločný program TD Bralen a skupiny Bruna Gentyho.
+
+  13.-14.4. 1992       Peter Sarah v Bratislave
+                       Návšteva generálneho riaditeľa London Contemporary Dance Trust
+  a executiv chief London Contemporary Dance School, Petra Saraha v TD Bralen
+
+  16.5. 1992           XXXII. Večer moderného tanca v DK Ovsište, Bratislava
+                       Prvá časť večera patrila Tanečnej skupine Vojenského umeleckého
+  súboru v Bratislave, ktorá uviedla choreogra u R. Letenaja “Fatamorgána" V druhej časti
+  vystúpilo TD Bralen s “Tracy” a premiérovou choreogra ou R. Letenaja, “Žít je strácet,
+  znovu mít" na piesne Hany Hegerovej.
+
+  19.-27.6. 1992      Ján Ďurovčik v TD Bralen, AKS
+                      R. Letenaj dal súbor a priestor k dispozícii J. Ďurovčíkovi na
+  vytvorenie jeho záverečnej práce k ukončeniu štúdia na VŠMU. Choreogra a na hudbu
+  Dad can dance mala názov Mor. Ďurovčik naviazal na seba časť súboru a neskôr s ňou
+  založil súbor Torzo
+
+  11.-24.9. 1992         Zájazd TD Bralen do Anglicka a Škótska
+                         V tomto termíne sa štyria členovia TD Bralen (R. Letenaj, K.
+  Vlniešková, J. Kekeňáková a D. Bolerázsky) zúčastnili tanečného festivalu vo Veľkej
+  Británii, presnejšie v škótskom Borders.
+
+  2.-14.10. 1992       Medzinárodný divadelný festival, Yokohama, Japonsko
+
+  21.10. 1992          Celosúborová schôdza - rozpustenie Bralenu
+
+  28.10. 1992          Prvý tréning novokonštituovaného TD Bralen v DK Ovsište
+
+  6.-8.11. 1992       Sústredenie, sála Mladé srdcia, Bratislava
+                      Vďaka nezištnej pomoci choreografa Ervína Vargu (um. vedúci
+  súboru Mladé srdcia) sme zorganizovali sústredenie s maďarským choreografom
+  Istvánom Orszovským, na ktorom vznikla nová choreogra a "Ave Mária", na hudbu
+  Fabrizzio de André
+
+  21.-22.11. 1992     VIII. Celoslovenský festival moderného tanca v DK Ovsište,
+                      Bratislava.
+  Tohtoročnému festivalu predchádzalo mestské kolo, ktoré však nebolo súťažné, ale
+  výberové. To znamená, že išlo o zaručenie kvality súborov, ktoré vystúpia na festivale, nie
+  udelením diplomov a určením poradia, ale výberom a odborným seminárom.
 performances:
 - date_from: '1992-01-06'
   date_to:
@@ -359,16 +402,6 @@ performances:
     J. Venkovovej pričom braleňáčky predvádzali večerné modely na móle i v chorogra i D.
     Puobišovej a uviedli sme celú choreogra u “Žít je strácet znovu mít”.
 - date_from: '1992-06-19'
-  date_to: '1992-06-27'
-  raw_header: Ján Ďurovčik v TD Bralen, AKS
-  name: Ján Ďurovčik v TD Bralen
-  location: AKS
-  description: |-
-    R. Letenaj dal súbor a priestor k dispozícii J. Ďurovčíkovi na
-    vytvorenie jeho záverečnej práce k ukončeniu štúdia na VŠMU. Choreogra a na hudbu
-    Dad can dance mala názov Mor. Ďurovčik naviazal na seba časť súboru a neskôr s ňou
-    založil súbor Torzo
-- date_from: '1992-06-19'
   date_to: '1992-06-21'
   raw_header: Národná prehliadka detského scénického tanca ’92, Iuventa,
   name: Národná prehliadka detského scénického tanca ’92
@@ -376,6 +409,16 @@ performances:
   description: |-
     Bratislava
     R. Letenaj bol členom poroty a lektorského zboru.
+- date_from: '1992-06-19'
+  date_to: '1992-06-27'
+  raw_header: Ján Ďurovčik v TD Bralen, AKS
+  name: Ján Ďurovčik v TD Bralen
+  location: AKS
+  description: |-
+    R. Letenaj dal súbor a priestor k dispozícii J. Ďurovčíkovi na
+    vytvorenie jeho záverečnej práce k ukončeniu štúdia na VŠMU. Choreogra a na hudbu
+    Dad can dance mala názov Mor. Ďurovčik naviazal na seba časť súboru a neskôr založil s
+    ňou súbor Torzo
 - date_from: '1992-06-29'
   date_to:
   raw_header: Prehrávky a natočenie videa, DK Ovsište, Bratislava

@@ -1,0 +1,99 @@
+---
+year: 1975
+year_description: |-
+  ROK 1975
+                                                    (vznik súboru)
+
+       Najdôležitejšie podujatia tohto roku:
+
+       5.7.1975            Založenie súboru, ZK ROH Slovnaft
+                           Súbor bol založený pri ZK ROH Slovnaft schválením koncepcie
+       výborom ZK na polročnú skušobnú lehotu. Zakladajúci členovia: P. Hrozienčik, D.
+       Kováčiková, O. Potfajová, K. Potfajová, D. Lacíková a E. Gondová
+
+       25.7.-6.8. 1975      Sústredenie súboru s Janom Hartmanom
+                            Na programe tohto sústredenia bol nácvik repertoáru a technické
+       tréningy. V tomto čase sa zrodila prvá choreogra a “Bralen"
+
+       14.10. 1975         Večer soudobého baletu, Divadlo Rokoko, Praha
+                           Jedno z najvýznamnejších podujatí v tomto roku, kde Oľga
+       Potfajová-Letenajová a Dagmar Kováčiková-Puobišová pohostinsky vystupovali v
+       choreogra i Ivanky Kubicovej "12+1" spolu s tanečníkmi VUS UK.
+
+
+
+
+                                                                                          1z3
+performances:
+- date_from: '1975-07-05'
+  date_to:
+  raw_header: Založenie súboru, ZK ROH Slovnaft
+  name: Založenie súboru
+  location: ZK ROH Slovnaft
+  description: |-
+    Súbor bol založený pri ZK ROH Slovnaft schválením koncepcie
+         výborom ZK na polročnú skušobnú lehotu. Zakladajúci členovia: P. Hrozienčik, D.
+         Kováčiková, O. Potfajová, K. Potfajová, D. Lacíková a E. Gondová
+- date_from: '1975-07-25'
+  date_to:
+  raw_header: Prvý tréning súboru Bralen
+  name: Prvý tréning súboru Bralen
+  location:
+  description:
+- date_from: '1975-07-25'
+  date_to: '1975-08-06'
+  raw_header: Sústredenie súboru s Janom Hartmanom
+  name: Sústredenie súboru s Janom Hartmanom
+  location:
+  description: |-
+    Na programe tohto sústredenia bol nácvik repertoáru a technické
+         tréningy. V tomto čase sa zrodila prvá choreogra a "Bralen" na skladbu "Andělské
+         přátelství" z cyklu starej českej hudby (Loutna česká) Adama Václava Michnu z Otradovic
+         v modernej úprave Václava Popelku.
+- date_from: '1975-08-01'
+  date_to: '1975-08-31'
+  raw_header: Sústredenie súboru, ZK ROH Slovnaft
+  name: Sústredenie súboru
+  location: ZK ROH Slovnaft
+  description: Snaha o vyrovnanie interpretačnej úrovne jednotlivých členov súboru
+- date_from: '1975-09-01'
+  date_to: '1975-09-07'
+  raw_header: Školenie vedúcich krúžkov MT
+  name: Školenie vedúcich krúžkov MT
+  location:
+  description: |-
+    organizované SUV SZM, prvé kontraverzie mezi Bralenom a EŠMFT.
+         O. Letenajová a D. Puobišová neboli pozvané, P. Hrozienčik bol zo školenia vylúčený
+
+         27. 9. 1975         3. Obvodná prehliadka ZUČ, DK Trnávka, Bratislava II
+                             Zúčastnilo sa 5 členov, diplom
+- date_from: '1975-10-14'
+  date_to:
+  raw_header: Večer soudobého baletu, Divadlo Rokoko, Praha
+  name: Večer soudobého baletu, Divadlo Rokoko
+  location: Praha
+  description: |-
+    Jedno z najvýznamnejších podujatí v tomto roku, kde Oľga
+         Potfajová-Letenajová a Dagmar Kováčiková-Puobišová pohostinsky vystupovali v
+         choreogra i Ivanky Kubicovej "12+1" spolu s tanečníkmi VUS UK.
+- date_from: '1975-10-23'
+  date_to:
+  raw_header: Dunajské majáky
+  name: Dunajské majáky
+  location:
+  description: 2z3
+- date_from: '1975-11-29'
+  date_to:
+  raw_header: 1. Konkurz
+  name: 1. Konkurz
+  location:
+  description: Z 82 zúčastnených záujemcov bolo prijatých 25
+- date_from: '1975-12-31'
+  date_to:
+  raw_header: Vystúpenie v silvestrovskom programe v DK Vernosť,
+  name: Vystúpenie v silvestrovskom programe v DK Vernosť,
+  location:
+  description: |-
+    Bratislava
+
+                                                                       3z3

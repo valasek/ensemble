@@ -3,7 +3,36 @@ year: 1995
 year_description: |-
   ROK 1995
                                         (20. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  27.1. 1995        Natáčanie videokazety Limón
+                    V DK Zrkadlový háj sme na javisku natáčali metodickú videokazetu s
+  Limonovským tréningom. Oľga Letenajová viedla tréning a cvičili jej braleňáci.
+
+  28.1. 1995        Natáčanie videokazety Jazz a fotenie s Brenkusom
+                    V DK Zrkadlový háj sme na javisku natáčali metodickú videokazetu s
+  jazzovým tréningom. Rasťo Letenaj viedol tréning a cvičili mu braleňáci.
+
+  20.-24.2. 1995      Joe Alegado v TD Bralen
+                      Sústredenie s Joe Alegadom na ktorom dokončil choreogra u Tres
+  Canciones.
+
+  5.-13.9. 1995       Bruce Taylor v TD Bralen
+                      Sústredenie s Bruce Taylorom. Postavil choreogra u “Rose Tango at
+  Boneyard”
+
+  15.-17.9. 1995      Sústredenie s Ervínom Vargom
+                      Dokončenie choreogra e “Odkaz”
+
+  1.-9.10. 1995       Zájazd TD Bralen do USA
+
+  27.11. 1995         Premiéra programu “Piesne”, SND Bratislava
+
+  2.12. 1995          20. výročie TD Bralen, DK ZH Bratislava
+                      uvedenie slávnostného programu k 20. výročiu TD Bralen v DK ZH
+
+  17.12. 1995         2. premiéra “Piesne”, Janáčkovo divadlo, Brno
 performances:
 - date_from: '1995-01-04'
   date_to: '1995-01-07'
@@ -25,14 +54,6 @@ performances:
   description: |-
     V DK Zrkadlový háj sme na javisku natáčali metodickú videokazetu s
     Limonovským tréningom. Oľga Letenajová viedla tréning a cvičili jej braleňáci.
-- date_from: '1995-01-28'
-  date_to:
-  raw_header: Natáčanie videokazety Jazz a fotenie s Brenkusom
-  name: Natáčanie videokazety Jazz a fotenie s Brenkusom
-  location:
-  description: |-
-    V DK Zrkadlový háj sme na javisku natáčali metodickú videokazetu s
-    jazzovým tréningom. Rasťo Letenaj viedol tréning a cvičili mu braleňáci.
 - date_from: '1995-01-28'
   date_to:
   raw_header: Natáčanie videokazety Jazz a fotenie s Petrom Brenkusom
@@ -490,12 +511,6 @@ performances:
          na certi kačnom pobyte v M. Graham school a bývali u Evy Jeníčkovej s Montym v NY.
 - date_from: '1995-10-01'
   date_to: '1995-10-09'
-  raw_header: Zájazd TD Bralen do USA
-  name: Zájazd TD Bralen do USA
-  location:
-  description:
-- date_from: '1995-10-01'
-  date_to: '1995-10-09'
   raw_header: Zájazd TD Bralen do USA, New York, Rochester
   name: Zájazd TD Bralen do USA, New York
   location: Rochester
@@ -756,12 +771,6 @@ performances:
           4. Otec Smútok, matka Nádej               tancuje: TD Bralen
           5. Rose Tango at Boneyard                 tancuje: TD Bralen
           6. Tres canciones                         tancuje: TD Bralen
-- date_from: '1995-12-02'
-  date_to:
-  raw_header: 20. výročie TD Bralen, DK ZH Bratislava
-  name: 20. výročie TD Bralen
-  location: DK ZH Bratislava
-  description: uvedenie slávnostného programu k 20. výročiu TD Bralen v DK ZH
 - date_from: '1995-12-02'
   date_to:
   raw_header: 20. výročie TD Bralen, DK ZH, Bratislava

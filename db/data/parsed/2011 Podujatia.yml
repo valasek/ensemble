@@ -1,0 +1,338 @@
+---
+year: 2011
+year_description: |-
+  ROK 2011
+                                    (36. rok existencie)
+
+  Najdôležitejšie podujatia tohto roku:
+
+  23.1. 2011               Nová web stránka TD Bralen
+                           Rasťo spustil novú webovú stránku súboru
+
+  26.2. 2011               Primus vesper Maximus, Janáčkovo divadlo, Brno
+                           Spoločný program TD Maximvs a TD Bralen. Bralen robil “Otec
+  Smútok” a “Cesta je nádej”.
+
+  30.10.2011                Secundus vesper Maximus, Janáčkovo divadlo, Brno
+                            Spoločné vystúpenie TD Maximvs, Jalegado dance com, Balet
+  Praha Junior a TD Bralen (“Tak mi treba”)
+
+  5.11. 2011             VMT, Malá scéna, Zlín, ČR
+                         celý programTDB, premiéra obnoveného “Tres canciones”.
+  Hosť Tanečný odbor ZUŠ Zlín.
+
+
+
+
+                                                                               Strana 1
+performances:
+- date_from: '2011-01-09'
+  date_to:
+  raw_header: MTT 2011, Laterne Magika, Praha
+  name: MTT 2011, Laterne Magika
+  location: Praha
+  description: |-
+    Bralen robil choreogra u “Cesta je nádej”
+
+                                   Mezinárodní týdny tance 2011
+                                  9.1. 2011, Laterna magika, Praha
+
+         1. Greetings from Mirabell                  tancuje: Balet Praha junior
+         2. Throu the souvenir                       tancuje: Eva Kolářová
+         3. Trio G moll                              tancuje: Bohemia balet, Praha
+                             - prestávka -
+         4. Cesta je nádej, nádej je cesta           tancuje: TD Bralen
+         5. Suit                                     tancuje: Eva Kolářová
+         6. Anyway                                   tancuje: Balet Praha junior
+         7. Closed Curtains                          tancuje: Jihočeský balet
+- date_from: '2011-01-23'
+  date_to:
+  raw_header: Nová web stránka TD Bralen
+  name: Nová web stránka TD Bralen
+  location:
+  description: Rasťo spustil novú webovú stránku súboru
+- date_from: '2011-02-05'
+  date_to:
+  raw_header: Seminár pre pedagógov súkromnej ZUŠ Jána Sirotku, AKS
+  name: Seminár pre pedagógov súkromnej ZUŠ Jána Sirotku
+  location: AKS
+  description: J&R Letenaj viedli tréningy Limón a jazz na sále TDB
+- date_from: '2011-02-18'
+  date_to:
+  raw_header: Otvorená opona, Polus City Center, Bratislava
+  name: Otvorená opona, Polus City Center
+  location: Bratislava
+  description: |-
+    Vystúpenia v Obchodnom centre Polus v rámci podujatia
+    Otvorená opona. 3x 20 min. vstupy:
+
+                                                Vstup 1.
+         1. To je moja stolička                      tancuje: TD Bralen
+         2. Co m i dáš                               tancuje: TD Bralen
+         3. Braleňáci na ulici                       tancuje: TD Bralen
+
+                                                Vstup 2.
+         1. Otec Smútok, matka Nádej                 tancuje: TD Bralen
+         2. Co m i dáš                               tancuje: TD Bralen
+         3. Cesta je nádej 4. časť                   tancuje: TD Bralen
+         4. Doktor čas (časť - klobúčik)             tancuje: TD Bralen
+         5. Braleňáci na ulici                       tancuje: TD Bralen
+         6. Boogie                                   tancuje: TD Bralen
+
+                                                Vstup 3.
+         1. Otec Smútok, matka Nádej                 tancuje: TD Bralen
+         2. Co m i dáš                               tancuje: TD Bralen
+         3. Braleňáci na ulici                       tancuje: TD Bralen
+         4. Boogie                                   tancuje: TD Bralen
+                                                                                     Strana 2
+- date_from: '2011-02-26'
+  date_to:
+  raw_header: Primus vesper Maximvs, Janáčkovo divadlo, Brno
+  name: Primus vesper Maximvs, Janáčkovo divadlo
+  location: Brno
+  description: |-
+    Spoločný program TD Maximvs a TD Bralen. Bralen robil “Otec
+    Smútok” a “Cesta je nádej”.
+
+                                   Primus Vesper Maximvs
+                              26.2. 2011, Janáčkovo divadlo Brno
+
+         1. Appalacské jaro                      tancuje: TD Maximvs
+         2. Otec Smútok, matka Nádej             tancuje: TD Bralen
+         3. Cesta je nádej, nádej je cesta       tancuje: TD Bralen
+                             - prestávka -
+         4. Budo                                 tancuje: TD Honza Pokusila, Hr. Králové
+         5. Trio G moll                          tancuje: Bohemia balet
+         6. Dolcenera                            tancuje: TD Maximvs
+- date_from: '2011-03-05'
+  date_to:
+  raw_header: Námornický bál, UTB, Zlín
+  name: Námornický bál, UTB
+  location: Zlín
+  description: |-
+    Vystúpenie na podujatí Námornícky bál na Univerzite Tomáše
+    Baťu v Zlíne. Podujatie vybavila a choreogra e urobila Hanka Vašková.
+- date_from: '2011-03-12'
+  date_to:
+  raw_header: 1. plese vegetariánov a Ples tanečníkov, Slovnaft, Blava
+  name: 1. plese vegetariánov a Ples tanečníkov, Slovnaft
+  location: Blava
+  description: |-
+    obe predstavenia boli v Dome služieb Slovnaft vo Vlčom hrdle
+    Uvádzali sme “Stoličku”, “Co mi dáš” a “Boogie”
+- date_from: '2011-03-20'
+  date_to:
+  raw_header: Sústredenie Hydrorocku, PKO, Bratislava
+  name: Sústredenie Hydrorocku, PKO
+  location: Bratislava
+  description: |-
+    Rasťo viedol tréningy pre tanečníkov Hydrorocku S. Kočiša
+    v PKO. A. Vrbičanová a J. Piktorová asistovali.
+- date_from: '2011-05-21'
+  date_to:
+  raw_header: VMT, DK Zrkadlový háj, Bratislava
+  name: VMT, DK Zrkadlový háj
+  location: Bratislava
+  description: |-
+    Plánovaný spoločný program TD Maximvs, TD Honzu Pokusila
+    (ČR) a TD Bralen sme zrušili pre malý počet predaných lístkov (3ks)
+- date_from: '2011-05-29'
+  date_to:
+  raw_header: MDD v Apolke, AKS
+  name: MDD v Apolke
+  location: AKS
+  description: |-
+    Vystúpenie v rámci MDD v Apolke - Detská prípravka tancovala
+    „Blchy“ a Braleňáci „Boogie“
+- date_from: '2011-06-03'
+  date_to:
+  raw_header: 50. výročie SOU-ch Slovnaft, Hotel Holiday Inn, Bratislava
+  name: 50. výročie SOU-ch Slovnaft, Hotel Holiday Inn
+  location: Bratislava
+  description: |-
+    Vystúpenie v rámci 50. výročia SOU-ch Slovnaft Bralen robil
+    “Co mi dáš” a “Boogie”
+- date_from: '2011-06-22'
+  date_to:
+  raw_header: Otvorená hodina detskej prípravky, AKS
+  name: Otvorená hodina detskej prípravky
+  location: AKS
+  description: |-
+    Detská prípravka predviedla rodičom čo sa naučili so svojimi
+    pedagógmi D. Štefanovou a R. Letenajom
+                                                                                    Strana 3
+- date_from: '2011-06-29'
+  date_to:
+  raw_header: Ukončenie sezóny, AKS
+  name: Ukončenie sezóny
+  location: AKS
+  description:
+- date_from: '2011-06-30'
+  date_to: '2011-07-31'
+  raw_header: Sťahovka a rekonštrukcia v priestoroch TD Bralen, AKS
+  name: Sťahovka a rekonštrukcia v priestoroch TD Bralen
+  location: AKS
+  description: Zmena účelu jednotlivých miestností - vytvorenie masérne
+- date_from: '2011-08-08'
+  date_to: '2011-08-12'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH Slovnaft, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH Slovnaft
+  location: Bratislava
+  description: |-
+    1.beh LŠT v Slovnafte, 65 účastníkov, učili: M. Klimešová, J.
+    Letenajová, P. Mihálik, M. Stašková a S. Beláková
+- date_from: '2011-08-15'
+  date_to: '2011-08-19'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH Slovnaft, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH Slovnaft
+  location: Bratislava
+  description: |-
+    2.beh LŠT v Slovnafte, 55 účastníkov, učili: M. Zubáková, J.
+    Alegado, M. Stašková a S. Beláková
+- date_from: '2011-08-17'
+  date_to:
+  raw_header: Repertoárový tréning s Joeom Alegadom, AKS
+  name: Repertoárový tréning s Joeom Alegadom
+  location: AKS
+  description: Joe čistil “Tres canciones” s novým obsadením
+- date_from: '2011-08-22'
+  date_to: '2011-08-26'
+  raw_header: Setkání s tancem, Mladočov, ČR
+  name: Setkání s tancem, Mladočov
+  location: ČR
+  description: U Mauerovcov učili J&R Letenaj a Hanka Vašková
+- date_from: '2011-09-05'
+  date_to:
+  raw_header: Zahájenie 37. sezóny, AKS
+  name: Zahájenie 37. sezóny
+  location: AKS
+  description:
+- date_from: '2011-09-10'
+  date_to:
+  raw_header: Deň otvorených dverí v Elledanse, Dom T&D, Bratislava
+  name: Deň otvorených dverí v Elledanse, Dom T&D
+  location: Bratislava
+  description: Bralen robil “Blchy”, “Stoličku” a “Cesta je nádej”
+- date_from: '2011-09-15'
+  date_to:
+  raw_header: Tréning s Joeom Alegadom, AKS
+  name: Tréning s Joeom Alegadom
+  location: AKS
+  description: čistil “Tres canciones”
+- date_from: '2011-09-16'
+  date_to:
+  raw_header: Konkurz, AKS
+  name: Konkurz
+  location: AKS
+  description: prišlo 16 dievčat z toho išlo 5 do Súboru a 11 do Prípravky
+- date_from: '2011-10-04'
+  date_to:
+  raw_header: Kurz jazzového tanca pre netanečníkov, AKS
+  name: Kurz jazzového tanca pre netanečníkov
+  location: AKS
+  description: |-
+    Pokus o realizáciu kurzu. Nerealizované pre malý počet
+    prihlásených (7 osôb)
+- date_from: '2011-10-21'
+  date_to: '2011-10-22'
+  raw_header: Sústredenie Súboru, AKS
+  name: Sústredenie Súboru
+  location: AKS
+  description:
+- date_from: '2011-10-26'
+  date_to:
+  raw_header: 50. výročie vzniku VUS UK, Stavovské divadlo, Praha, ČR
+  name: 50. výročie vzniku VUS UK, Stavovské divadlo, Praha
+  location: ČR
+  description: |-
+    Vystúpenie v programe Hanka Vašková tancovala “Exil”
+
+                                        TCP - VUS 50
+                             26.10. 2011, Stavovské divadlo, Praha
+
+         1. Chasin'                               tancuje: Balet Praha Junior
+         2. Exil                                  tancuje: TD Bralen
+         3. Constant Moment                       tancuje: Jan Kodet
+         4. Stretnutie s labuťou                  tancuje: Balet Bratislava
+         5. Underground                           tancuje: Balet Praha Junior
+                                                                                       Strana 4
+
+                             - prestávka -
+        6. Ebony concerto                         tancuje: Baby balet Praha
+        7. Bolero                                 tancuje: Jihočeský balet
+        8. Curtain up                             tancuje: Balet Praha Junior
+- date_from: '2011-10-30'
+  date_to:
+  raw_header: Secundus vesper Maximus, Janáčkovo divadlo, Brno
+  name: Secundus vesper Maximus, Janáčkovo divadlo
+  location: Brno
+  description: |-
+    Spoločné vystúpenie TD Maximvs, Jalegado dance com, Balet
+    Praha Junior a TD Bralen (“Tak mi treba”)
+
+                                 Secundus vesper Maximvs
+                             30.10. 2011, Janáčkovo divadlo, Brno
+
+        1. Full moon rising                       tancuje: Jalegado dance com.
+        2. Pozdravy z Nirabell                    tancuje: Balet Praha Junior
+        3. Tak mi treba                           tancuje: TD Bralen
+        4. Excerpts from In between worlds        tancuje: Jalegado dance com.
+        5. Curtain up                             tancuje: Balet Praha Junior
+                            - prestávka -
+        6. The rests                              tancuje: TD Maximvs
+        7. At the bring                           tancuje: Jalegado dance com.
+        8. Underground                            tancuje: Balet Praha Junior
+        9. Karneval zvířat                        tancuje: TD Maximvs
+- date_from: '2011-11-05'
+  date_to:
+  raw_header: VMT, Malá scéna, Zlín, ČR
+  name: VMT, Malá scéna, Zlín
+  location: ČR
+  description: |-
+    celý programTDB, premiéra obnoveného “Tres canciones”.
+    Hosť Tanečný odbor ZUŠ Zlín.
+
+                                   Večer moderného tanca
+                              5.11. 2011, 19:00, Malá scéna, Zlín
+
+        1. Braleňáci na ulici                     tancuje: TD Bralen
+        2. Tak mi treba                           tancuje: TD Bralen
+        3. Exil                                   tancuje: TD Bralen
+        4. Cesta je nádej, nádej je cesta         tancuje: TD Bralen
+        5. Kavárna                                tancuje: ZUŠ Zlín
+        6. Otec Smútok, matka Nádej               tancuje: TD Bralen
+        7. Tres canciones                         tancuje: TD Bralen
+- date_from: '2011-12-10'
+  date_to:
+  raw_header: Detská mikulášska diskotéka, reštaurácia pod Hradom,
+  name: Detská mikulášska diskotéka
+  location: reštaurácia pod Hradom
+  description: |-
+    Bratislava
+    detská prípravka tancovala “Blchy”, predstavenie vybavili rodičia detí (p. Krkošková)
+- date_from: '2011-12-15'
+  date_to:
+  raw_header: Monika Heisenbergerová, AKS
+  name: Monika Heisenbergerová
+  location: AKS
+  description: |-
+    Monika sa vydala do Rakúska a tak sa prišla rozlúčiť s TDB
+
+                                                                                      Strana 5
+- date_from: '2011-12-17'
+  date_to: '2011-12-18'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    Joe Alegado robil dva technické tréningy a jeden
+    repertoárový, na ktorom čistil “Tres canciones”
+- date_from: '2011-12-21'
+  date_to:
+  raw_header: Posedenie pod jedličkouAKS
+  name: Posedenie pod jedličkouAKS
+  location:
+  description: |-
+    vyhodnotenie a ukončenie roka
+
+                                                                                  Strana 6

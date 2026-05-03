@@ -3,7 +3,23 @@ year: 1994
 year_description: |-
   ROK 1994
                                       (19. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  19.2. 1994          2. premiéra prvého samostatného programu TD Bralen, DK ZH,
+                      Bratislava
+
+  25.3. 1994          Výchovné koncerty “Spoznávajme MT”, DK ZH Bratislava
+                      2 výchovné koncerty
+
+  29.9. 1994          Vystúpenie, SND, Bratislava
+                      Spoločný program Baletu SND a TD Bralen na našej prvej scéne
+
+  21.-23.10. 1994    Tanec tanec, Ústí nad Orlicí
+                     V rámci Národnej prehliadky ČR uviedol Bralen svoj celovečerný
+  program a R. Letenaj robil seminár
+
+  18.-20.11. 1994     9. Festival moderného scénického tanca, DK ZH, Bratislava
 performances:
 - date_from: '1994-01-03'
   date_to: '1994-01-08'
@@ -419,12 +435,6 @@ performances:
   description:
 - date_from: '1994-09-29'
   date_to:
-  raw_header: Vystúpenie, SND, Bratislava
-  name: Vystúpenie, SND
-  location: Bratislava
-  description: Spoločný program Baletu SND a TD Bralen na našej prvej scéne
-- date_from: '1994-09-29'
-  date_to:
   raw_header: Večer súčasných choreogra í, SND, Bratislava
   name: Večer súčasných choreogra í, SND
   location: Bratislava
@@ -472,14 +482,6 @@ performances:
   description: |-
     Učili O. a R. Letenaj, D. Strnad, J. Kekeňáková a D. Štefenová, 56
     účastníkov, cvičili v dvoch skupinách na sálach v AKS a SOU Hydrostav
-- date_from: '1994-10-21'
-  date_to: '1994-10-23'
-  raw_header: Tanec tanec, Ústí nad Orlicí
-  name: Tanec tanec
-  location: Ústí nad Orlicí
-  description: |-
-    V rámci Národnej prehliadky ČR uviedol Bralen svoj celovečerný
-    program a R. Letenaj robil seminár
 - date_from: '1994-10-21'
   date_to: '1994-10-23'
   raw_header: Tanec tanec '94, Roškotovo divadlo, Ústí nad Orlicí

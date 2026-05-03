@@ -1,4 +1,8 @@
 2026:
+  - date: 2026-05-03
+    items:
+      - "Naimportované všetky podujatia i zoznam členov zo vstupného zoznamu súborov"
+      - "Oprava: Importované texty majú zachované riadkovanie"
   - date: 2026-05-02
     items:
       - "Zobrazenie podujatí s podporou importu"

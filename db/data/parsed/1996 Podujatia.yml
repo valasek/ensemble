@@ -3,7 +3,38 @@ year: 1996
 year_description: |-
   ROK 1996
                                       (21. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  15.-19.4. 1996      Sústredenie s Joe Alegadom, AKS
+                      Joe Alegado v Bralene - príprava novej choreogra e “Khaled”
+
+  20.-26.5. 1996      Sústredenie súboru, AKS
+                      dokončenie novej choreogra e Bruce Taylora s názvom "Búrka"
+
+  1.-22.6. 1996       Študijný pobyt, Skidmore College, USA
+                      študijný pobyt O. Letenajovej a J. Kekeňákovej v Saratoga Springs,
+  USA
+
+  30.8. 1996        Večer moderného tanca, DU SF, Piešťany
+                    Predstavenie Bralenu v rámci Kultúrneho leta v Dome umenia
+  Slovenskej lharmónie, v Piešťanoch
+
+  13.9.-2.10. 1996    Porto Hydra (3x), Grécko
+                      Tanečné divadlo Bralen v Grécku - TD Bralen - hosť Medzinárodného
+  tanečného festivalu v gréckom Porto Hydra, mali sme 15 predstavení
+
+  17.11. 1996       Večer moderného tanca, Trnava
+                    spoločné predstavenie TD Bralen a Tanečného štúdia baletu a
+  súčasného tanca Dušana Nebylu v Mestskom divadle v Trnave
+
+  24.11. 1996        Vystúpenie s programom Piesne, MD Zlín
+                     Predstavenie TD Bralen "Piesne" pred vypredaným hľadiskom
+  Mestského divadla v Zlíne
+
+  7.-8.12. 1996       Sústredenie s Cristinou Perera, AKS
+                      s argentínskou tanečnicou, pedagogičkou a choreografkou sme mali
+  4 tréningy
 performances:
 - date_from: '1996-01-05'
   date_to:
@@ -466,14 +497,6 @@ performances:
   description: R. Letenaj a J. Kekeňáková učili v súbore Magdy Mauerovej
 - date_from: '1996-11-17'
   date_to:
-  raw_header: Večer moderného tanca, Trnava
-  name: Večer moderného tanca
-  location: Trnava
-  description: |-
-    spoločné predstavenie TD Bralen a Tanečného štúdia baletu a
-    súčasného tanca Dušana Nebylu v Mestskom divadle v Trnave
-- date_from: '1996-11-17'
-  date_to:
   raw_header: Divadelné inšpiratívne vystúpenia DIV'96, MD, Trnava
   name: Divadelné inšpiratívne vystúpenia DIV'96, MD
   location: Trnava
@@ -491,14 +514,6 @@ performances:
          4. Otec Smútok, matka Nádej               tancuje: TD Bralen
          5. Rose Tango at Boneyard                 tancuje: TD Bralen
          6. Tres canciones                         tancuje: TD Bralen
-- date_from: '1996-11-24'
-  date_to:
-  raw_header: Vystúpenie s programom Piesne, MD Zlín
-  name: Vystúpenie s programom Piesne
-  location: MD Zlín
-  description: |-
-    Predstavenie TD Bralen "Piesne" pred vypredaným hľadiskom
-    Mestského divadla v Zlíne
 - date_from: '1996-11-24'
   date_to:
   raw_header: Vystúpenie s programom Piesne, MD, Zlín
@@ -526,16 +541,6 @@ performances:
   location: Bratislava
   description:
 - date_from: '1996-12-07'
-  date_to: '1996-12-08'
-  raw_header: Sústredenie s Cristinou Perera, AKS
-  name: Sústredenie s Cristinou Perera
-  location: AKS
-  description: |-
-    s argentínskou tanečnicou, pedagogičkou a choreografkou sme mali
-    4 tréningy
-
-                               PODUJATIA
-- date_from: '1996-12-07'
   date_to:
   raw_header: Majstrovstvá sveta v akrobaticko RnR, ŠH Pasienky, Bratislava
   name: Majstrovstvá sveta v akrobaticko RnR, ŠH Pasienky
@@ -544,6 +549,14 @@ performances:
     hosťovanie s choreogra ou “No a čo” v kultúrnom programe v rámci
          podujatia Majstrovstiev sveta juniorov v akrobatickom rock´n´rolle v športovej hale na
          Pasienkoch.
+- date_from: '1996-12-07'
+  date_to: '1996-12-08'
+  raw_header: Sústredenie s Cristinou Perera, AKS
+  name: Sústredenie s Cristinou Perera
+  location: AKS
+  description: |-
+    s argentínskou tanečnicou, pedagogičkou a choreografkou sme mali
+         4 tréningy
 - date_from: '1996-12-16'
   date_to:
   raw_header: Akadémia TD Bralen, DK ZH, Bratislava

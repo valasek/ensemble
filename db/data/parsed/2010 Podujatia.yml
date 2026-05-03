@@ -1,0 +1,387 @@
+---
+year: 2010
+year_description: |-
+  ROK 2010
+                                 (35. rok existencie)
+
+  Najdôležitejšie podujatia tohto roku:
+
+  31.1. 2010               Premiéra programu Nádej, DK ZH, Bratislava
+                           “Proti prúdu”, “Exil”, “Otec Smútok”, “Doktor Čas”,
+  “Cesta je nádej”
+
+  16.4. 2010                 „Dance Puzzle“, T&D Elle danse, Bratislava
+                             Spoločný program Elledanse, TK Evy Jaczovej a TD
+  Bralen (“Proti prúdu”, “Doktor čas”)
+
+  14.5. 2010               Vystúpenie, Divadlo Barka, Brno
+                           Vystúpenie s programom Nádej v Divadle Barka v Brne
+  predstavenie vybavovala Hanka Vašková, prenájom divadla
+
+  17.6. 2010               Tréning Súboru s Dávidom Strnadom, AKS
+
+  16.10. 2010                Večer moderného tanca, DK Zrkadlový háj, Bratislava
+                             Spoločné predstavenie TD Bralen a Bohemia balet Praha,
+  Bralen robil “Doktor čas” a “Cesta je nádej”
+performances:
+- date_from: '2010-01-08'
+  date_to: '2010-01-10'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: J. Letenajová stavala choreogra u “Doktor čas”
+- date_from: '2010-01-15'
+  date_to:
+  raw_header: Zápis nových členov, AKS
+  name: Zápis nových členov
+  location: AKS
+  description: |-
+    Tento raz nie Konkurz ale Zápis nových záujemcov do
+         Prípravky TD Bralen. Prišlo 12 dievčat od 10 - do 30 rokov.
+- date_from: '2010-01-16'
+  date_to: '2010-01-17'
+  raw_header: Vystúpenie, Hotel Palota, Miszkolc, Maďarsko
+  name: Vystúpenie, Hotel Palota, Miszkolc
+  location: Maďarsko
+  description: |-
+    “Otec Smútok” a “Cesta je nádej” pre farmakologickú
+          rmu. Predstavenie organizovala agentúra Continentaltours.
+- date_from: '2010-01-22'
+  date_to: '2010-01-24'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: |-
+    stavanie choreogra e Proti prúdu a Doktor čas a
+         zbehávka celého nového programu Nádej
+- date_from: '2010-01-28'
+  date_to:
+  raw_header: Bralen v médiach, SRo, Bratislava
+  name: Bralen v médiach, SRo
+  location: Bratislava
+  description: |-
+    Rozhovor s R. Letenajom na rádiu Devín - pozvánka na
+         premiéru
+- date_from: '2010-01-31'
+  date_to:
+  raw_header: Premiéra programu Nádej, DK ZH, Bratislava
+  name: Premiéra programu Nádej, DK ZH
+  location: Bratislava
+  description: |-
+    Nádej
+                          31.1. 2010, Dom kultúry Zrkadlový háj, Bratislava
+
+              1. Proti prúdu                              tancuje: TD Bralen
+              2. Exil                                     tancuje: TD Bralen
+              3. Otec Smútok, matka Nádej                 tancuje: TD Bralen
+              4. Doktor čas                               tancuje: TD Bralen
+              5. Cesta je nádej, nádej je cesta           tancuje: TD Bralen
+- date_from: '2010-03-20'
+  date_to:
+  raw_header: Vystúpenie, Devínska nová Ves, Bratislava
+  name: Vystúpenie, Devínska nová Ves
+  location: Bratislava
+  description: |-
+    TDB na podujatí Bahajský nový rok v Devínskej novej
+         Vsi (cez Ľubicu Kordošovú). Repertoár: “Boogie” a “Co mi dáš”
+- date_from: '2010-04-10'
+  date_to: '2010-04-11'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description:
+- date_from: '2010-04-16'
+  date_to:
+  raw_header: 2x „Dance Puzzle“, T&D Elle danse, Bratislava
+  name: 2x „Dance Puzzle“, T&D Elle danse
+  location: Bratislava
+  description: |-
+    Spoločný program Tanečnej školy Elledanse, TK
+    Evy Jaczovej a TD Bralen (“Proti prúdu”, “Doktor čas”)
+
+                                      Dancing puzzle
+                    16.4. 2010, 18:00 a 20:00, T&D Elle danse, Bratislava
+
+         1. tac - tac - tac                          tancuje: Elledanse
+         2. Tango                                    tancuje: TK E.J., Bratislava
+         3. Proti prúdu                              tancuje: TD Bralen
+         4. A Normal Day                             tancuje: Elledanse
+         5. Cis.moll                                 tancuje: TK E.J., Bratislava
+         6. Coppélia                                 tancuje: TK E.J., Bratislava
+         7. Ulica                                    tancuje: Elledanse
+         8. Moje múzy                                tancuje: Elledanse
+         9. Doktor Čas                               tancuje: TD Bralen
+         10. Pocta kravám                            tancuje: Elledanse
+- date_from: '2010-04-24'
+  date_to:
+  raw_header: WW – weekend workshop, Olomouc, ČR
+  name: WW – weekend workshop, Olomouc
+  location: ČR
+  description: |-
+    J&R Letenaj viedli tréningy (Pilates, Limón, jazz) pre
+    tanečníkov z Moravy a Čiech v Sislon u Hanky Dezortovej
+- date_from: '2010-05-14'
+  date_to:
+  raw_header: Nádej, Divadlo Barka, Brno
+  name: Nádej, Divadlo Barka
+  location: Brno
+  description: |-
+    Vystúpenie s programom Nádej v Divadle Barka v Brne
+    predstavenie vybavovala Hanka Vašková, prenájom divadla
+
+                                           Nádej
+                              14.5. 2010, Divadlo Barka, Brno
+
+         1. Proti prúdu                              tancuje: TD Bralen
+         2. Exil                                     tancuje: TD Bralen
+         3. Otec Smútok, matka Nádej                 tancuje: TD Bralen
+         4. Doktor čas                               tancuje: TD Bralen
+         5. Cesta je nádej, nádej je cesta           tancuje: TD Bralen
+- date_from: '2010-05-22'
+  date_to:
+  raw_header: Stretnutie, DKZH , Bratislava
+  name: Stretnutie, DKZH
+  location: Bratislava
+  description: |-
+    Spoločné vystúpenie TD Bralen a Detského baletného
+    štúdia Magdalény Thierovej v DK Zrkadlový háj v Bratislave
+
+                                        Stretnutie
+                               22.5. 2010, DK ZH, Bratislava
+
+         1. Balóniková rapsódia                      tancuje: DBŠ M. Thierovej
+         2. Kúzelná škôlka                           tancuje: DBŠ M. Thierovej
+         3. Cesta je nádej, nádej je cesta (1. 2.)   tancuje: TD Bralen
+         4. Baletka bez špičky?                      tancuje: DBŠ M. Thierovej
+
+         5. Labutia promenáda                      tancuje: DBŠ M. Thierovej
+         6. Bábiky                                 tancuje: DBŠ M. Thierovej
+         7. Doktor čas (košeľa)                    tancuje: TD Bralen
+         8. Boogie                                 tancuje: TD Bralen
+         9. Stretnutie s anjelom                   tancuje: DBŠ M. Thierovej
+         10. Veselé kačičky                        tancuje: DBŠ M. Thierovej
+         11. Tanečný šok                           tancuje: DBŠ M. Thierovej
+         12. Otec Smútok, matka Nádej              tancuje: TD Bralen
+         13. Repa ako z rozprávky                  tancuje: DBŠ M. Thierovej
+         14. Tak to som ja                         tancuje: DBŠ M. Thierovej
+         15. Prázdniny                             tancuje: DBŠ M. Thierovej
+         16. Cesta je nádej, nádej je cesta (4. č) tancuje: TD Bralen
+- date_from: '2010-05-30'
+  date_to:
+  raw_header: Vystúpenie Deň detí, AKS
+  name: Vystúpenie Deň detí
+  location: AKS
+  description: |-
+    Deň detí - spoločné vystúpenie krúžkov a súborov Apolky.
+    Bralen robil “Boogie”
+- date_from: '2010-06-17'
+  date_to:
+  raw_header: Tréning Súboru s Dávidom Strnadom, AKS
+  name: Tréning Súboru s Dávidom Strnadom
+  location: AKS
+  description:
+- date_from: '2010-06-18'
+  date_to: '2010-06-19'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description: príprava na Prahu - “Otec Smútok” a “Cesta je nádej”
+- date_from: '2010-06-24'
+  date_to:
+  raw_header: Jubilanti v Apollke, AKS
+  name: Jubilanti v Apollke
+  location: AKS
+  description: |-
+    Podujatie organizované Slovnaftom. Bralen vystúpil s “Co
+    mi dáš?” Tancovala J. Piktorová
+- date_from: '2010-06-26'
+  date_to:
+  raw_header: Open Air Lichtenstein, Praha, ČR
+  name: Open Air Lichtenstein, Praha
+  location: ČR
+  description: |-
+    Spoločné vystúpenie s Bohemia balet Praha. Bralen
+    tancoval “Otec Smútok” a “Cesta je nádej”.
+- date_from: '2010-06-28'
+  date_to:
+  raw_header: Celosúborová schôdza, AKS
+  name: Celosúborová schôdza
+  location: AKS
+  description: Vyhodnotenie sezóny
+- date_from: '2010-07-01'
+  date_to:
+  raw_header: Schôdza, AKS
+  name: Schôdza
+  location: AKS
+  description: zhodnotenie práce jednotlivých členov súborovej skupiny
+- date_from: '2010-07-03'
+  date_to:
+  raw_header: Vystúpenie, Dom armády, Trenčín
+  name: Vystúpenie, Dom armády
+  location: Trenčín
+  description: |-
+    na večierku rmy Ametist, cez agentúru Tonas v Dome
+    Armády v Trenčíne s choreogra ou “Narodeninové boogie”
+- date_from: '2010-07-31'
+  date_to:
+  raw_header: Inštruktáž, Zemianska Olča
+  name: Inštruktáž
+  location: Zemianska Olča
+  description: |-
+    R. Letenaj robil tréningy pre Klub spoločenských tancov
+    Nové Zámky v Zemianskej Olči. Vybavil vedúci KST Vadkerty.
+- date_from: '2010-08-09'
+  date_to: '2010-08-13'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH
+  location: Bratislava
+  description: |-
+    J. Letenajová učila Pilates, M. Klimešová balet a
+    modernu, P. Mihálik jazz, B. Lanczová Limón a S. Beláková jazz a variácie.
+- date_from: '2010-08-16'
+  date_to: '2010-08-20'
+  raw_header: Letná škola tanca v TD Bralen, SOUCH, Bratislava
+  name: Letná škola tanca v TD Bralen, SOUCH
+  location: Bratislava
+  description: |-
+    J. Letenajová učila Pilates, H. Žitňanová balet, P. Mihálik
+    jazz, J. Alegado Limón a S. Beláková jazz a variácie.
+- date_from: '2010-08-22'
+  date_to: '2010-08-27'
+  raw_header: Setkání s tancem, Mladočov, ČR
+  name: Setkání s tancem, Mladočov
+  location: ČR
+  description: |-
+    R. Letenaj (jazz) a J. Letenajová (variácie, Limón) učili na
+    LŠT u Mauerovcov. Klasiku učila L. Ovsová, a Hip hop N. Kristlová.
+- date_from: '2010-09-06'
+  date_to:
+  raw_header: Začiatok tréningov v novej sezóne, AKS
+  name: Začiatok tréningov v novej sezóne
+  location: AKS
+  description:
+- date_from: '2010-09-08'
+  date_to: '2010-09-11'
+  raw_header: Sústredenie, AKS
+  name: Sústredenie
+  location: AKS
+  description:
+- date_from: '2010-09-17'
+  date_to:
+  raw_header: Konkurz, AKS
+  name: Konkurz
+  location: AKS
+  description: |-
+    22 prijatých, z toho 5 do novej Detskej skupiny, 12 do
+    Prípravky a 5 do Súboru
+- date_from: '2010-09-18'
+  date_to:
+  raw_header: Tréning s D. Strnadom, AKS
+  name: Tréning s D. Strnadom
+  location: AKS
+  description: |-
+    David Strnad začal stavať nový tanec “Tak mi treba” 1.
+    časť
+- date_from: '2010-09-23'
+  date_to:
+  raw_header: Jubilanti, AKS
+  name: Jubilanti
+  location: AKS
+  description: vystúpenie pre pracovníkov Slovnaftu
+- date_from: '2010-10-02'
+  date_to:
+  raw_header: Sústredenie k repertoáru na VMT
+  name: Sústredenie k repertoáru na VMT
+  location:
+  description:
+- date_from: '2010-10-16'
+  date_to:
+  raw_header: Večer moderného tanca, DK Zrkadlový háj, Bratislava
+  name: Večer moderného tanca, DK Zrkadlový háj
+  location: Bratislava
+  description: |-
+    Spoločné predstavenie TD Bralen a Bohemia balet Praha
+
+                                  Večer moderného tanca
+                                16.10. 2010, DK ZH, Bratislava
+
+           1. Růže                                  tancuje: Bohemia balet, Praha
+           2. Doktor čas                            tancuje: TD Bralen
+           3. Písně potulného tovariše              tancuje: Bohemia balet, Praha
+           4. Cesta je nádej, nádej je cesta        tancuje: TD Bralen
+           5. Jakstohoven                           tancuje: Bohemia balet, Praha
+- date_from: '2010-10-30'
+  date_to:
+  raw_header: Tréning s D. Strnadom, AKS
+  name: Tréning s D. Strnadom
+  location: AKS
+  description: |-
+    David Strnad začal stavať nový tanec “Tak mi treba” 2.
+    časť
+- date_from: '2010-11-17'
+  date_to:
+  raw_header: Skúška Výročného programu, AKS
+  name: Skúška Výročného programu
+  location: AKS
+  description: s bývalými členmi Bralenu
+- date_from: '2010-11-19'
+  date_to:
+  raw_header: Vystúpenie, Incheba, Bratislava
+  name: Vystúpenie, Incheba
+  location: Bratislava
+  description: |-
+    pre O. Štefíka v Inchebe – 20. rokov rmy Jolly Joker.
+    Bralen tancoval “Ulicu” a “Cesta je nádej”
+- date_from: '2010-11-21'
+  date_to:
+  raw_header: Sústredenie, sála Maximvs, Brno
+  name: Sústredenie, sála Maximvs
+  location: Brno
+  description: |-
+    u Davida Strnada v Brne - dostaval poslednú časť tanca
+    “Tak mi treba”
+- date_from: '2010-11-26'
+  date_to:
+  raw_header: Rozhovor s R. Letenajom, Rádio Devín, SRo, Blava
+  name: Rozhovor s R. Letenajom, Rádio Devín, SRo
+  location: Blava
+  description:
+- date_from: '2010-11-28'
+  date_to:
+  raw_header: Skúška Výročného programu, AKS
+  name: Skúška Výročného programu
+  location: AKS
+  description: s bývalými členmi Bralenu
+- date_from: '2010-12-02'
+  date_to:
+  raw_header: Zbehávka výročného programu na sále TD Bralen
+  name: Zbehávka výročného programu na sále TD Bralen
+  location:
+  description:
+- date_from: '2010-12-03'
+  date_to:
+  raw_header: Výročný program 35. rokov TD Bralen , DK ZH, Blava
+  name: Výročný program 35. rokov TD Bralen , DK ZH
+  location: Blava
+  description: |-
+    35. výročie TD Bralen 3
+                               3.12. 2010, DK ZH, Bratislava
+           1. Som tvoj?                           tancuje: TD Bralen
+                 konferance 1
+           2. To je moja stolička                  tancuje: TD Bralen
+           3. Hviezda na mojom pravom ramene       tancuje: TD Bralen
+                 konferance 2
+           4. Braleňáci na ulici                   tancuje: TD Bralen
+           5. Co mi dáš?                           tancuje: TD Bralen
+           6. Rose Tango                           tancuje: TD Bralen
+                 konferance 3
+           7. Tak mi treba                         tancuje: TD Bralen
+           8. Tres canciones                       tancuje: TD Bralen
+                 konferance 4
+           9. Cesta je nádej, nádej je cesta       tancuje: TD Bralen
+- date_from: '2010-12-16'
+  date_to:
+  raw_header: Rozlúčka s rokom – posedenie pod jedličkou
+  name: Rozlúčka s rokom – posedenie pod jedličkou
+  location:
+  description:

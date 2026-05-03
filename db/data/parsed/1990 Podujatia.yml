@@ -3,7 +3,44 @@ year: 1990
 year_description: |-
   ROK 1990
                                       (15. rok existencie)
+
   Najdôležitejšie podujatia tohto roku:
+
+  23.4.-4.5. 1990       Zájazd TD Bralen do Emslandu, SRN
+                        V tomto termíne sa TD Bralen zúčastnilo zájazdu do SRN, ktorého
+  základy sa položili na jeho prvom zahraničnom zájazde, na divadelnom festivale v
+  Lingene. Zájazdový program: Na Bacha, Nové renesančné tance, Zápisnice dôverné,
+  Duch mora, Križovatka Manhattan a Ebony concerto. Zúčastnilo sa 25 členov a mali sme
+  5 predstavení.
+
+  2.6. 1990          SND uvádza… , SND Bratislava
+                     Spoločné predstavenie bratislavských amatérskych súborov
+  moderného tanca. Toto podujatie bolo výnimočné tým, že sa po prvýkrát prezentoval
+  slovenský amatérsky moderný tanec na profesionálnej scéne Slovenského národného
+  divadla.
+
+  17.-30.6. 1990      Dance point - tanečný kurz, Kolýn nad Rýnom, SRN
+                      Kontakt a spolupráca s Joe Alegadom prinášala neustále ovocie pre
+  tanečníkov TD Bralen. Tak sa na jeho doporučenie zúčastnilo 15 členov mimoriadne
+  zaujímavého letného tanečného kurzu v Kolýne nad Rýnom.
+
+  15.7. 1990           Samostatný celovečerný program, DK Ružinov, Bratislava
+                       V poradí už 2. ročník "Tanečných re exií" (11.-15.7.) sa rozhodol DK
+  Ružinov zorganizovať spoločne s TD Bralen a venovať ich oslavám 15. výročia jeho
+  vzniku. Pozvanie na tento "mini festival" prijali Lines Dance Company z U.S.A., Tanečná
+  skupina Paradogs zo Švajčiarska, ďalšia švajčiarska tanečná skupina Mobile Ballet Bern,
+  pražská skupina Unia Nova a tak sa stali gratulantami TD Bralen.
+
+  16.7. 1990        Tréning s Dan Wagonerom a predstavenie LCDT, AKS
+                    Tréning s americkým pedagógom a choreografom Dan Wagonerom,
+  toho času umeleckým vedúcim London Contemporary Dance Theatre v Bralene.
+
+  23.-25.11. 1990      1. Víkendový workshop WW v TD Bralen
+                       bolo 36 účastníkov v dvoch skupinách, učili O. a R. Letenajovci,
+  spolu 16 tréningov (4 v piatok, 8 v sobotu a 4 v nedeľu)
+
+  24.11. 1990          Konkurz do TD Bralen, AKS
+                       90 uchádzačov, 38 prijatých
 performances:
 - date_from: '1990-01-12'
   date_to:
@@ -481,17 +518,6 @@ performances:
   description:
 - date_from: '1990-07-15'
   date_to:
-  raw_header: Samostatný celovečerný program, DK Ružinov, Bratislava
-  name: Samostatný celovečerný program, DK Ružinov
-  location: Bratislava
-  description: |-
-    V poradí už 2. ročník "Tanečných re exií" (11.-15.7.) sa rozhodol DK
-    Ružinov zorganizovať spoločne s TD Bralen a venovať ich oslavám 15. výročia jeho
-    vzniku. Pozvanie na tento "mini festival" prijali Lines Dance Company z U.S.A., Tanečná
-    skupina Paradogs zo Švajčiarska, ďalšia švajčiarska tanečná skupina Mobile Ballet Bern,
-    pražská skupina Unia Nova a tak sa stali gratulantami TD Bralen.
-- date_from: '1990-07-15'
-  date_to:
   raw_header: Tanečné re exie II., DK Ružinov, Bratislava
   name: Tanečné re exie II., DK Ružinov
   location: Bratislava
@@ -782,10 +808,7 @@ performances:
   raw_header: Konkurz do TD Bralen, AKS
   name: Konkurz do TD Bralen
   location: AKS
-  description: |-
-    90 uchádzačov, 38 prijatých
-
-                              PODUJATIA
+  description: 90 uchádzačov, 38 prijatých
 - date_from: '1990-12-07'
   date_to: '1990-12-09'
   raw_header: 2. Víkendový workshop WW v TD Bralen
