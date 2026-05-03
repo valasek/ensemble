@@ -4,8 +4,12 @@
 
 ## Roadmap
 
-Podujatie má type, institution
+Podujatie má type a institution
 Pridať Administráciu za užívateľské prihlásenie
+Pridať export a import
+Preklad Adminu
+MCP server
+
 
 ...
 

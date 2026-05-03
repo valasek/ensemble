@@ -147,6 +147,10 @@ sk:
       group: "Skupina"
       name: "Názov"
       description: "Popis"
+      production: "Popis"
+      location: "Miesto"
+      date: "Dátum"
+      end_date: "Dátum do"
     resource_translations:
       assembly:
         one: "Súbor"
