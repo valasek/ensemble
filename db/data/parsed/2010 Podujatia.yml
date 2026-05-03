@@ -29,7 +29,7 @@ performances:
   raw_header: Sústredenie, AKS
   name: Sústredenie
   location: AKS
-  description: J. Letenajová stavala choreogra u “Doktor čas”
+  description: J. Letenajová stavala choreografiu “Doktor čas”
 - date_from: '2010-01-15'
   date_to:
   raw_header: Zápis nových členov, AKS
@@ -45,14 +45,14 @@ performances:
   location: Maďarsko
   description: |-
     “Otec Smútok” a “Cesta je nádej” pre farmakologickú
-          rmu. Predstavenie organizovala agentúra Continentaltours.
+          firmu. Predstavenie organizovala agentúra Continentaltours.
 - date_from: '2010-01-22'
   date_to: '2010-01-24'
   raw_header: Sústredenie, AKS
   name: Sústredenie
   location: AKS
   description: |-
-    stavanie choreogra e Proti prúdu a Doktor čas a
+    stavanie choreografie Proti prúdu a Doktor čas a
          zbehávka celého nového programu Nádej
 - date_from: '2010-01-28'
   date_to:
@@ -220,8 +220,8 @@ performances:
   name: Vystúpenie, Dom armády
   location: Trenčín
   description: |-
-    na večierku rmy Ametist, cez agentúru Tonas v Dome
-    Armády v Trenčíne s choreogra ou “Narodeninové boogie”
+    na večierku firmy Ametist, cez agentúru Tonas v Dome
+    Armády v Trenčíne s choreografiou “Narodeninové boogie”
 - date_from: '2010-07-31'
   date_to:
   raw_header: Inštruktáž, Zemianska Olča
@@ -330,7 +330,7 @@ performances:
   name: Vystúpenie, Incheba
   location: Bratislava
   description: |-
-    pre O. Štefíka v Inchebe – 20. rokov rmy Jolly Joker.
+    pre O. Štefíka v Inchebe – 20. rokov firmy Jolly Joker.
     Bralen tancoval “Ulicu” a “Cesta je nádej”
 - date_from: '2010-11-21'
   date_to:

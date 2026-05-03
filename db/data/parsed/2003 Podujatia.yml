@@ -4,7 +4,7 @@ year_description: |-
   ROK 2003
                                            (28. rok existencie)
 
-             Aj napriek zložitejšej situácii vo nancovaní súborovej činnosti sa nám i v roku 2003
+             Aj napriek zložitejšej situácii vo financovaní súborovej činnosti sa nám i v roku 2003
        podarilo udržať umeleckú činnosť, uviesť premiéru nového programu v Slovenskom
        národnom divadle, zrealizovať tri zahraničné zájazdy, zorganizovať Letnú školu tanca a
        množstvo seminárov v celej Európe. Odozva odbornej kritiky i diváckej obce na náš nový
@@ -28,7 +28,7 @@ year_description: |-
 
        10.-18.3. 2003    Sústredenie s francúzskym pedagógom Bruce Taylorom, AKS
                          Bruce robil tréningy s 3., 4., 5., a 6. ročníkom a so súborom vytvoril
-       choreogra u “Hviezda na mojom pravom ramene”
+       choreografiu “Hviezda na mojom pravom ramene”
 
        4.-6.4. 2003      Tanečný festival, Burghausen, Nemecko
                          Zájazd TD Bralen na medzinárodný tanečný festival do nemeckého
@@ -36,7 +36,7 @@ year_description: |-
 
        28.4.-7.5. 2003    Sústredenie s brazílskou pedagogičkou Cristinou Pererovou
                           Cristina robila tréningy s 3., 4., 5., a 6. ročníkom a so súborom začala
-       stavať choreogra u “No more”
+       stavať choreografiu “No more”
 
        19.5. 2003          Premiéra Human, DPOH, Bratislava
                            PREMIÉRA „Ľudia“ na scéne DPOH v Bratislave, na ktorej sa podieľali
@@ -66,7 +66,7 @@ performances:
   name: MTT 2003, Laterna Magika, Praha
   location: ČR
   description: |-
-    Predstavenie zložené z choreogra í tanečných konzervatórií z Prahy,
+    Predstavenie zložené z choreografií tanečných konzervatórií z Prahy,
          Varšavy, Lódže, Györu, Pécsi a bratislavského Bralenu. Bralen uviedol “Leting go”
 - date_from: '2003-01-13'
   date_to:
@@ -108,8 +108,8 @@ performances:
   name: Vystúpenie, Europapier
   location: Bratislava-Petržalka
   description: |-
-    vystúpenie v sklade na remnom dni z príležitosti otvorenia novej
-         budovy rmy Europapier Slovakia. Tancovali sme “La Massa” a “Vždy je ešte raz”
+    vystúpenie v sklade na firemnom dni z príležitosti otvorenia novej
+         budovy firmy Europapier Slovakia. Tancovali sme “La Massa” a “Vždy je ešte raz”
 - date_from: '2003-02-22'
   date_to: '2003-02-23'
   raw_header: Víkendový workshop - jazz, TŠ Victoria, Brno, ČR
@@ -143,7 +143,7 @@ performances:
   location: AKS
   description: |-
     Bruce robil tréningy s 3., 4., 5., a 6. ročníkom a so súborom vytvoril
-         choreogra u “Hviezda na mojom pravom ramene”
+         choreografiu “Hviezda na mojom pravom ramene”
 - date_from: '2003-03-31'
   date_to: '2003-04-04'
   raw_header: Seminár na TK a AMU, Praha, ČR
@@ -170,7 +170,7 @@ performances:
   location: Bratislava
   description: |-
     Vystúpenie na festivale „Oživené tance“ v bratislavskom Istropolise.
-         Bralen uviedol časť Vlak z choreogra e “Odkaz” a “Showtime”
+         Bralen uviedol časť Vlak z choreografie “Odkaz” a “Showtime”
 - date_from: '2003-04-26'
   date_to:
   raw_header: Akadémia TD Bralen, DK ZH, Bratislava
@@ -212,7 +212,7 @@ performances:
   location:
   description: |-
     Cristina robila tréningy s 3., 4., 5., a 6. ročníkom a so súborom začala
-    stavať choreogra u “No more”
+    stavať choreografiu “No more”
 - date_from: '2003-05-19'
   date_to:
   raw_header: Premiéra Human, DPOH, Bratislava
@@ -355,7 +355,7 @@ performances:
   description: |-
     R. Letenaj a J. Kekeňáková viedli 16 tréningov moderného a
     jazzového tanca v Kojšove, pre žiakov Základnej umeleckej školy Zuzany Molčanovej z
-    Košíc. Janka vytvorila pre ZUŠ aj dve choreogra e “Nikomu to nepovedz” a “ To som
+    Košíc. Janka vytvorila pre ZUŠ aj dve choreografie “Nikomu to nepovedz” a “ To som
     nechcela”
 - date_from: '2003-10-22'
   date_to:
@@ -401,7 +401,7 @@ performances:
   name: Vystúpenie, Incheba
   location: Bratislava
   description: |-
-    Vystúpenie TD Bralen a Petra Dvorského na remnom dni spoločnosti
+    Vystúpenie TD Bralen a Petra Dvorského na firemnom dni spoločnosti
     Holcim v bratislavskej Inchebe. Bralen uviedol “Dime a Duet” z Tres canciones
 - date_from: '2003-11-28'
   date_to: '2003-11-30'

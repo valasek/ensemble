@@ -25,13 +25,13 @@ performances:
   raw_header: Sústredenie, AKS
   name: Sústredenie
   location: AKS
-  description: s D. Strnadom. Začal robiť novú choreogra u k 40. výročiu - “Karant”
+  description: s D. Strnadom. Začal robiť novú choreografiu k 40. výročiu - “Karant”
 - date_from: '2014-03-08'
   date_to: '2014-03-09'
   raw_header: Sústredenie, AKS
   name: Sústredenie
   location: AKS
-  description: s D. Strnadom - Dorobil choreogra u “Karant”
+  description: s D. Strnadom - Dorobil choreografiu “Karant”
 - date_from: '2014-03-29'
   date_to: '2014-03-30'
   raw_header: WW weekend workshop, Zlín, ČR
@@ -43,14 +43,14 @@ performances:
   raw_header: Premiera muzikálu My Fair Lady, MD Zlín, ČR
   name: Premiera muzikálu My Fair Lady, MD Zlín
   location: ČR
-  description: R. Letenaj choreogra a, Z. Dušek réžia, braleňáci medzi divákmi
+  description: R. Letenaj choreografia, Z. Dušek réžia, braleňáci medzi divákmi
 - date_from: '2014-05-08'
   date_to: '2014-05-11'
   raw_header: Sústredenie s Joe Alegadom, AKS
   name: Sústredenie s Joe Alegadom
   location: AKS
   description: |-
-    Okrem technických tréningov začal stavať novú choreogra u “Moje
+    Okrem technických tréningov začal stavať novú choreografiu “Moje
     sestry” k 40. výročiu.
 - date_from: '2014-05-17'
   date_to: '2014-05-18'
@@ -159,7 +159,7 @@ performances:
   raw_header: Sústredenie s Joe Alegadom, AKS
   name: Sústredenie s Joe Alegadom
   location: AKS
-  description: dorobil novú choreogra u “Moje sestry”
+  description: dorobil novú choreografiu “Moje sestry”
 - date_from: '2014-11-08'
   date_to:
   raw_header: Dance Life Expo 2014, Brno, ČR
@@ -188,7 +188,7 @@ performances:
   raw_header: Choreographic factory, TD Elledanse, Bratislava
   name: Choreographic factory, TD Elledanse
   location: Bratislava
-  description: Vystupili sme s choreogra ou “Karant”
+  description: Vystupili sme s choreografiou “Karant”
 - date_from: '2014-11-14'
   date_to: '2014-11-17'
   raw_header: Inštruktáž v TS Žába, Veselí nad Lužnicí, ČR

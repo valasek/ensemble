@@ -27,6 +27,44 @@ PDF_DIR       = Rails.root.join("db/data/pdfs")
 EXTRACTED_DIR = Rails.root.join("db/data/extracted")
 PARSED_DIR    = Rails.root.join("db/data/parsed")
 
+# Fixes the fi-ligature extraction problem: pdftotext maps the PDF fi-ligature glyph
+# to a plain space (0x20) instead of the two characters "fi". pdftohtml handles the
+# ligature correctly, so we use its output as a reference word list to patch the text.
+#
+# Strategy:
+#   - Words with fi in the middle (e.g. "choreografie"):
+#     the broken form is "choreogra e" — replace via word-boundary regex.
+#   - Words starting with fi (e.g. "finančnej"):
+#     the broken form is the remainder without fi ("nančnej") — replace as whole token.
+FIX_FI_HELPER = lambda do |text, pdf_path|
+  html = `pdftohtml -stdout -noframes -enc UTF-8 "#{pdf_path}" 2>/dev/null`
+  return text if html.empty?
+
+  plain = html
+    .gsub(/<[^>]+>/, " ")
+    .gsub(/&amp;/, "&").gsub(/&lt;/, "<").gsub(/&gt;/, ">")
+    .gsub(/&quot;/, '"').gsub(/&#160;/, " ")
+    .gsub(/&#(\d+);/) { [ $1.to_i ].pack("U") }
+    .gsub(/&[a-z]+;/, " ")
+
+  fixed = text.dup
+
+  # Mid-word fi (at least one alpha char on each side of "fi")
+  plain.scan(/[[:alpha:]]+fi[[:alpha:]]+/).uniq.each do |word|
+    parts   = word.split("fi", -1)
+    pattern = "\\b" + parts.map { |p| Regexp.escape(p) }.join("\\s+") + "\\b"
+    fixed.gsub!(Regexp.new(pattern), word)
+  end
+
+  # Word-initial fi (the leading "fi" is dropped; remainder appears as standalone token)
+  plain.scan(/\bfi[[:alpha:]]{2,}/).uniq.each do |word|
+    rest = word[2..]
+    fixed.gsub!(Regexp.new("\\b" + Regexp.escape(rest) + "\\b"), word)
+  end
+
+  fixed
+end
+
 namespace :performances do
   # ----------------------------------------------------------
   # STEP 1 – Extract text from PDFs
@@ -43,6 +81,12 @@ namespace :performances do
       cmd = %(pdftotext -layout -enc UTF-8 "#{pdf}" "#{out_file}")
       puts "  Extracting: #{File.basename(pdf)}"
       system(cmd) or abort "pdftotext failed for #{pdf}"
+
+      # pdftotext maps the PDF fi-ligature glyph to a space; patch it using pdftohtml
+      text  = File.read(out_file, encoding: "UTF-8")
+      fixed = FIX_FI_HELPER.call(text, pdf)
+      File.write(out_file, fixed, encoding: "UTF-8") if fixed != text
+
       puts "    → #{out_file}"
     end
 

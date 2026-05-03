@@ -159,7 +159,7 @@ performances:
   raw_header: Cena Bratislavy, DK Dúbravka, Bratislava
   name: Cena Bratislavy, DK Dúbravka
   location: Bratislava
-  description: Uvádzali sme choreogra u “Prestávka”
+  description: Uvádzali sme choreografiu “Prestávka”
 - date_from: '1987-06-10'
   date_to:
   raw_header: Schôdza a predstavenie v Prahe
@@ -305,8 +305,8 @@ performances:
   description: Rasťo Letenaj viedol tréningy a P. Samuhelová asistovala
 - date_from: '1987-10-05'
   date_to:
-  raw_header: Návšteva lmového predstavenia, kino Hviezda, Bratislava
-  name: Návšteva lmového predstavenia, kino Hviezda
+  raw_header: Návšteva filmového predstavenia, kino Hviezda, Bratislava
+  name: Návšteva filmového predstavenia, kino Hviezda
   location: Bratislava
   description: |-
     A. Gades - Čarovná láska, účastníci: R. Letenaj, P. Hrozienčik, J.
@@ -377,7 +377,7 @@ performances:
                                    Images (Veľká Británia)
                                    Orkhema (Francúzsko)
                                    Kinder und Jugendballets (SRN)
-                                   Kedzie Pen eld (USA)
+                                   Kedzie Penfield (USA)
               domáce skupiny:      Tanečné divadlo Praha
                                    Isadora Dance Group, Praha
                                    Súbor moderného tanca Tremolo, Košice
@@ -433,7 +433,7 @@ performances:
         4. Oči plé šupín                         tancuje: Orkhema, F
         5. Návraty domů                          tancuje: VUS UK, Praha
                                  - prestávka -
-                        Tiene detstva            tancuje: Kedzie Pen eld
+                        Tiene detstva            tancuje: Kedzie Penfield
         6. Neistá krajina                        tancuje: Philippe Tressera com., F
         7. Trio                                  tancuje: ADC, GB
         8. Masky                                 tancuje: Nucleo danza, Argentína
@@ -459,7 +459,7 @@ performances:
   location: Bratislava
   description: |-
     nedeľa
-         1. Tiene detsva                        tancuje: Kedzie Pen eld, GB
+         1. Tiene detsva                        tancuje: Kedzie Penfield, GB
          2. Preludium air Rigaudon              tancuje: Auriga
          3. Príbeh vojaka                       tancuje: ADC, GB
          4. Zrcadlení                           tancuje: Studio komorního tance, Praha
@@ -477,7 +477,7 @@ performances:
     nedeľa             Program Images (GB) a Tressera com. (F)
 
     Praktické semináre pre účastníkov viedli:
-         13.11.   10:00-11:30     Kedzie Pen eld (USA) - kontaktné improvizácie
+         13.11.   10:00-11:30     Kedzie Penfield (USA) - kontaktné improvizácie
                   15:00-16:30     Bruno Genty (F) - moderný tanec
          14.11.   10:00-11:30     ? Ron Howell (GB) - moderný tanec
                   15:00-16:30     ?
@@ -509,7 +509,7 @@ performances:
     som sa rozhodla, že sa na ňom zúčastním. To, čo som mala možnosť vidieť ma doslova
     ohromilo. Z ničoho nič a zrazu taký neuveriteľný festival. Gratulujem!"
 
-         TD Bralen počas troch festivalových večerov uviedlo choreogra e: “Na Bacha”,
+         TD Bralen počas troch festivalových večerov uviedlo choreografie: “Na Bacha”,
     “Korzo”, “Ebony concerto”, “Putá” a “Nové renesančné tance”.
 - date_from: '1987-11-16'
   date_to:

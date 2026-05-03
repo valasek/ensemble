@@ -14,7 +14,7 @@ year_description: |-
                      TDB vystúpilo ako hosť na Evans Dance Show, organizovala Eva
   Nejedlá.
 
-  11.3. 2020           COVID 19 - O ciálne zatvárame priestory pre verejnosť, AKS
+  11.3. 2020           COVID 19 - Oficiálne zatvárame priestory pre verejnosť, AKS
                        technické i repertoárové tréningy do odvolania zrušené. Posledný
   tréning, klasika (Duras)
 
@@ -71,7 +71,7 @@ performances:
   raw_header: Zahájenie repertoárových tréningov, AKS
   name: Zahájenie repertoárových tréningov
   location: AKS
-  description: J. Olexová de nitívne ukončila pôsobenie v súbore.
+  description: J. Olexová definitívne ukončila pôsobenie v súbore.
 - date_from: '2020-01-11'
   date_to: '2020-01-12'
   raw_header: Sústredenie, AKS
@@ -118,13 +118,13 @@ performances:
   location: ČR
   description: |-
     TDB vystúpilo ako hosť na Evans Dance Show, organizovala Eva
-    Nejedlá. Bralen výstupil s choreogra ami “Boogie” (tancovali: Pobožná (p), Karazei,
+    Nejedlá. Bralen výstupil s choreografiami “Boogie” (tancovali: Pobožná (p), Karazei,
     Kubačková (p), Lazíková, Zajícová) a “Cesta je nádej, nádej je cesta” (tancovali: solo -
     Lazíková; Holáňová, Karazei, Kubačková, Mikšová, Milučká, Šešerová - všetci okrem
     Šešerovej premiérovo). Braleňáci sa okrem toho zúčastnili sprievodných workshopov
     klasiky (viedla Krupičková; zúčastnili sa: Červáková, Karazei, Kubačková, Milučká,
     Nováková, Šeďová) a jazzu (viedol Duras; zúčastnili sa: Červáková, Holáňová,
-    Kopnická, Vargaiová). Po dlhšej odmlke máme o ciálne v repertoári opäť aj celú
+    Kopnická, Vargaiová). Po dlhšej odmlke máme oficiálne v repertoári opäť aj celú
     Cestu.
 
                                          Evans dance show
@@ -176,7 +176,7 @@ performances:
     V Zimnej jazdiarni Bratislavského hradu sa konala vernisáž
          výstavy Divadelné storočie - Stopy a postoje, kde na panely venovanému
          modernému tancu bol uvedený ako reprezentant tohoto žánru TD Bralen s dvoma
-         fotogra ami z tanca “Spomienky a “6 tancov pre autu”
+         fotografiami z tanca “Spomienky a “6 tancov pre autu”
 - date_from: '2020-03-02'
   date_to:
   raw_header: Podanie projektu k účasti na ImpulsTanz, FPU
@@ -191,7 +191,7 @@ performances:
   description: |-
     Na workshope sa zúčastnilo 6 platiacich účastníkov a 12
          neplatiacich braleňákov. Učili M. Zubáková (4 tréningy) a T. Duras a Z. Sehnalová. Po
-          nančnej stránke bolo WW stratové (-7€)
+          finančnej stránke bolo WW stratové (-7€)
 - date_from: '2020-03-09'
   date_to:
   raw_header: Uzatvorenie škôl pre COVID-19
@@ -204,8 +204,8 @@ performances:
          situácii a možných scenároch do blízkej budúcnosti.
 - date_from: '2020-03-11'
   date_to:
-  raw_header: O ciálne zatvárame priestory pre verejnosť, AKS
-  name: O ciálne zatvárame priestory pre verejnosť
+  raw_header: Oficiálne zatvárame priestory pre verejnosť, AKS
+  name: Oficiálne zatvárame priestory pre verejnosť
   location: AKS
   description: |-
     technické i repertoárové tréningy do odvolania zrušené. Posledný
@@ -221,8 +221,8 @@ performances:
          mala byť plnohodnotný člen. Je tiež prijatá na odbor moderný tanec na VŠMU.
 - date_from: '2020-03-13'
   date_to:
-  raw_header: Podujatia DanceFest o ciálne zrušené,
-  name: Podujatia DanceFest o ciálne zrušené,
+  raw_header: Podujatia DanceFest oficiálne zrušené,
+  name: Podujatia DanceFest oficiálne zrušené,
   location:
   description: |-
     resp. presunuté na jeseň. S Hankou Vaškovou sme tiež
@@ -269,7 +269,7 @@ performances:
   name: Verejná výzva Alvin Ailey
   location:
   description: |-
-    Bralen virtuálne natočil krátky video výňatok z ich choreogra e
+    Bralen virtuálne natočil krátky video výňatok z ich choreografie
     Revelations.
 - date_from: '2020-04-16'
   date_to:
@@ -307,12 +307,12 @@ performances:
   description:
 - date_from: '2020-05-10'
   date_to:
-  raw_header: Virtuálne sledovanie choreogra í (cez Jitsi Meet)
-  name: Virtuálne sledovanie choreogra í (cez Jitsi Meet)
+  raw_header: Virtuálne sledovanie choreografií (cez Jitsi Meet)
+  name: Virtuálne sledovanie choreografií (cez Jitsi Meet)
   location:
   description: |-
     z historického repertoáru TDB. V nasledujúcich týždňoch sme si s
-    Braleňákmi pozreli choreogra e: “Na Bacha”, “V Mlhách”, “Hlasy”, “Štyria”, “Hviezda
+    Braleňákmi pozreli choreografie: “Na Bacha”, “V Mlhách”, “Hlasy”, “Štyria”, “Hviezda
     na mojom pravom ramene”, “Undertime”, “Rose Tango”
 - date_from: '2020-05-15'
   date_to:
@@ -532,7 +532,7 @@ performances:
   name: Sústredenie súboru
   location: AKS
   description: |-
-    Sústredenie zamerané na tvorbu novej choreogra e od T. Durasa.
+    Sústredenie zamerané na tvorbu novej choreografie od T. Durasa.
     Sústredenie bolo skrátené z pôvodných štyroch dní na dva z preventívnych dôvodov v
     dôsledku blízkeho kontaktu dvoch členov s osobami, u ktorých bolo potvrdené
     podozrenie na Covid-19. Obe naše dievčatá (M. Šeďová, V. Karazei) boli neskôr testované
@@ -569,7 +569,7 @@ performances:
   name: Zahájenie 46. sezóny
   location: AKS
   description: |-
-    O ciálne zahájenie 46. sezóny TDB, prvý spoločný repertoárový
+    Oficiálne zahájenie 46. sezóny TDB, prvý spoločný repertoárový
     tréning súboru. Nové pôsobenie v súbore začínajú D. Horváthová a Z. Mayerová.
 - date_from: '2020-09-12'
   date_to: '2020-09-13'
@@ -577,7 +577,7 @@ performances:
   name: Sústredenie súboru a prípravky
   location: AKS
   description: |-
-    Sústredenie bolo zamerané na obnovenie a prečistenie choreogra e
+    Sústredenie bolo zamerané na obnovenie a prečistenie choreografie
     "Karant". V sobotu sme prečistili tretiu časť, v nedeľu prvú. Čistenie spoločných častí šlo
     relatívne rýchlo, práca s priestorom v obsadeniach pokulháva - treba zlepšiť. Rozcvičku
     viedla V. Karazei, ktorá nás zbežne zoznámila s ukrajinskými tancami. Tréning začínal
@@ -614,13 +614,13 @@ performances:
   name: Sústredenie súboru
   location: AKS
   description: |-
-    Sústredenie bolo zamerané na tvorbu novej choreogra e T. Durasa -
+    Sústredenie bolo zamerané na tvorbu novej choreografie T. Durasa -
     pokračovanie z konca augusta. Na sústredenie mala prísť aj bývalá členka, Barbora
     Šoganová, ktorá mala viesť herecký workshop a pomôcť tak s hereckou prípravou
               ostatných členov. Deň pred sústredením mi volala, že jeden z ich pedagógov bol
               testovaný pozitívne a zostáva preto v karanténe. Náhradnú rozcvičku preto dala Vita
               Karazei, pokračovala vo workshope z predošlého sústredenia, národné tance z Ukrajiny.
-              Následne sme pokračovali nácvikom novej choreogra e s pracovným názvom "Nemé
+              Následne sme pokračovali nácvikom novej choreografie s pracovným názvom "Nemé
               hlasy." Dosiaľ máme vytvorené približne 3 minúty z predpokladanej dĺžky cca 15 minút.
               Sústredenie poznačila aj smutná situácia - otec L. Kubačkovej utrpel infarkt, Lucka
               cestovala domov.
@@ -631,7 +631,7 @@ performances:
   location:
   description: |-
     V. Karazei a T. Duras, ako fyzické osoby, podali v mimoriadnej výzve
-              žiadosť o štipendium na FPU. Obsahom projektov je tvorba choreogra í "Nemé hlasy" a
+              žiadosť o štipendium na FPU. Obsahom projektov je tvorba choreografií "Nemé hlasy" a
               "We're Never Clean." Oba projekty boli podporené (2x 3000€). Mimoriadna výzva
               neumožňovala vytvoriť žiadosť o grant organizáciám, iba fyzickým osobám.
 - date_from: '2020-10-05'
@@ -649,9 +649,9 @@ performances:
   location: Bratislava
   description: |-
     Pôvodne obsadenú Luciu Kubačkovú, pre rodinné dôvody, nahradila
-              So a Vargaiová. Na mieste sme sa stretli s druhou skupinou, zo ZUŠ sv. Cecílie. S ich
+              Sofia Vargaiová. Na mieste sme sa stretli s druhou skupinou, zo ZUŠ sv. Cecílie. S ich
               vedúcou (Lenka Kunošová) sme sa rozprávali o možnej budúcej spolupráci
-              choreogra ckého charakteru - budú mať o dva roky výročné predstavenie, radi by uviedli
+              choreografického charakteru - budú mať o dva roky výročné predstavenie, radi by uviedli
               celovečerný program.
               Samotné natáčanie prebiehalo oproti plánu na náhradnom mieste, nakoľko pôvodné
               miesto (pri Riverpark Dance School) bolo obsadené konferenciou Globsec.
@@ -757,13 +757,13 @@ performances:
     izolácii.
 
     21-22.11. 2020       Sústredenie súboru, AKS
-                         Sústerdenie bolo zamerané na pokračovanie v tvorbe choreogra e T.
+                         Sústerdenie bolo zamerané na pokračovanie v tvorbe choreografie T.
     Durasa s pracovným názvom "Nemé hlasy." Rozvičku nám pôvodne mala prísť spraviť
     Katarína Hajsterová. Vzhľadom na obmedzený režim robila rozcvičku S. Zajícová, súčasný
     tanec. Na záver sústredenia prebehol video konferenčný hovor aj s ostatnými členmi
     súboru, ktorí sa aktuálne nezapájajú do procesu osobne (bývanie, obmedzenia, zlomená
     noha). Na tomto T. Duras bližšie ozrejmil súboru svoj myšlienkový proces a obsah novo-
-    tvorenej choreogra e.
+    tvorenej choreografie.
 - date_from: '2020-11-28'
   date_to:
   raw_header: ''
@@ -783,7 +783,7 @@ performances:
   raw_header: Sústredenie súboru, AKS
   name: Sústredenie súboru
   location: AKS
-  description: pokračovanie v tvorbe novej choreogra e T. Durasa
+  description: pokračovanie v tvorbe novej choreografie T. Durasa
 - date_from: '2020-12-18'
   date_to:
   raw_header: Ukončenie tréningov v Bralene, AKS

@@ -7,10 +7,10 @@ year_description: |-
   Najdôležitejšie podujatia tohto roku:
 
   8.1. 1997           Sústredenie s Liborom Vaculíkom, AKS
-                      Libor Vaculík začal stavať novú choreogra u “V mlhách”
+                      Libor Vaculík začal stavať novú choreografiu “V mlhách”
 
   25.-26.1. 1997      Sústredenie s Cristinou Pererovou, AKS
-                      Začala stavať novú choreogra u “Undertime”
+                      Začala stavať novú choreografiu “Undertime”
 
   5.5.-26.6. 1997     J. Kekeňáková, New York, USA
                       Janka Kekeňáková v Marta Graham School
@@ -27,7 +27,7 @@ performances:
   raw_header: Sústredenie s Cristinou Perera, AKS
   name: Sústredenie s Cristinou Perera
   location: AKS
-  description: Dokončenie choreogra e “Undertime”
+  description: Dokončenie choreografie “Undertime”
 - date_from: '1997-01-07'
   date_to:
   raw_header: Začiatok roka, AKS
@@ -40,7 +40,7 @@ performances:
   name: Sústredenie s Liborom Vaculíkom
   location: AKS
   description: |-
-    Libor Vaculík po prvýkrát v Bralene začal stavať choreogra u “V
+    Libor Vaculík po prvýkrát v Bralene začal stavať choreografiu “V
     mlhách”
 - date_from: '1997-01-08'
   date_to:
@@ -53,7 +53,7 @@ performances:
   raw_header: Sústredenie s Liborom Vaculíkom
   name: Sústredenie s Liborom Vaculíkom
   location:
-  description: Na tomto sústredení sa pracovalo na novej choreogra i “V mlhách”
+  description: Na tomto sústredení sa pracovalo na novej choreografii “V mlhách”
 - date_from: '1997-01-17'
   date_to: '1997-01-19'
   raw_header: Seminár v Košiciach
@@ -66,7 +66,7 @@ performances:
   name: Sústredenie s Cristinou Pererovou
   location: AKS
   description: |-
-    C. Perera po prvý raz v Bralene začala stavať choreogra u
+    C. Perera po prvý raz v Bralene začala stavať choreografiu
     “Undertime”
 - date_from: '1997-01-26'
   date_to:
@@ -74,7 +74,7 @@ performances:
   name: 70. narodeniny Š. Nosáľa, SND
   location: Bratislava
   description: |-
-    Bralen vystúpil ako hosť programu s 1.časťou choreogra e Ervína
+    Bralen vystúpil ako hosť programu s 1.časťou choreografie Ervína
     Vargu “Odkaz” (časť Vlak)
 
                         Galavečer k životnému jubileu Štafana Nosáľa
@@ -97,7 +97,7 @@ performances:
   raw_header: Sústredenie s Cristinou Pererovou, AKS
   name: Sústredenie s Cristinou Pererovou
   location: AKS
-  description: Zpokračovala v práci na novej choreogra e “Undertime”
+  description: Zpokračovala v práci na novej choreografie “Undertime”
 - date_from: '1997-02-08'
   date_to: '1997-02-09'
   raw_header: Tanzwoche, Viedeň
@@ -121,7 +121,7 @@ performances:
   name: Sústredenie
   location: AKS
   description: |-
-    Tréningy boli s Liborom Vaculíkom a opakovali sa nové choreogra e
+    Tréningy boli s Liborom Vaculíkom a opakovali sa nové choreografie
     od Brucea Taylora a Cristiny Pererovej
 - date_from: '1997-02-18'
   date_to:
@@ -134,14 +134,14 @@ performances:
   raw_header: Sústredenie s L. Vaculíkom, AKS
   name: Sústredenie s L. Vaculíkom
   location: AKS
-  description: Dokončil choreogra u “ V mlhách” na hudbu Leoša Janáčka
+  description: Dokončil choreografiu “ V mlhách” na hudbu Leoša Janáčka
 - date_from: '1997-02-24'
   date_to:
   raw_header: Natáčanie v DK Zrkadlový háj, Bratislava
   name: Natáčanie v DK Zrkadlový háj
   location: Bratislava
   description: |-
-    Odovzdanie choreogra e “V mlhách” umeleckej rade TD Bralen,
+    Odovzdanie choreografie “V mlhách” umeleckej rade TD Bralen,
     pričom sme ju aj natočili na video.
 - date_from: '1997-02-26'
   date_to: '1997-02-27'
@@ -161,13 +161,13 @@ performances:
     Cristina Perera. A. Greenwood (USA) viedol tréningy moderného a klasického tanca.
 
     28.2-3.3 1997       Seminár v La Mosce, Košice
-                        Rasťo Letenaj postavil pre tento súbor novú choreogra u
+                        Rasťo Letenaj postavil pre tento súbor novú choreografiu
 - date_from: '1997-03-08'
   date_to: '1997-03-09'
   raw_header: Sústredenie s C. Pererou, AKS
   name: Sústredenie s C. Pererou
   location: AKS
-  description: Cristina Perera pokračuje v tvorbe novej choreogra e pre Bralen
+  description: Cristina Perera pokračuje v tvorbe novej choreografie pre Bralen
 - date_from: '1997-03-13'
   date_to:
   raw_header: Počuť srdcom, Žiar nad Hronom
@@ -195,7 +195,7 @@ performances:
   raw_header: Sústredenie s C. Pererou, AKS
   name: Sústredenie s C. Pererou
   location: AKS
-  description: Pokračovanie v novej choreogra i “Under time”
+  description: Pokračovanie v novej choreografii “Under time”
 - date_from: '1997-03-24'
   date_to:
   raw_header: Konkurz do TD Bralen, AKS
@@ -243,7 +243,7 @@ performances:
   location: Trnava
   description: |-
     Bralen vystúpil ako hosť celoštátnej prehliadky scénického tanca s
-         choreogra ami “Otec Smútok, matka Nádej” a “Tres canciones”. Organizátor NOC
+         choreografiami “Otec Smútok, matka Nádej” a “Tres canciones”. Organizátor NOC
          Bratislava a Trnavské divadlo. R. Letenaj bol v porote.
 
          Harmonogram:
@@ -298,7 +298,7 @@ performances:
          20. Vírenie v tieni                        tancuje: TS Impulz, B. Bystrica
          21. Já především                           tancuje: C-dance, Ústí nad Orlicí
 
-                         19:00      Galaprogram z vybraných choreogra í prehliadky a hostí
+                         19:00      Galaprogram z vybraných choreografií prehliadky a hostí
                                     TD Bralen a C-dance.
 - date_from: '1997-04-12'
   date_to: '1997-04-14'
@@ -351,14 +351,14 @@ performances:
   location: Poľsko
   description: |-
     Hlavným organizátorom bol Slovenský inštitút vo Varšave. Bralen
-    uviedol dve choreogra e “Hlasy” a “Tri piesne”. 10 členov Bralenu cestovalo 2 autami.
+    uviedol dve choreografie “Hlasy” a “Tri piesne”. 10 členov Bralenu cestovalo 2 autami.
 - date_from: '1997-05-17'
   date_to:
   raw_header: World Masters, Veľká sála Istropolisu, Bratislava
   name: World Masters, Veľká sála Istropolisu
   location: Bratislava
   description: |-
-    Bralen ako hosť súťaže v akrobatickom rock’n’rolle s choreogra ou
+    Bralen ako hosť súťaže v akrobatickom rock’n’rolle s choreografiou
     “Tres canciones”, (len Duet a La massa)
 - date_from: '1997-05-21'
   date_to:
@@ -366,7 +366,7 @@ performances:
   name: Podpoliansky sen, Športová hala
   location: Zvolen
   description: |-
-    Bralen ako hosť s 1. časťou choreogra e “Odkaz” a “No a čo”.
+    Bralen ako hosť s 1. časťou choreografie “Odkaz” a “No a čo”.
     Organizátorom bolo Podpolianské kultúrne centrum.
 - date_from: '1997-05-24'
   date_to: '1997-05-25'
@@ -470,7 +470,7 @@ performances:
   raw_header: 585. Výročie mesta Trenčína, Dom armády, Trenčín
   name: 585. Výročie mesta Trenčína, Dom armády
   location: Trenčín
-  description: Bralen vystúpil s choreogra ou “No a čo”
+  description: Bralen vystúpil s choreografiou “No a čo”
 - date_from: '1997-09-14'
   date_to:
   raw_header: Sústredenie, AKS
@@ -607,7 +607,7 @@ performances:
   location:
   description: |-
     J. Alegado robil technické tréningy so súborom a vyššími ročníkmi a
-    čistil choreogra u “Tres canciones”
+    čistil choreografiu “Tres canciones”
 - date_from: '1997-12-10'
   date_to:
   raw_header: Stretnutie Správnej rady TD Bralen

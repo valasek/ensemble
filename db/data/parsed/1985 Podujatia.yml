@@ -109,11 +109,11 @@ performances:
   description: Oľga a Rasťo Letenajovci viedli tréningy
 - date_from: '1985-04-02'
   date_to: '1985-04-03'
-  raw_header: Kedzie Pen eld v Bralene
-  name: Kedzie Pen eld v Bralene
+  raw_header: Kedzie Penfield v Bralene
+  name: Kedzie Penfield v Bralene
   location:
   description: |-
-    Stavala choreogra u Na Bacha a viedla 3 tréningy so súborom a 1 s
+    Stavala choreografiu Na Bacha a viedla 3 tréningy so súborom a 1 s
     novými členmi
 - date_from: '1985-04-29'
   date_to: '1985-05-10'
@@ -132,8 +132,8 @@ performances:
     republiky v Berlíne, v hale Arena v Poznani, v Paláci kultúry v Drážďanoch a v krajskom
     divadle v Ustí nad Labem. Okrem týchto spoločných predstavení uviedla každá delegácia
     niekoľkokrát svoj samostatný program na trase Festivalu.
-         Súbor Bralen sa predstavil nasledovnými choreogra ami: "Kliky bé", "Fajnové
-    odpoludnie”, "6 tancov pre autu" a časťou choreogra e “Temperamenty".
+         Súbor Bralen sa predstavil nasledovnými choreografiami: "Kliky bé", "Fajnové
+    odpoludnie”, "6 tancov pre autu" a časťou choreografie “Temperamenty".
 - date_from: '1985-05-16'
   date_to:
   raw_header: Schôdza v Bralene
@@ -250,13 +250,13 @@ performances:
   raw_header: Sústredenie s Honzom Hartmanom v Bralene
   name: Sústredenie s Honzom Hartmanom v Bralene
   location:
-  description: Začal stavať choreogra u Korzo
+  description: Začal stavať choreografiu Korzo
 - date_from: '1985-09-20'
   date_to: '1985-09-22'
   raw_header: Sústredenie s Honzom Hartmanom v Bralene
   name: Sústredenie s Honzom Hartmanom v Bralene
   location:
-  description: Dokončil choreogra u Korzo
+  description: Dokončil choreografiu Korzo
 - date_from: '1985-09-29'
   date_to:
   raw_header: Konkurz do Bralenu
@@ -401,7 +401,7 @@ performances:
          9. Raport                           tancuje: VUS UK, Praha
 
           Počas troch festivalových dní dýchal tanečnou atmosférou celý DK Ružinov. Vo foyer
-    na niekoľkých televíznych monitoroch bežali tanečné lmy a pro ly popredných
+    na niekoľkých televíznych monitoroch bežali tanečné filmy a profily popredných
     tanečných osobností, v informačnom stredisku členovia Bralenu prijímali skupiny,
     vypisovali programy na jednotlivé predstavenia a zabezpečovali plynulý chod celého
     festivalu. Vo veľkej sále DK prebiehali javiskové a priestorové skúšky tanečných skupín a
@@ -439,8 +439,8 @@ performances:
     výročí vzniku souboru moderního tance Bralen..."
 
          ..."Domácí Bralen ve své nabídce zachytil spektrum své činnosti, od Letenajovy
-    Přestávky a Puobišové Temperamentů, přes tanec choreografky Kedzie Pen eld Na
-    Bacha až k Hartmannovým choreogra ím Korzo, Fajnové odpoledne a Reminiscence.
+    Přestávky a Puobišové Temperamentů, přes tanec choreografky Kedzie Penfield Na
+    Bacha až k Hartmannovým choreografiím Korzo, Fajnové odpoledne a Reminiscence.
     Soubor ukazuje svým výkonem, že rozdílnost přístupu jednotlivých choreografů ho
     obohacuje v technice i výrazu a vytváří z něho těleso všestranného zaměření."
 

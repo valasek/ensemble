@@ -15,15 +15,15 @@ year_description: |-
   jazzovým tréningom. Rasťo Letenaj viedol tréning a cvičili mu braleňáci.
 
   20.-24.2. 1995      Joe Alegado v TD Bralen
-                      Sústredenie s Joe Alegadom na ktorom dokončil choreogra u Tres
+                      Sústredenie s Joe Alegadom na ktorom dokončil choreografiu Tres
   Canciones.
 
   5.-13.9. 1995       Bruce Taylor v TD Bralen
-                      Sústredenie s Bruce Taylorom. Postavil choreogra u “Rose Tango at
+                      Sústredenie s Bruce Taylorom. Postavil choreografiu “Rose Tango at
   Boneyard”
 
   15.-17.9. 1995      Sústredenie s Ervínom Vargom
-                      Dokončenie choreogra e “Odkaz”
+                      Dokončenie choreografie “Odkaz”
 
   1.-9.10. 1995       Zájazd TD Bralen do USA
 
@@ -99,7 +99,7 @@ performances:
   name: Joe Alegado v TD Bralen
   location:
   description: |-
-    Sústredenie s Joe Alegadom na ktorom dokončil choreogra u “Tres
+    Sústredenie s Joe Alegadom na ktorom dokončil choreografiu “Tres
     Canciones”.
 - date_from: '1995-02-25'
   date_to: '1995-02-26'
@@ -174,7 +174,7 @@ performances:
   location:
   description: |-
     15.-16.4 1995      Sústredenie Bralenu, AKS
-                       Rasťo Letenaj začal s tvorbou novej choreogra e “Otec smútok,
+                       Rasťo Letenaj začal s tvorbou novej choreografie “Otec smútok,
     matka Nádej”. Začal s prvou časťou - sólo.
 - date_from: '1995-04-17'
   date_to:
@@ -224,9 +224,9 @@ performances:
   name: Konkurz na VII. Tanec Praha ’95, Duncan centrum
   location: Praha
   description: |-
-    V Duncan centre Praha sa Bralen zúčasnil výberu choreogra í na
+    V Duncan centre Praha sa Bralen zúčasnil výberu choreografií na
          Tanec Praha s dvoma tancami: “Všetko je inak..” a “No a čo”, z ktorých bola vybraná
-         choreogra a “No a čo”.
+         choreografia “No a čo”.
 - date_from: '1995-05-06'
   date_to: '1995-05-07'
   raw_header: Víkendový workshop 53. WW - tanečné variácie, AKS
@@ -283,7 +283,7 @@ performances:
   raw_header: Sústredenie TD Bralen
   name: Sústredenie TD Bralen
   location:
-  description: Ervín Varga začal stavať novú choreogra u “Odkaz”
+  description: Ervín Varga začal stavať novú choreografiu “Odkaz”
 - date_from: '1995-06-07'
   date_to:
   raw_header: Výchovné koncerty a predstavenie v Brne
@@ -306,14 +306,14 @@ performances:
   raw_header: Sústredenie TD Bralen
   name: Sústredenie TD Bralen
   location:
-  description: Ervín Varga pokračuje v práci na novej choreogra i
+  description: Ervín Varga pokračuje v práci na novej choreografii
 - date_from: '1995-06-14'
   date_to:
   raw_header: Krok za krokom, DK Dúbravka, Bratislava
   name: Krok za krokom, DK Dúbravka
   location: Bratislava
   description: |-
-    TD Bralen ako hosť uviedol choreogra u “No a čo” na záverečnom
+    TD Bralen ako hosť uviedol choreografiu “No a čo” na záverečnom
     programe ZUŠ Obráncov mieru Heleny Žitňanovej v DK Dúbravka.
 
                                        Krok za krokom
@@ -410,7 +410,7 @@ performances:
   name: Tanec Praha
   location:
   description: |-
-    Vystúpenie TD Bralen s choreogra ou “No a čo” v rámci festivalu
+    Vystúpenie TD Bralen s choreografiou “No a čo” v rámci festivalu
     Tanec Praha na Staromestskom námestí (30.6. a 1.7.) a v 2.7. v Divadle Komedie. Išli sme
     dvoma autami 7 osôb. bývali sme na ubytovni Sokol Karlín.
 - date_from: '1995-07-03'
@@ -424,7 +424,7 @@ performances:
     dance E Gajdošová, 6x strečing D. Štefanová, 5x jazz D. Strnad
 
     4.-7. 1995          Jean Humbert cup, vystúpenie, nám. SNP, Banská Bystrica
-                        Na základe objednávky rmy Mana, BB, Bralen uviedol svoj program
+                        Na základe objednávky firmy Mana, BB, Bralen uviedol svoj program
     na scéne na nám. SNP v rámci kultúrneho programu pri príležitosti ľahkoatletických
     pretekov “Jean Humbert Cup” Išli sme dvoma autami: 1. D. Strnad, Z. Jahnová, D.
     Bolerázsky, S. Beláková, D. Štefanová, Z. Markova a 2. R. Letenaj, Z. Dlhoš, J.
@@ -480,21 +480,21 @@ performances:
 
          29.8.-.4.9. 1995   Joe Alegado v TD Bralen
                             Sústredenie s Joe Alegadom a Palomou Solanas. Nácvik “Tres
-         canciones” a tvorba novej choreogra e “Zákutia vedomia”
+         canciones” a tvorba novej choreografie “Zákutia vedomia”
 - date_from: '1995-09-05'
   date_to: '1995-09-12'
   raw_header: Bruce Taylor v TD Bralen
   name: Bruce Taylor v TD Bralen
   location:
   description: |-
-    Sústredenie s Bruce Taylorom. Postavil choreogra u “Rose Tango at
+    Sústredenie s Bruce Taylorom. Postavil choreografiu “Rose Tango at
          Boneyard”
 - date_from: '1995-09-15'
   date_to: '1995-09-17'
   raw_header: Sústredenie s Ervínom Vargom
   name: Sústredenie s Ervínom Vargom
   location:
-  description: Dokončenie choreogra e “Odkaz”
+  description: Dokončenie choreografie “Odkaz”
 - date_from: '1995-09-27'
   date_to:
   raw_header: Členská schôdza TD Bralen
@@ -508,7 +508,7 @@ performances:
   location:
   description: |-
     R. Letenaj letel do USA pred Bralenom, nakoľko O. Letenajová bola
-         na certi kačnom pobyte v M. Graham school a bývali u Evy Jeníčkovej s Montym v NY.
+         na certifikačnom pobyte v M. Graham school a bývali u Evy Jeníčkovej s Montym v NY.
 - date_from: '1995-10-01'
   date_to: '1995-10-09'
   raw_header: Zájazd TD Bralen do USA, New York, Rochester
@@ -635,7 +635,7 @@ performances:
 
           sobota 14.10. 1995 09:00          praktické semináre I. Kubicová a R. Letenaj
                              13:00          Súťažná prehliadka
-                             19:00          Galaprogram ocenených choreogra í
+                             19:00          Galaprogram ocenených choreografií
                              21:00          Spoločenský večer
 
           nedeľa 15.10. 1995 09:00          Rozborový seminár s porotou
@@ -673,7 +673,7 @@ performances:
   name: Natáčanie Kultúrnej revue
   location: DK ZH a Bralen
   description: |-
-    V DK ZH sme pre STV natočili choreogra e “Na Bacha”, “Stolička” a”
+    V DK ZH sme pre STV natočili choreografie “Na Bacha”, “Stolička” a”
     Sólo?” a na sale bralenu zábery z tréningu a rozhovor s P. Hrozienčikom a R. Letenajom.
 - date_from: '1995-11-04'
   date_to: '1995-11-05'
@@ -718,7 +718,7 @@ performances:
   raw_header: 35. výročie SOU Slovnaft, Koménium, Bratislava
   name: 35. výročie SOU Slovnaft, Koménium
   location: Bratislava
-  description: TD Bralen vystúpilo v programe s choreogra ou “Co mi dáš”
+  description: TD Bralen vystúpilo v programe s choreografiou “Co mi dáš”
 - date_from: '1995-11-17'
   date_to:
   raw_header: Generálka “Piesne”, DK ZH
@@ -754,7 +754,7 @@ performances:
   raw_header: Sústredenie s Joe Alegadom
   name: Sústredenie s Joe Alegadom
   location:
-  description: čistenie choreogra e “Piesne”
+  description: čistenie choreografie “Piesne”
 - date_from: '1995-11-27'
   date_to:
   raw_header: Premiéra programu “Piesne”, SND Bratislava

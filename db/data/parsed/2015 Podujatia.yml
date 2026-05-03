@@ -182,7 +182,7 @@ performances:
   name: Choreografphic Factory. Dom T&D
   location: Bratislava
   description: |-
-    Vystúpenie v Elle Dance s choreogra ou “Moje sestry” (T. Duras
+    Vystúpenie v Elle Dance s choreografiou “Moje sestry” (T. Duras
     tancoval Šeďovej miesto) a ešte D. Malenovská postavila sólo, ktoré tancovala A.
     Vrbičanová
                                     Choreographic factory
@@ -202,7 +202,7 @@ performances:
   name: Medzinárodný týždeň tanca, Divadlo Komédie
   location: Praha
   description: |-
-    Vystúpenie v divadle Komedie s choreogra ou “Moje sestry”. Išli sme
+    Vystúpenie v divadle Komedie s choreografiou “Moje sestry”. Išli sme
     na otočku s P. Mešťaníkovým autom. Predstavenie dopadlo výborne. Dievčatá zatancovali
     veľmi pekne.
                                            MTT 2015
@@ -289,7 +289,7 @@ performances:
   raw_header: Sústredenie, AKS
   name: Sústredenie
   location: AKS
-  description: J. Letenajová stavala druhú časť novej choreogra e “Mesto”
+  description: J. Letenajová stavala druhú časť novej choreografie “Mesto”
 - date_from: '2015-06-30'
   date_to:
   raw_header: Posledné tréningy tejto sezóny, AKS
@@ -408,7 +408,7 @@ performances:
   location: AKS
   description: |-
     Víkendové sústredenie zamerané na pokračovanie v 3.a 4. časti
-         choreogra e Mesto a rozhovor R. Letenaja s redaktorkou Sandrou Polovkovou do novej
+         choreografie Mesto a rozhovor R. Letenaja s redaktorkou Sandrou Polovkovou do novej
          knihy k 40-tke Bralenu.
                  Od tohto mesiaca až do januára sme dali robiť rozcvičky K. Čaplovej v rámci
          príprav na prijímacie pohovory na VŠMU. Robila ich z Limóna, Hortona, jazzu a baletu a
@@ -439,7 +439,7 @@ performances:
   raw_header: Víkendové sústrenie, AKS
   name: Víkendové sústrenie
   location: AKS
-  description: na ktorom J. Letenajová dokončila choreogra u “Mesto”
+  description: na ktorom J. Letenajová dokončila choreografiu “Mesto”
 - date_from: '2015-11-28'
   date_to: '2015-11-29'
   raw_header: Sústredenie, AKS
@@ -448,12 +448,12 @@ performances:
   description: |-
     Braleňáci si ho platili, aj si povedali s akými pedagógmi chcú cvičiť:
          D. Beňákovou a B. Lanczovou. My sme to len zorganizovali. Vyšiel čas aj na úpravy v
-         choreogra i Mesto. Zo soboty na nedeľu tu Braleňáci prespali, lebo T. Duras a L. Zaťková
+         choreografii Mesto. Zo soboty na nedeľu tu Braleňáci prespali, lebo T. Duras a L. Zaťková
          oslavovali narodeniny. Bol to celkom plný víkend.
 - date_from: '2015-12-11'
   date_to:
-  raw_header: Repertoárový tréning venovaný úpravám choreogra e Mesto
-  name: Repertoárový tréning venovaný úpravám choreogra e Mesto
+  raw_header: Repertoárový tréning venovaný úpravám choreografie Mesto
+  name: Repertoárový tréning venovaný úpravám choreografie Mesto
   location:
   description:
 - date_from: '2015-12-13'

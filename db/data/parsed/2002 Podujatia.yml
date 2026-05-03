@@ -5,7 +5,7 @@ year_description: |-
                                      (27. rok existencie)
 
           Rok 2002 bol v histórii Tanečného divadla Bralen výnimočný vo veľkom rozkolísaní
-  úrovne podmienok na prácu súboru. Celý rok bol ovplyvňovaný nančným zabezpečením
+  úrovne podmienok na prácu súboru. Celý rok bol ovplyvňovaný finančným zabezpečením
   činnosti a žiaľ, musím konštatovať, negatívne. Rok sme začali stratou 91.000.- Sk, z roku
   2001 a s prísľubom nášho generálneho sponzora, že jeho sponzorský príspevok bude
   poukázaný na účet TD Bralen už v januári. Pripísanie tohoto príspevku sa uskutočnilo až
@@ -26,14 +26,14 @@ year_description: |-
   realizovať predstavenia a účasť na podujatiach, ktoré by bez použitia vlastného
   mikrobusu, boli nereálne.
           Rok 2002 bol charakteristický i zaujatím pozície vo svete web a internetu. Naša
-  profesionálna webovská stránka, na veľmi vysokej gra ckej úrovni a obsahovej stránke,
+  profesionálna webovská stránka, na veľmi vysokej grafickej úrovni a obsahovej stránke,
   sa objavila na zoznamoch všetkých väčších dostupných portálov, čím sa nám otvárajú
   nové možnosti získavania kontaktov a v neposlednej rade i propagácie ako súboru, tak i
   jeho podporovateľov.
           Z umeleckého hľadiska a dúfame, že i z pohľadu diváka môžem činnosť hodnotiť
   veľmi pozitívne, s udržaním umeleckého rastu, s dostatočným počtom predstavení a
   s výnimočným ohlasom odbornej kritiky.
-          Pre už spomínanú nančnú stituáciu v prvej polovici roka, klesol počet predstavení
+          Pre už spomínanú finančnú stituáciu v prvej polovici roka, klesol počet predstavení
   z priemerného počtu cca 60, až o 1/3. V roku 2002 zrealizoval súbor 42 predstavení,
   z čoho 9 bolo na Slovensku a 33 v zahraničí. Z predstavení na Slovensku vyzdvihnem
   uvedenie novembrového galaprogramu na scéne Slovenského národného divadla
@@ -41,7 +41,7 @@ year_description: |-
   svojom žánri.
           Zo zahraničných predstavení nesmiem vynechať zájazd na Medzinárodný tanečný
   festival do gréckeho Porto Hydra, na ktorom súbor absolvoval 22 predstavení a tohto
-  festivalu sme sa zúčastnili už deviaty krát. Pre nančnú náročnosť tohto podujatia
+  festivalu sme sa zúčastnili už deviaty krát. Pre finančnú náročnosť tohto podujatia
   (hradenie leteniek z vlastného rozpočtu, vystúpenia bez nároku na honorár, organizátor
   hradí len náklady na pobyt), sme účasť na tomto podujatí, až do prípadnej zmeny
   podmienok, pozastavili. Za veľmi úspešné považujem pražské vystúpenia, na ktorých sa
@@ -126,14 +126,14 @@ performances:
   location: ČR
   description: |-
     Hosťujúce vystúpenie Bralenu v rámci Medzinárodného týždňa tanca
-    s choreogra ou „Som Tvoj..?“ v Laternej magike, Praha
+    s choreografiou „Som Tvoj..?“ v Laternej magike, Praha
 - date_from: '2002-01-25'
   date_to:
   raw_header: Predstavenie, Dom armády, Trenčín, SR
   name: Predstavenie, Dom armády, Trenčín
   location: SR
   description: |-
-    Vystúpenie Bralenu v komponovanom programe na remnom dni
+    Vystúpenie Bralenu v komponovanom programe na firemnom dni
     DMD Holding, spolu s Júliusom Satinským a Violin Orchestra, v Dome Armády v Trenčíne.
 - date_from: '2002-01-31'
   date_to:
@@ -141,7 +141,7 @@ performances:
   name: Správna rada, Insiders
   location: Bratislava
   description: |-
-    Stretnutie Správnej rady TD Bralen, v sídle rmy Insiders, Leškova 3.
+    Stretnutie Správnej rady TD Bralen, v sídle firmy Insiders, Leškova 3.
     Účastníci: J. Petrášová, P. Hrozienčik, P. Stránsky, D. Masariková, M. Milko, Ľ. Belák, Ľ.
     Sákal a R. Letenaj
 - date_from: '2002-02-03'
@@ -237,7 +237,7 @@ performances:
   location: Košice
   description: |-
     Vystúpenie TD Bralen v spoločnom programe s Petrom Lipom na
-          remnom dni rmy HTC v Košiciach. Bralen uviedol: “Vždy je ešte raz”, “Co mi dáš” a
+          firemnom dni firmy HTC v Košiciach. Bralen uviedol: “Vždy je ešte raz”, “Co mi dáš” a
          “Boogie”.
 - date_from: '2002-04-12'
   date_to: '2002-04-14'
@@ -347,10 +347,10 @@ performances:
   location:
   description: |-
     Sledovanie Medzinárodnej baletnej súťaže v Belehrade
-                         “Choreogra cké miniatúry”
+                         “Choreografické miniatúry”
                          obed
                          Sledovanie Medzinárodnej baletnej súťaže v Belehrade
-                         “Choreogra cké miniatúry”
+                         “Choreografické miniatúry”
                          večera
                          voľno - nočný život
 - date_from: '2002-05-12'
@@ -420,7 +420,7 @@ performances:
   name: Deň rodiny Slovnaft, Bratislava
   location: SR
   description: |-
-    Hosťujúce vystúpenie s choreogra ou „Som Tvoj..?“, v rámci osláv
+    Hosťujúce vystúpenie s choreografiou „Som Tvoj..?“, v rámci osláv
     dňa rodiny, ktoré organizuje Slovnaft a.s. pre svojich zamestnancov ale i verejnosť, v areáli
     na Kuchajde v Bratislave
 - date_from: '2002-06-10'
@@ -596,8 +596,8 @@ performances:
   name: Predstavenie, Dom Armády, Trenčín
   location: SR
   description: |-
-    Vystúpenie Bralenu s troma choreogra ami v komponovanom
-    programe, spolu s mímom Vladimírom Kulíškom a Violin Orchestra na remnom dni ČSOB
+    Vystúpenie Bralenu s troma choreografiami v komponovanom
+    programe, spolu s mímom Vladimírom Kulíškom a Violin Orchestra na firemnom dni ČSOB
     v Dome Armády v Trenčíne.
 - date_from: '2002-11-16'
   date_to: '2002-11-17'

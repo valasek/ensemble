@@ -21,7 +21,7 @@ year_description: |-
   programu sa predstavilo Štúdio komorného tanca Evy Blažíčkovej z Prahy.
 
   11.6. 1988         Mestská súťažná prehliadka moderného tanca, DK Ružinov
-                     TD Bralen predstavilo nové choreogra e Evy Jeníčkovej "Zápisnice
+                     TD Bralen predstavilo nové choreografie Evy Jeníčkovej "Zápisnice
   dôverné" (hudba: africká ľudová), Rastislava Letenaja “Putá" (hudba: Phillip Glass)
 
   2.-7.7. 1988        Letná škola tanca Vladimíra Buryana, Skryje u Brna
@@ -101,7 +101,7 @@ performances:
     5. Hra s citmi           tancuje: TŠ “S”     13. Priemerní ťa nepustia tancuje: TŠ “S”
     6. Detská izbička        tancuje: Baby balet 14. Temperamenty          tancuje: Bralen
     7. Nepísaný zákon        tancuje: TŠ “S”     15. Karneval              tancuje: TŠ “S”
-    8. Renesančné tance      tancuje: Bralen     16. nále
+    8. Renesančné tance      tancuje: Bralen     16. finále
 - date_from: '1988-02-27'
   date_to:
   raw_header: Inštruktáž v Prešove
@@ -131,13 +131,13 @@ performances:
   raw_header: Sústredenie s Robertom Baloghom
   name: Sústredenie s Robertom Baloghom
   location:
-  description: Nácvik choreogra e Nepokojné vidiny
+  description: Nácvik choreografie Nepokojné vidiny
 - date_from: '1988-03-20'
   date_to:
   raw_header: Tréning s Honzom Hartmannom
   name: Tréning s Honzom Hartmannom
   location:
-  description: Nácvik choreogra e Manhattan
+  description: Nácvik choreografie Manhattan
 - date_from: '1988-03-23'
   date_to:
   raw_header: Detská prehliadka ĽŠU v DK Dúbravka
@@ -172,7 +172,7 @@ performances:
          Francúzsko, David Appel USA, sólisti Štátneho divadla z Brna, sólisti Laternej magiky ND
          z Prahy, Štúdio komorného tanca Evi Blažíčkovej, Pražský komorný balet Pavla Šmoka,
          súbor GITIS z Moskvy, Re ex Dance Company, Veľká Británia, vystúpil Bralen ako hosť s
-         choreogra ami: "Nové renesančné tance, "Na Bacha"a "Putá".
+         choreografiami: "Nové renesančné tance, "Na Bacha"a "Putá".
 
                                                    MTT’88
                                       20.4. 1988, Divadlo Bráník, Praha
@@ -186,7 +186,7 @@ performances:
               7. Na Bacha                     tancuje: Bralen
               8. Furrawn                      tancuje: David Appel
 
-               Choreogra u "Nové renesančné tance" ohodnotil V. Malcev v Rudom Práve 11.5.
+               Choreografiu "Nové renesančné tance" ohodnotil V. Malcev v Rudom Práve 11.5.
          1988, kde napísal: "Vysoce hodnotím kompozici "Nové renesanční tance" v podání
          bratislavského Bralenu, s jehož sedmi členy je nastudoval kmenový choreograf VUS-u,
          Ján Hartmann. Na dosti rozsáhlé hudební ploše, kterou se prolíná historická hudba se
@@ -294,9 +294,9 @@ performances:
   name: Mestská súťažná prehliadka moderného tanca
   location: DK Ružinov
   description: |-
-    TD Bralen predstavilo nové choreogra e Evy Jeníčkovej "Zápisnice
+    TD Bralen predstavilo nové choreografie Evy Jeníčkovej "Zápisnice
     dôverné" (hudba: africká ľudová), Rastislava Letenaja “Putá" (hudba: Phillip Glass) a
-    "Rocková meditácia" (hudba: Billy Cobham). Všetky tri choreogra e boli ocenené a prvé
+    "Rocková meditácia" (hudba: Billy Cobham). Všetky tri choreografie boli ocenené a prvé
     dve boli doporučené na VI. Celoslovenský festival moderného tanca. Program:
 
          1. Za rohom                               tancuje: Prens
@@ -516,7 +516,7 @@ performances:
   name: 6. Celoslovenský festival moderného tanca
   location: Banská Bystrica
   description: |-
-    Na tomto festivale sa TD Bralen predstavilo dvoma choreogra ami,
+    Na tomto festivale sa TD Bralen predstavilo dvoma choreografiami,
     ktoré boli doporučené odbornou porotou na mestskej súťažnej prehliadke (11.-12. 6. 1988
     v DK Ružinov), “Zápisnice dôverné” a “Putá”.
 
@@ -546,7 +546,7 @@ performances:
         8. Aj v tebe je nádej, tak túž             tancuje: Prens
 
     Ocenenia pre Bralen:
-        Diplom a cena súboru za tvorivý prínos a inscenáciu choreogra e Zápisnice dôverné
+        Diplom a cena súboru za tvorivý prínos a inscenáciu choreografie Zápisnice dôverné
         Diplom a cenu Bralenu za kolektívny interpretačný výkon
         Diplom a čestné uznanie Jene Kekeňákovej za interpretáciu
         Diplom Rastislavovi Letenajovi za námet tanca Putá a jeho javiskové spracovanie
@@ -621,4 +621,4 @@ performances:
   raw_header: Sústredenie s Honzom Hartmannom
   name: Sústredenie s Honzom Hartmannom
   location:
-  description: Stavanie choreogra e “Križovatka Manhattan”
+  description: Stavanie choreografie “Križovatka Manhattan”

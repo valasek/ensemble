@@ -16,7 +16,7 @@ year_description: |-
 
   27.3. 1993           Zrekonštruovaná sála TD Bralen
                        Prvý tréning TDB v rekonštruovanej sále v Apollo klube Slovnaft. R.
-  Letenaj začal stavať novú choreogra u “Kvartet”
+  Letenaj začal stavať novú choreografiu “Kvartet”
 
   12. - 15.4. 1993    Prijatie tanečnej skupiny z USA
                       TDB prijalo súbor moderného tanca Carolyn Dutra Dancers z U.S.A.
@@ -60,7 +60,7 @@ performances:
   name: MTT ’93, Laterna magika
   location: Praha
   description: |-
-    Vystúpenie TD Bralen v komponovanom programe s choreogra ou
+    Vystúpenie TD Bralen v komponovanom programe s choreografiou
     “Žít je strácet znovu mít”. Neskúsenosť nových tanečníkov Bralenu a celkový dojem z
     jeho vystúpenia tak nedosiahol kvalitu, na ktorú boli diváci zvyknutí. Dana Paseková v
     aprílovom čísle Tanečných listov 1993 napísala:
@@ -156,7 +156,7 @@ performances:
   location:
   description: |-
     Prvý tréning TDB v rekonštruovanej sále v Apollo klube Slovnaft. R.
-    Letenaj začal stavať novú choreogra u “Kvartet”
+    Letenaj začal stavať novú choreografiu “Kvartet”
 - date_from: '1993-04-06'
   date_to:
   raw_header: Umelecká rada, AKS
@@ -280,7 +280,7 @@ performances:
   location: Bratislava
   description: |-
     Vystúpenie v galaprograme na záver Svetového pohára v rock ´n ´rolle
-    v športovej hale na Pasienkoch s choreogra ou “Na Bacha”.
+    v športovej hale na Pasienkoch s choreografiou “Na Bacha”.
 - date_from: '1993-05-27'
   date_to:
   raw_header: Vystúpenie, Čadca
@@ -312,7 +312,7 @@ performances:
   name: Krásna Fatima
   location: Trenčianske Teplice
   description: |-
-    R. Letenaj, J. Kekeňáková a D. Bolerázsky pripravovali nalistky
+    R. Letenaj, J. Kekeňáková a D. Bolerázsky pripravovali finalistky
     Krásnej Fatimy
 - date_from: '1993-06-04'
   date_to: '1993-06-06'
@@ -409,7 +409,7 @@ performances:
   location: Trenčianske Teplice
   description: |-
     R. Letenaj, J. Kekeňáková a D. Bolerázsky na sústredení pripravovali
-          nalistky Krásnej Fatimy
+          finalistky Krásnej Fatimy
 - date_from: '1993-07-05'
   date_to: '1993-07-10'
   raw_header: LŠT v TD Bralen, AKS
@@ -493,13 +493,13 @@ performances:
   location: Nové Zámky
   description: |-
     Celosúborové sústredenie TDB v Nových Zámkoch, zamerané na
-    nácvik choreogra a “Ave Mária” s I. Orsovszkým a tanca “Kvartet” s R. Letenajom.
+    nácvik choreografia “Ave Mária” s I. Orsovszkým a tanca “Kvartet” s R. Letenajom.
 - date_from: '1993-09-13'
   date_to:
   raw_header: Ondrej Šoth v TD Bralen, AKS
   name: Ondrej Šoth v TD Bralen
   location: AKS
-  description: Ondrej Šoth začal stavať novú choreogra u pre TD Bralen
+  description: Ondrej Šoth začal stavať novú choreografiu pre TD Bralen
 - date_from: '1993-09-17'
   date_to: '1993-09-19'
   raw_header: 33. Víkendový workshop WW - jazz, AKS
@@ -705,8 +705,8 @@ performances:
   description: s americkým pedagógom a choreografom Joe Alegadom
 - date_from: '1993-12-15'
   date_to:
-  raw_header: Vystúpenie pre rmu Max Factor, Reduta, Bratislava
-  name: Vystúpenie pre rmu Max Factor, Reduta
+  raw_header: Vystúpenie pre firmu Max Factor, Reduta, Bratislava
+  name: Vystúpenie pre firmu Max Factor, Reduta
   location: Bratislava
   description:
 - date_from: '1993-12-18'
