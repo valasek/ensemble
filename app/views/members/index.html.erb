@@ -13,7 +13,7 @@
       <%= render "shared/instant_search" %>
 
       <div class="badge badge-primary badge-outline badge-lg">
-        <%= @assembly.members.count %> členov
+        <%= number_with_delimiter(@assembly.members.count, delimiter: " ") %> členov
       </div>
 
     </div>

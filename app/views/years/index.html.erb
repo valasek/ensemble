@@ -37,8 +37,8 @@
                 class: "btn btn-outline btn-primary flex-col h-auto py-3 gap-1" do %>
             <span class="text-xl"><%= year %></span>
             <div class="flex gap-1 pt-4 flex-wrap justify-center">
-              <span class="badge badge-sm badge-soft badge-primary"><%= @year_stats[year][:performances] %> podujatí</span>
-              <span class="badge badge-sm badge-soft badge-secondary"><%= @year_stats[year][:members] %> členov</span>
+              <span class="badge badge-sm badge-soft badge-primary"><%= number_with_delimiter(@year_stats[year][:performances], delimiter: " ") %> podujatí</span>
+              <span class="badge badge-sm badge-soft badge-secondary"><%= number_with_delimiter(@year_stats[year][:members], delimiter: " ") %> členov</span>
             </div>
           <% end %>
         <% end %>

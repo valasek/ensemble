@@ -12,7 +12,7 @@
       <%= render "shared/instant_search" %>
 
       <div class="badge badge-primary badge-outline badge-lg">
-        <%= @assembly.performances.count %> podujatí
+        <%= number_with_delimiter(@assembly.performances.count, delimiter: " ") %> podujatí
       </div>
 
     </div>

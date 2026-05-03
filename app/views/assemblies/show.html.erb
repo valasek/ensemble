@@ -27,7 +27,7 @@
           <h3 class="card-title flex items-center gap-2">
             Členovia
             <span class="badge badge-outline badge-primary badge-sm">
-              <%= @assembly.members.count %>
+              <%= number_with_delimiter(@assembly.members.count, delimiter: " ") %>
             </span>
           </h3>
           <p>Zoznam hercov, režisérov a tvorcov súboru</p>
@@ -41,7 +41,7 @@
           <h3 class="card-title flex items-center gap-2">
             Podujatia
             <span class="badge badge-outline badge-secondary badge-sm">
-              <%= @performances_count %>
+              <%= number_with_delimiter(@performances_count, delimiter: " ") %>
             </span>
           </h3>
           <p>Predstavenia, premiéry a archív inscenácií</p>
