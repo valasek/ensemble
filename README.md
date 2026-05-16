@@ -6,9 +6,9 @@
 
 Podujatia
 
-Možnosť výberu najdůležitejších podujatí ako príznak
+Možnosť výberu najdôležitejších podujatí ako príznak
 
-Odsadiť dátum, názov, miesto po kliku text a na konci fotografie, doklady
+Podujatie má na konci prílohy. Fotografie, doklady
 
 Zoznam vš. podujatí v rámci roku
 Po mesiacoch
