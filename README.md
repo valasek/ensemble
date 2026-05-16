@@ -4,6 +4,19 @@
 
 ## Roadmap
 
+Podujatia
+
+Možnosť výberu najdůležitejších podujatí ako príznak
+
+Odsadiť dátum, názov, miesto po kliku text a na konci fotografie, doklady
+
+Zoznam vš. podujatí v rámci roku
+Po mesiacoch
+
+Nová kategória, repertoár
+
+Názov, rok premiéry, rok, choreograf, hudba, dĺžka, popis a videá, fotografie
+
 Podujatie má type a institution
 Pridať Administráciu za užívateľské prihlásenie
 Pridať export a import

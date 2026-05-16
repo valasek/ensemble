@@ -28,20 +28,19 @@
            data-turbo-frame="_top"
            class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
           <div class="card-body p-4 gap-1">
-            <h2 class="card-title text-base"><%= performance.name %></h2>
-            <p class="text-sm text-base-content/60">
+            <h2 class="card-title text-xl">
               <% if performance.end_date.present? %>
                 <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
               <% else %>
                 <%= performance.date.strftime("%d. %m. %Y") %>
               <% end %>
+            </h2>
+            <p class="text-sm text-base-content/60">
+              <%= performance.name %>
               <% if performance.location.present? %>
                 &middot; <%= performance.location %>
               <% end %>
             </p>
-            <% if performance.description.present? %>
-              <div class="text-sm mt-1 line-clamp-2 text-base-content/80"><%= performance.description %></div>
-            <% end %>
           </div>
         </a>
       <% end %>
@@ -51,17 +50,15 @@
     <div class="hidden md:block overflow-x-auto rounded-box">
       <table class="table table-zebra w-full">
         <colgroup>
-          <col class="w-1/5">
-          <col class="w-1/6">
-          <col class="w-1/6">
-          <col class="w-5/12">
+          <col class="w-1/3">
+          <col class="w-1/3">
+          <col class="w-1/3">
         </colgroup>
         <thead>
           <tr>
-            <th>Názov</th>
             <th>Dátum</th>
+            <th>Názov</th>
             <th>Miesto</th>
-            <th>Popis</th>
           </tr>
         </thead>
         <tbody>
@@ -70,25 +67,18 @@
                 data-controller="row-link"
                 data-action="click->row-link#navigate"
                 data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
-              <td class="font-medium">
-                <b><%= performance.name %></b>
-              </td>
-              <td class="whitespace-nowrap">
-                <% if performance.end_date.present? %>
+              <td class="whitespace-nowrap text-xl">
+                <b><% if performance.end_date.present? %>
                   <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
                 <% else %>
                   <%= performance.date.strftime("%d. %m. %Y") %>
-                <% end %>
+                <% end %></b>
+              </td>
+              <td>
+                <%= performance.name %>
               </td>
               <td>
                 <%= performance.location %>
-              </td>
-              <td>
-                <div class="max-h-[4.5rem] overflow-hidden text-sm
-                            [mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)]
-                            [-webkit-mask-image:linear-gradient(to_bottom,black_55%,transparent_100%)]">
-                  <%= performance.description %>
-                </div>
               </td>
             </tr>
           <% end %>
