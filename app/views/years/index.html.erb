@@ -13,7 +13,7 @@
     <section class="flex flex-col items-center gap-4">
       <label class="form-control w-full max-w-sm">
         <div class="label">
-          <span class="label-text text-base font-medium">Vybrať rok</span>
+          <span class="label-text text-base font-medium">Vyberte rok pre zobrazenie detailov</span>
         </div>
         <%= select_tag :year,
               options_for_select(@years),
@@ -26,7 +26,6 @@
                 year_redirect_url_value: assembly_years_path(@assembly)
               } %>
       </label>
-      <p class="text-sm opacity-50">Vyberte rok pre zobrazenie detailov</p>
     </section>
 
     <section>

@@ -5,22 +5,17 @@
 ## Roadmap
 
 Podujatia
-
-Možnosť výberu najdôležitejších podujatí ako príznak
-
-Podujatie má na konci prílohy. Fotografie, doklady
-
-Zoznam vš. podujatí v rámci roku
-Po mesiacoch
+- Možnosť výberu najdôležitejších podujatí ako príznak
+- Podujatie má na konci prílohy. Fotografie, doklady
+- Podujatie má type a institution
 
 Nová kategória, repertoár
+- Názov, rok premiéry, rok, choreograf, hudba, dĺžka, popis a videá, fotografie
 
-Názov, rok premiéry, rok, choreograf, hudba, dĺžka, popis a videá, fotografie
-
-Podujatie má type a institution
-Pridať Administráciu za užívateľské prihlásenie
-Pridať export a import
-MCP server
+Ostatné:
+- Pridať Administráciu za užívateľské prihlásenie
+- Pridať export a import
+- MCP server
 
 ...
 
