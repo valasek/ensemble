@@ -151,6 +151,7 @@ sk:
       location: "Miesto"
       date: "Dátum"
       end_date: "Dátum do"
+      is_featured: "Dôležité"
     resource_translations:
       assembly:
         one: "Súbor"
@@ -162,8 +163,8 @@ sk:
         one: "Používateľ"
         other: "Používatelia"
       performance:
-        one: "Predstavenie"
-        other: "Predstavenia"
+        one: "Podujatie"
+        other: "Podujatia"
       member_of_assembly:
         one: "Člen v skupinách"
         other: "Členovia v skupinách"

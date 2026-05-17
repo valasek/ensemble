@@ -11,6 +11,7 @@ class Avo::Resources::Performance < Avo::BaseResource
     field :end_date, as: :date
     field :name, as: :text
     field :location, as: :text
+    field :is_featured, as: :boolean
     field :description, as: :trix
     field :assembly, as: :belongs_to
   end

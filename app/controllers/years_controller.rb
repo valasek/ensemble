@@ -34,6 +34,7 @@ class YearsController < ApplicationController
     member_ids = @assembly.member_of_assemblies.where(year: @year).pluck(:member_id)
     @members = @assembly.members.where(id: member_ids).sorted_by_name
     @performances = @assembly.performances.where("strftime('%Y', date) = ?", @year.to_s).order(date: :asc)
+    @featured_performances = @performances.select(&:is_featured?)
   end
 
   private

@@ -44,6 +44,41 @@
       </section>
     <% end %>
 
+    <% if @featured_performances.any? %>
+      <section>
+        <h2 class="text-2xl font-semibold mb-4">Najdôležitejšie podujatia roku</h2>
+        <div class="overflow-x-auto rounded-box">
+          <table class="table table-zebra w-full">
+            <thead>
+              <tr>
+                <th>Dátum</th>
+                <th>Názov</th>
+                <th>Miesto</th>
+              </tr>
+            </thead>
+            <tbody>
+              <% @featured_performances.each do |performance| %>
+                <tr class="hover:bg-base-300 cursor-pointer"
+                    data-controller="row-link"
+                    data-action="click->row-link#navigate"
+                    data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
+                  <td class="whitespace-nowrap font-bold">
+                    <% if performance.end_date.present? %>
+                      <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
+                    <% else %>
+                      <%= performance.date.strftime("%d. %m. %Y") %>
+                    <% end %>
+                  </td>
+                  <td><%= performance.name %></td>
+                  <td><%= performance.location %></td>
+                </tr>
+              <% end %>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    <% end %>
+
     <section>
       <details>
         <summary class="text-2xl font-semibold mb-4 cursor-pointer list-none flex items-center gap-2 group">
