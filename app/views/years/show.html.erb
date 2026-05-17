@@ -9,7 +9,7 @@
     </div>
   </section>
 
-  <main class="max-w-4xl mx-auto px-6 space-y-12 pb-16">
+  <main class="px-6 space-y-12 pb-16">
 
     <% if @assembly_year&.description&.present? %>
       <section data-controller="expand">
@@ -47,35 +47,7 @@
     <% if @featured_performances.any? %>
       <section>
         <h2 class="text-2xl font-semibold mb-4">Najdôležitejšie podujatia roku</h2>
-        <div class="overflow-x-auto rounded-box">
-          <table class="table table-zebra w-full">
-            <thead>
-              <tr>
-                <th>Dátum</th>
-                <th>Názov</th>
-                <th>Miesto</th>
-              </tr>
-            </thead>
-            <tbody>
-              <% @featured_performances.each do |performance| %>
-                <tr class="hover:bg-base-300 cursor-pointer"
-                    data-controller="row-link"
-                    data-action="click->row-link#navigate"
-                    data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
-                  <td class="whitespace-nowrap font-bold">
-                    <% if performance.end_date.present? %>
-                      <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
-                    <% else %>
-                      <%= performance.date.strftime("%d. %m. %Y") %>
-                    <% end %>
-                  </td>
-                  <td><%= performance.name %></td>
-                  <td><%= performance.location %></td>
-                </tr>
-              <% end %>
-            </tbody>
-          </table>
-        </div>
+        <%= render "performances/performances_list", performances: @featured_performances, assembly: @assembly %>
       </section>
     <% end %>
 
@@ -89,23 +61,8 @@
           </svg>
         </summary>
         <% if @members.any? %>
-          <div class="overflow-x-auto rounded-box mt-4">
-            <table class="table table-zebra">
-              <thead>
-                <tr>
-                  <th>Meno</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @members.each do |member| %>
-                  <tr class="hover:bg-base-300">
-                    <td class="font-medium">
-                      <%= link_to member.name, assembly_member_path(@assembly, member), class: "link link-primary" %>
-                    </td>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
+          <div class="mt-4">
+            <%= render "members/members_table", members: @members, assembly: @assembly %>
           </div>
         <% else %>
           <p class="opacity-50 mt-4">Žiadni členovia pre tento rok.</p>
@@ -131,66 +88,7 @@
               <div class="flex-1 h-px bg-base-300"></div>
             </div>
 
-            <!-- MOBILE: stacked cards -->
-            <div class="md:hidden space-y-3">
-              <% month_performances.each do |performance| %>
-                <a href="<%= assembly_performance_path(@assembly, performance) %>"
-                   data-turbo-frame="_top"
-                   class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
-                  <div class="card-body p-4 gap-1">
-                    <h2 class="card-title text-xl">
-                      <% if performance.end_date.present? %>
-                        <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
-                      <% else %>
-                        <%= performance.date.strftime("%d. %m. %Y") %>
-                      <% end %>
-                    </h2>
-                    <p class="text-sm text-base-content/60">
-                      <%= performance.name %>
-                      <% if performance.location.present? %>
-                        &middot; <%= performance.location %>
-                      <% end %>
-                    </p>
-                  </div>
-                </a>
-              <% end %>
-            </div>
-
-            <!-- DESKTOP: table -->
-            <div class="hidden md:block overflow-x-auto rounded-box">
-              <table class="table table-zebra w-full">
-                <colgroup>
-                  <col class="w-1/3">
-                  <col class="w-1/3">
-                  <col class="w-1/3">
-                </colgroup>
-                <thead>
-                  <tr>
-                    <th>Dátum</th>
-                    <th>Názov</th>
-                    <th>Miesto</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <% month_performances.each do |performance| %>
-                    <tr class="hover:bg-base-300 cursor-pointer"
-                        data-controller="row-link"
-                        data-action="click->row-link#navigate"
-                        data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
-                      <td class="whitespace-nowrap text-xl">
-                        <b><% if performance.end_date.present? %>
-                          <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
-                        <% else %>
-                          <%= performance.date.strftime("%d. %m. %Y") %>
-                        <% end %></b>
-                      </td>
-                      <td><%= performance.name %></td>
-                      <td><%= performance.location %></td>
-                    </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </div>
+            <%= render "performances/performances_list", performances: month_performances, assembly: @assembly %>
           <% end %>
         <% else %>
           <p class="opacity-50 mt-4">Žiadne podujatia pre tento rok.</p>

@@ -3,6 +3,7 @@
     items:
       - "Podujatia sa zobrazujú formou dátum, meno, miesto a po prekliku je zobrazovaný popis"
       - "Podujatia v roku sú členené podľa mesiacov"
+      - "V rámci roku sú v tabuľke zobrazené najdôležitejšie podujatia, až potom členovia a podujatia"
       - "Bezpečnosť: Aktualizácia SW na najnovšiu verziu"
   - date: 2026-05-03
     items:

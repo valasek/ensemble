@@ -21,32 +21,7 @@
 
   <%= turbo_frame_tag "members-table" do %>
   <section class="space-y-6 p-4">
-    <div class="overflow-x-auto rounded-box">
-      <table class="table table-zebra">
-        <thead>
-          <tr>
-            <th>Meno</th>
-            <th>V <%= @assembly.name %> pôsobil/a v rokoch</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @members.each do |member| %>
-            <tr class="hover:bg-base-300 cursor-pointer">
-              <td class="font-medium">
-                <%= link_to assembly_member_path(@assembly, member), data: { turbo_frame: "_top" }, class: "font-medium hover:underline block w-full" do %>
-                  <b><%= member.name %></b>
-                <% end %>
-              </td>
-              <td>
-                <%= link_to assembly_member_path(@assembly, member), data: { turbo_frame: "_top" }, class: "block w-full" do %>
-                  <%= render "members/year_timeline", years: member.member_of_assemblies.map(&:year).sort %>
-                <% end %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+    <%= render "members/members_table", members: @members, assembly: @assembly %>
 
     <%= paginate @members %>
   </section>

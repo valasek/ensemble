@@ -21,70 +21,7 @@
   <%= turbo_frame_tag "performances-table" do %>
   <section class="space-y-6 p-4">
 
-    <!-- MOBILE: stacked cards -->
-    <div class="md:hidden space-y-3">
-      <% @performances.each do |performance| %>
-        <a href="<%= assembly_performance_path(@assembly, performance) %>"
-           data-turbo-frame="_top"
-           class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
-          <div class="card-body p-4 gap-1">
-            <h2 class="card-title text-xl">
-              <% if performance.end_date.present? %>
-                <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
-              <% else %>
-                <%= performance.date.strftime("%d. %m. %Y") %>
-              <% end %>
-            </h2>
-            <p class="text-sm text-base-content/60">
-              <%= performance.name %>
-              <% if performance.location.present? %>
-                &middot; <%= performance.location %>
-              <% end %>
-            </p>
-          </div>
-        </a>
-      <% end %>
-    </div>
-
-    <!-- DESKTOP: table -->
-    <div class="hidden md:block overflow-x-auto rounded-box">
-      <table class="table table-zebra w-full">
-        <colgroup>
-          <col class="w-1/3">
-          <col class="w-1/3">
-          <col class="w-1/3">
-        </colgroup>
-        <thead>
-          <tr>
-            <th>Dátum</th>
-            <th>Názov</th>
-            <th>Miesto</th>
-          </tr>
-        </thead>
-        <tbody>
-          <% @performances.each do |performance| %>
-            <tr class="hover:bg-base-300 cursor-pointer"
-                data-controller="row-link"
-                data-action="click->row-link#navigate"
-                data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
-              <td class="whitespace-nowrap text-xl">
-                <b><% if performance.end_date.present? %>
-                  <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
-                <% else %>
-                  <%= performance.date.strftime("%d. %m. %Y") %>
-                <% end %></b>
-              </td>
-              <td>
-                <%= performance.name %>
-              </td>
-              <td>
-                <%= performance.location %>
-              </td>
-            </tr>
-          <% end %>
-        </tbody>
-      </table>
-    </div>
+    <%= render "performances/performances_list", performances: @performances, assembly: @assembly %>
 
     <%= paginate @performances %>
   </section>
