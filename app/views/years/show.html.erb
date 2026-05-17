@@ -88,28 +88,75 @@
           </svg>
         </summary>
         <% if @performances.any? %>
-          <div class="overflow-x-auto rounded-box mt-4">
-            <table class="table table-zebra">
-              <thead>
-                <tr>
-                  <th>Názov</th>
-                  <th>Dátum</th>
-                  <th>Miesto</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% @performances.each do |performance| %>
-                  <tr class="hover:bg-base-300">
-                    <td class="font-medium">
-                      <%= link_to performance.name, assembly_performance_path(@assembly, performance), class: "link link-primary" %>
-                    </td>
-                    <td><%= performance.date.strftime("%d. %m. %Y") %></td>
-                    <td><%= performance.location %></td>
+          <% sk_months = %w[Január Február Marec Apríl Máj Jún Júl August September Október November December] %>
+          <% @performances.group_by { |p| p.date.month }.each_with_index do |(month_num, month_performances), idx| %>
+            <div class="flex items-center gap-4 <%= idx == 0 ? 'mt-6' : 'mt-12' %> mb-4">
+              <div class="flex-1 h-px bg-base-300"></div>
+              <h3 class="text-3xl font-extrabold text-primary whitespace-nowrap"><%= sk_months[month_num - 1] %></h3>
+              <div class="flex-1 h-px bg-base-300"></div>
+            </div>
+
+            <!-- MOBILE: stacked cards -->
+            <div class="md:hidden space-y-3">
+              <% month_performances.each do |performance| %>
+                <a href="<%= assembly_performance_path(@assembly, performance) %>"
+                   data-turbo-frame="_top"
+                   class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
+                  <div class="card-body p-4 gap-1">
+                    <h2 class="card-title text-xl">
+                      <% if performance.end_date.present? %>
+                        <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
+                      <% else %>
+                        <%= performance.date.strftime("%d. %m. %Y") %>
+                      <% end %>
+                    </h2>
+                    <p class="text-sm text-base-content/60">
+                      <%= performance.name %>
+                      <% if performance.location.present? %>
+                        &middot; <%= performance.location %>
+                      <% end %>
+                    </p>
+                  </div>
+                </a>
+              <% end %>
+            </div>
+
+            <!-- DESKTOP: table -->
+            <div class="hidden md:block overflow-x-auto rounded-box">
+              <table class="table table-zebra w-full">
+                <colgroup>
+                  <col class="w-1/3">
+                  <col class="w-1/3">
+                  <col class="w-1/3">
+                </colgroup>
+                <thead>
+                  <tr>
+                    <th>Dátum</th>
+                    <th>Názov</th>
+                    <th>Miesto</th>
                   </tr>
-                <% end %>
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  <% month_performances.each do |performance| %>
+                    <tr class="hover:bg-base-300 cursor-pointer"
+                        data-controller="row-link"
+                        data-action="click->row-link#navigate"
+                        data-row-link-url-value="<%= assembly_performance_path(@assembly, performance) %>">
+                      <td class="whitespace-nowrap text-xl">
+                        <b><% if performance.end_date.present? %>
+                          <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
+                        <% else %>
+                          <%= performance.date.strftime("%d. %m. %Y") %>
+                        <% end %></b>
+                      </td>
+                      <td><%= performance.name %></td>
+                      <td><%= performance.location %></td>
+                    </tr>
+                  <% end %>
+                </tbody>
+              </table>
+            </div>
+          <% end %>
         <% else %>
           <p class="opacity-50 mt-4">Žiadne podujatia pre tento rok.</p>
         <% end %>

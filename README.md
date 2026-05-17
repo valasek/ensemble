@@ -33,18 +33,15 @@ All source code in this repository is released under the **[O'Saasy](https://osa
 - 📝 Attribution and copyright notice must be included
 - ⚠️ No liability and no warranty
 
-# Import Bralen data
+## Import data
 
-bin/rails performances:extract
-bin/rails performances:parse
-
-
+`bin/rails performances:extract`
+`bin/rails performances:parse`
 `kamal app exec 'bin/rails performances:import ASSEMBLY=bralen'`
 
 Details are in /lib/tasks/import_performances.rake
 
-
-# Reindex all Tables
+## Reindex all Tables
 ```sh
 rails runner 'Member.clear_index!'
 rails runner 'Performance.clear_index!'
@@ -52,8 +49,7 @@ rails runner 'Performance.reindex!'
 rails runner 'Member.reindex!'
 ```
 
-# Or in a Rake task
-# lib/tasks/search.rake
+Or in a Rake task `lib/tasks/search.rake`
 
 ```rb
 namespace :search do
@@ -89,6 +85,62 @@ kamal reset_demo
 kamal logs
 kamal console
 ```
+
+## Infrastructure
+
+### DB Backup
+
+Uses [litestream](https://litestream.io/)
+
+config file: `/etc/litestream.yml`
+service file: `/usr/lib/systemd/system/litestream.service`
+
+Show status
+`litestream status`
+`sudo systemctl status litestream`
+
+Stop service
+`sudo systemctl stop litestream`
+
+Start service
+`sudo systemctl start litestream`
+
+Show logs
+`sudo journalctl -u ensemble --since "100 hours ago"`
+
+### DB Restore
+
+`litestream restore -config /etc/litestream.yml -o production.sqlite3 /var/lib/docker/volumes/ensemble_storage/_data/production.sqlite3`
+`sqlite production.sqlite3 "PRAGMA integrity_check;"`
+`cp production.sqlite3/var/lib/docker/volumes/ensemble_storage/_data/production.sqlite3`
+
+### Local Backup Process: From your host machine
+
+```sh
+docker cp your-rails7-container:/storage/production.sqlite3 ./backup/production.sqlite3
+docker cp 290055864fd3:/storage/production-backup.sqlite3 ./production.sqlite3
+```
+
+### Local Restore Process: To your new Rails 8 container
+
+```sh
+docker cp --chown rails:rails ./production.sqlite3 your-rails8-container:/rails/storage/production.sqlite3
+docker cp ./production.sqlite3 290055864fd3:/rails/storage/production.sqlite3
+```
+
+And backup locally
+
+```sh
+scp ./production.sqlite3 root@162.55.185.37:/root/production.sqlite3
+```
+
+Inspect container via bash
+
+```sh
+docker exec -it 290055864fd3 bash
+```
+
+---
 
 ## Technical notes
 
@@ -151,34 +203,6 @@ pin "algoliasearch", to: "https://cdn.jsdelivr.net/npm/algoliasearch@5.48.1/dist
 ### Show list of rake tasks
 
 bin/rails -T
-
-### Backup and restore DB
-
-Backup Process: From your host machine
-
-```sh
-docker cp your-rails7-container:/storage/production.sqlite3 ./backup/production.sqlite3
-docker cp 290055864fd3:/storage/production-backup.sqlite3 ./production.sqlite3
-```
-
-Restore Process: To your new Rails 8 container
-
-```sh
-docker cp --chown rails:rails ./production.sqlite3 your-rails8-container:/rails/storage/production.sqlite3
-docker cp ./production.sqlite3 290055864fd3:/rails/storage/production.sqlite3
-```
-
-And backup locally
-
-```sh
-scp ./production.sqlite3 root@162.55.185.37:/root/production.sqlite3
-```
-
-Inspect container via bash
-
-```sh
-docker exec -it 290055864fd3 bash
-```
 
 ### KAMAL deployment setup
 

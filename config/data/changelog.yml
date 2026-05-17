@@ -1,7 +1,8 @@
 2026:
-  - date: 2026-05-16
+  - date: 2026-05-17
     items:
       - "Podujatia sa zobrazujú formou dátum, meno, miesto a po prekliku je zobrazovaný popis"
+      - "Podujatia v roku sú členené podľa mesiacov"
       - "Bezpečnosť: Aktualizácia SW na najnovšiu verziu"
   - date: 2026-05-03
     items:
