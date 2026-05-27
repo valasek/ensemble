@@ -1,4 +1,8 @@
 2026:
+  - date: 2026-05-27
+    items:
+      - "Možnosť registrácie a prihlácenia sa pomocou emailu a hesla alebo pomogou SSO cez Google."
+      - "Administrácia je dostupná iba prihlásenému užívateľovi."
   - date: 2026-05-17
     items:
       - "Podujatia sa zobrazujú formou dátum, meno, miesto a po prekliku je zobrazovaný popis"

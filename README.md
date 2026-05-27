@@ -4,8 +4,9 @@
 
 ## Roadmap
 
+Priradiť užívateľa na súbor
+
 Podujatia
-- Možnosť výberu najdôležitejších podujatí ako príznak
 - Podujatie má na konci prílohy. Fotografie, doklady
 - Podujatie má type a institution
 
@@ -82,6 +83,16 @@ kamal console
 ```
 
 ## Infrastructure
+
+Hosting - [Hetzner VPS](https://www.hetzner.com/)
+
+Google Analytics
+
+Email - [Resend](https://resend.com/emails)
+
+SSO - Google
+
+Cloudflare Turnstile for bots protection
 
 ### DB Backup
 

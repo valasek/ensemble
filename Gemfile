@@ -45,6 +45,8 @@ gem "image_processing", "~> 1.2"
 # My inserted gems
 gem "devise"
 gem "omniauth-google-oauth2"
+gem "omniauth-rails_csrf_protection"  # blocks GET requests to OAuth endpoints (CSRF protection)
+gem "resend"                          # transactional email via Resend API
 # gem "acts_as_tenant" # Multitenancy support
 gem "avo"           # Admin panel
 gem "kaminari"      # Pagination
