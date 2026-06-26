@@ -18,7 +18,16 @@
   <div class="navbar-center"></div>
 
   <%# Right: auth links + mobile hamburger %>
-  <div class="navbar-end gap-2">
+  <div class="navbar-end gap-2" data-controller="theme">
+    <label class="hidden md:flex items-center gap-2 text-sm">
+      <span class="opacity-70">Téma</span>
+      <select class="select select-sm select-bordered text-base-content" data-theme-target="select" data-action="change->theme#change" aria-label="Zmeniť tému">
+        <option value="auto">Auto</option>
+        <option value="light">Light</option>
+        <option value="dark">Dark</option>
+      </select>
+    </label>
+
     <%# Desktop %>
     <div class="hidden lg:flex items-center gap-2">
       <% if user_signed_in? %>
@@ -39,17 +48,27 @@
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
         </svg>
       </div>
-      <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-10 mt-3 w-48 p-2 shadow">
-        <li><%= link_to "Home", root_path %></li>
+      <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 text-base-content rounded-box z-10 mt-3 w-48 p-2 shadow">
+        <li class="menu-title">Téma</li>
+        <li>
+          <select class="select select-sm select-bordered text-base-content mx-2 my-1" data-theme-target="select" data-action="change->theme#change" aria-label="Zmeniť tému">
+            <option value="auto">Auto</option>
+            <option value="light">Light</option>
+            <option value="dark">Dark</option>
+          </select>
+        </li>
+        <li class="menu-title">Navigácia</li>
+        <li><%= link_to "Home", root_path, class: "text-base-content" %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Administration", "/admin" %></li>
+          <li><%= link_to "Administration", "/admin", class: "text-base-content" %></li>
           <li>
             <%= link_to "Sign out", destroy_user_session_path,
-                  data: { turbo_method: :delete } %>
+                  data: { turbo_method: :delete },
+                  class: "text-base-content" %>
           </li>
         <% else %>
-          <li><%= link_to "Sign in", new_user_session_path %></li>
-          <li><%= link_to "Sign up free", new_user_registration_path %></li>
+          <li><%= link_to "Sign in", new_user_session_path, class: "text-base-content" %></li>
+          <li><%= link_to "Sign up free", new_user_registration_path, class: "text-base-content" %></li>
         <% end %>
       </ul>
     </div>

@@ -9,6 +9,19 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <script nonce="<%= request.content_security_policy_nonce %>">
+      (function() {
+        var key = "ensemble-theme";
+        var saved = localStorage.getItem(key);
+
+        if (saved === "light" || saved === "dark") {
+          document.documentElement.setAttribute("data-theme", saved);
+        } else {
+          document.documentElement.removeAttribute("data-theme");
+        }
+      })();
+    </script>
+
     <%= yield :head %>
 
     <%# Enable PWA manifest for installable apps (make sure to enable in config/routes.rb too!) %>
@@ -30,7 +43,7 @@
     <%= render "layouts/google_tag_manager" %>
   </head>
 
-  <body class="min-h-screen font-serif flex flex-col bg-base-100">
+  <body class="min-h-screen font-serif flex flex-col bg-base-100 text-base-content">
     <%= render "layouts/header" %>
     <main class="flex-1 w-full max-w-7xl mx-auto mt-4 px-5">
       <%= render "layouts/messages" %>

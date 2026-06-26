@@ -5,18 +5,18 @@
       <p class="text-sm sm:text-base">
         <%= image_tag "favicon.ico", alt: "Ensemble logo", class: "inline w-4 h-4 sm:w-5 sm:h-5" %>
         Kronika je navrhnutá, vytvorená a podporovaná
-        <%= link_to "Stanislavom Valáškom", "https://www.stanislavvalasek.com", class: "link" %>.
-        <span class="block sm:inline">Vytvorené s ❤️ na <%= link_to "Slovensku", "https://slovakia.travel", class: "link" %></span>
+        <%= link_to "Stanislavom Valáškom", "https://www.stanislavvalasek.com", class: "link text-base-content" %>.
+        <span class="block sm:inline">Vytvorené s ❤️ na <%= link_to "Slovensku", "https://slovakia.travel", class: "link text-base-content" %></span>
       </p>
     </aside>
 
     <!-- right -->
     <aside class="text-left sm:text-right">
-      <%= link_to "Nové funkcie", ensemble_changelog_path, class: "text-sm sm:text-base link" %>
+      <%= link_to "Nové funkcie", ensemble_changelog_path, class: "text-sm sm:text-base link text-base-content" %>
       /
-      <%= link_to "Status", "https://stats.uptimerobot.com/tjN875xKdi", class: "text-sm sm:text-base link" %>
+      <%= link_to "Status", "https://stats.uptimerobot.com/tjN875xKdi", class: "text-sm sm:text-base link text-base-content" %>
       /
-      <%= link_to "Licencia", ensemble_license_path, class: "text-sm sm:text-base link" %>
+      <%= link_to "Licencia", ensemble_license_path, class: "text-sm sm:text-base link text-base-content" %>
       /
       <span class="text-sm sm:text-base">© <%= Date.current.year %> Stanislav Valasek</span>
     </aside>

@@ -4,10 +4,16 @@
 @source "../../../app/javascript/**/*.js";
 @source "../../../app/views/**/*";
 
-@plugin "./daisyui.js";
+@plugin "./daisyui.js" {
+  themes: light --default, dark --prefersdark;
+}
 @plugin "@tailwindcss/typography";
 
 @layer base {
+  a {
+    color: inherit;
+  }
+
   h1 {
     font-size: var(--text-4xl);
   }
@@ -21,3 +27,4 @@
     font-size: var(--text-xl);
   }
 }
+
