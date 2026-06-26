@@ -8,15 +8,31 @@
 
   <main class="max-w-4xl mx-auto px-6 space-y-12">
     <section class="grid sm:grid-cols-3 gap-6">
+      <%= link_to assembly_performances_path(@assembly), class: "card border border-base-300 bg-base-200 hover:bg-base-300 transition text-base-content" do %>
+        <div class="card-body">
+          <h3 class="card-title ">
+            Časová os podujatí TD Bralen od roku 2025 až 1975
+          </h3>
+          <p class="flex justify-center pt-4">
+            <span class="badge badge-outline badge-primary">
+              <%= number_with_delimiter(@performances_count, delimiter: " ") %> podujatí
+            </span>
+          </p>
+          <div class="card-actions justify-end">
+            <span class="btn btn-link text-base-content">Zobraziť →</span>
+          </div>
+        </div>
+      <% end %>
       <%= link_to assembly_years_path(@assembly), class: "card border border-base-300 bg-base-200 hover:bg-base-300 transition text-base-content" do %>
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
-            Prehľad po rokoch
-            <span class="badge badge-outline badge-primary badge-sm">
-              <%= @assembly.member_of_assemblies.distinct.count(:year) %>
-            </span>
+            Prehľad podujatí po rokoch
           </h3>
-          <p>Zobraziť členov a podujatia vo vybranom roku</p>
+          <p class="flex justify-center pt-4">
+            <span class="badge badge-outline badge-primary">
+              <%= @assembly.member_of_assemblies.distinct.count(:year) %> rokov
+            </span>
+          </p>
           <div class="card-actions justify-end">
             <span class="btn btn-link text-base-content">Zobraziť →</span>
           </div>
@@ -25,26 +41,13 @@
       <%= link_to assembly_members_path(@assembly), class: "card border border-base-300 bg-base-200 hover:bg-base-300 transition text-base-content" do %>
         <div class="card-body">
           <h3 class="card-title flex items-center gap-2">
-            Členovia
-            <span class="badge badge-outline badge-primary badge-sm">
-              <%= number_with_delimiter(@assembly.members.count, delimiter: " ") %>
-            </span>
+            Zoznam členov súboru a prípravných skupín TD Bralen
           </h3>
-          <p>Zoznam hercov, režisérov a tvorcov súboru</p>
-          <div class="card-actions justify-end">
-            <span class="btn btn-link text-base-content">Zobraziť →</span>
-          </div>
-        </div>
-      <% end %>
-      <%= link_to assembly_performances_path(@assembly), class: "card border border-base-300 bg-base-200 hover:bg-base-300 transition text-base-content" do %>
-        <div class="card-body">
-          <h3 class="card-title flex items-center gap-2">
-            Podujatia
-            <span class="badge badge-outline badge-secondary badge-sm">
-              <%= number_with_delimiter(@performances_count, delimiter: " ") %>
+          <p class="flex justify-center pt-4">
+            <span class="badge badge-outline badge-primary">
+              <%= number_with_delimiter(@assembly.members.count, delimiter: " ") %> členov
             </span>
-          </h3>
-          <p>Predstavenia, premiéry a archív inscenácií</p>
+          </p>
           <div class="card-actions justify-end">
             <span class="btn btn-link text-base-content">Zobraziť →</span>
           </div>

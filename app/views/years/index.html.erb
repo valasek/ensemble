@@ -10,24 +10,6 @@
 
   <main class="max-w-4xl mx-auto px-6 space-y-10 pb-16">
 
-    <section class="flex flex-col items-center gap-4">
-      <label class="form-control w-full max-w-sm">
-        <div class="label">
-          <span class="label-text text-base font-medium">Vyberte rok pre zobrazenie detailov</span>
-        </div>
-        <%= select_tag :year,
-              options_for_select(@years),
-              prompt: "— Vyberte rok —",
-              id: "year-select",
-              class: "select select-bordered w-full",
-              data: {
-                controller: "year-redirect",
-                action: "change->year-redirect#change",
-                year_redirect_url_value: assembly_years_path(@assembly)
-              } %>
-      </label>
-    </section>
-
     <section>
       <h2 class="text-xl font-semibold mb-4">Všetky roky</h2>
       <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
@@ -36,8 +18,7 @@
                 class: "btn btn-outline btn-primary flex-col h-auto py-3 gap-1" do %>
             <span class="text-xl"><%= year %></span>
             <div class="flex gap-1 pt-4 flex-wrap justify-center">
-              <span class="badge badge-sm badge-soft badge-primary"><%= number_with_delimiter(@year_stats[year][:performances], delimiter: " ") %> podujatí</span>
-              <span class="badge badge-sm badge-soft badge-secondary"><%= number_with_delimiter(@year_stats[year][:members], delimiter: " ") %> členov</span>
+              <span class="badge badge-sm badge-outline"><%= number_with_delimiter(@year_stats[year][:performances], delimiter: " ") %> podujatí</span>
             </div>
           <% end %>
         <% end %>
