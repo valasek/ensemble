@@ -1,4 +1,8 @@
 2026:
+  - date: 2026-06-30
+    items:
+      - "Pre predstavenie je možno nastaviť 1 alebo viac kategórií. Nastavovanie je možné v administrácií. Podľa kategórií je možné filtrovať predstavenia."
+      - "Bezpečnosť: Aktualizácia SW na najnovšiu verziu"
   - date: 2026-05-27
     items:
       - "Možnosť registrácie a prihlácenia sa pomocou emailu a hesla alebo pomogou SSO cez Google."
