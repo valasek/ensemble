@@ -12,7 +12,7 @@
 
     <section>
       <h2 class="text-xl font-semibold mb-4">Všetky roky</h2>
-      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-3">
         <% @years.each do |year| %>
           <%= link_to assembly_year_path(@assembly, year),
                 class: "btn btn-outline btn-primary flex-col h-auto py-3 gap-1" do %>
