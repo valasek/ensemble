@@ -52,14 +52,35 @@
     <% end %>
 
     <section>
-      <details>
+      <% details_options = @selected_category_id.present? ? { open: true } : {} %>
+      <%= content_tag :details, details_options do %>
         <summary class="text-2xl font-semibold mb-4 cursor-pointer list-none flex items-center gap-2 group">
           Všetky podujatia
-          <span class="badge badge-outline badge-secondary badge-sm ml-2"><%= @performances.size %></span>
+          <span class="badge badge-outline badge-primary badge-sm ml-2"><%= @performances.size %></span>
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-6 h-6 ml-auto text-secondary transition-transform duration-300 group-open:rotate-180">
             <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd" />
           </svg>
         </summary>
+
+        <div class="my-4">
+          <%= form_with url: assembly_year_path(@assembly, @year), method: :get, class: "flex items-end gap-3 flex-wrap" do %>
+            <div class="form-control w-full max-w-sm">
+              <label class="label" for="year_category_id">
+                <span class="label-text mb-4">Filter podľa kategórie</span>
+              </label>
+              <%= select_tag :category_id,
+                             options_from_collection_for_select(@category_options, :id, :name, @selected_category_id),
+                             include_blank: "Všetky kategórie",
+                             class: "select select-bordered w-full",
+                             id: "year_category_id" %>
+            </div>
+            <%= submit_tag "Filtrovať", class: "btn btn-primary" %>
+            <% if @selected_category_id.present? %>
+              <%= link_to "Zrušiť filter", assembly_year_path(@assembly, @year), class: "btn btn-ghost" %>
+            <% end %>
+          <% end %>
+        </div>
+
         <% if @performances.any? %>
           <% sk_months = %w[Január Február Marec Apríl Máj Jún Júl August September Október November December] %>
           <% @performances.group_by { |p| p.date.month }.each_with_index do |(month_num, month_performances), idx| %>
@@ -72,9 +93,9 @@
             <%= render "performances/performances_list", performances: month_performances, assembly: @assembly %>
           <% end %>
         <% else %>
-          <p class="opacity-50 mt-4">Žiadne podujatia pre tento rok.</p>
+          <p class="opacity-50 mt-4">Žiadne podujatia pre tento rok zodpovedajúce vybranému filtru.</p>
         <% end %>
-      </details>
+      <% end %>
     </section>
 
     <section>

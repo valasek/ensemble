@@ -1,5 +1,5 @@
 class Avo::Resources::Performance < Avo::BaseResource
-  self.includes = [ :assembly ]
+  self.includes = [ :assembly, :categories ]
   # self.attachments = []
   self.search = {
     query: -> { query.ransack(name_cont: params[:q]).result(distinct: false) }
@@ -12,6 +12,9 @@ class Avo::Resources::Performance < Avo::BaseResource
     field :name, as: :text
     field :location, as: :text
     field :is_featured, as: :boolean
+    field :categories,
+          as: :has_many,
+          through: :performance_categories
     field :description, as: :trix
     field :assembly, as: :belongs_to
   end

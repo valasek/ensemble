@@ -11,8 +11,25 @@
 
       <%= render "shared/instant_search" %>
 
+      <%= form_with url: assembly_performances_path(@assembly), method: :get, class: "flex justify-center items-end gap-3 flex-wrap" do %>
+        <div class="form-control w-full max-w-sm">
+          <label class="label" for="category_id">
+            <span class="label-text mb-4">Filter podľa kategórie</span>
+          </label>
+          <%= select_tag :category_id,
+                         options_from_collection_for_select(@category_options, :id, :name, @selected_category_id),
+                         include_blank: "Všetky kategórie",
+                         class: "select select-bordered w-full",
+                         id: "category_id" %>
+        </div>
+        <%= submit_tag "Filtrovať", class: "btn btn-primary" %>
+        <% if @selected_category_id.present? %>
+          <%= link_to "Zrušiť filter", assembly_performances_path(@assembly), class: "btn btn-ghost" %>
+        <% end %>
+      <% end %>
+
       <div class="badge badge-primary badge-outline badge-lg">
-        <%= number_with_delimiter(@assembly.performances.count, delimiter: " ") %> podujatí
+        <%= number_with_delimiter(@performances.total_count, delimiter: " ") %> podujatí
       </div>
 
     </div>
@@ -23,7 +40,7 @@
 
     <%= render "performances/performances_list", performances: @performances, assembly: @assembly %>
 
-    <%= paginate @performances %>
+    <%= paginate @performances, params: { category_id: @selected_category_id.presence } %>
   </section>
   <% end %>
 

@@ -3,6 +3,7 @@ class Assembly < ApplicationRecord
   has_many :members, dependent: :destroy
   has_many :member_of_assemblies, dependent: :destroy
   has_many :performances, dependent: :destroy
+  has_many :categories, dependent: :destroy
   has_many :assembly_years, dependent: :destroy
 
   has_rich_text :production
@@ -16,5 +17,9 @@ class Assembly < ApplicationRecord
 
   def self.ransackable_attributes(auth_object = nil)
     [ "name", "subdomain" ]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    [ "categories", "members", "member_of_assemblies", "performances", "users" ]
   end
 end

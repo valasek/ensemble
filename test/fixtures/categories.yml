@@ -1,0 +1,11 @@
+one:
+  name: Zájazdy
+  assembly: one
+
+two:
+  name: Letné školy tanca
+  assembly: one
+
+three:
+  name: Interné súborové podujatia
+  assembly: one

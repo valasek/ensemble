@@ -3,6 +3,8 @@ class Performance < ApplicationRecord
 
   # acts_as_tenant(:assembly)
   belongs_to :assembly
+  has_many :performance_categories, dependent: :destroy
+  has_many :categories, through: :performance_categories
 
   has_rich_text :description
 
@@ -72,6 +74,10 @@ class Performance < ApplicationRecord
   end
 
   def self.ransackable_associations(auth_object = nil)
-    [ "assembly" ]
+    [ "assembly", "categories", "performance_categories" ]
+  end
+
+  def category_names
+    categories.sort_by(&:name).map(&:name).join(", ")
   end
 end

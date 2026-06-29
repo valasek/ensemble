@@ -23,4 +23,10 @@ class PerformanceTest < ActiveSupport::TestCase
     assert_not performance.valid?
     assert_not_empty performance.errors[:assembly]
   end
+
+  test "category_names joins category names with comma" do
+    performance = performances(:one)
+
+    assert_equal "Zájazdy", performance.category_names
+  end
 end

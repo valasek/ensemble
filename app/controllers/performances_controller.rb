@@ -4,10 +4,21 @@ class PerformancesController < ApplicationController
 
   # GET /performances
   def index
-    @performances = @assembly.performances
-                              .includes(:rich_text_description)
-                              .order(date: :desc)
-                              .page(params[:page]).per(15)
+    @selected_category_id = params[:category_id].presence
+    @category_options = @assembly.categories.order(:name)
+
+    scoped_performances = @assembly.performances
+                                   .includes(:rich_text_description, :categories)
+                                   .order(date: :desc)
+
+    if @selected_category_id.present?
+      scoped_performances = scoped_performances
+                              .joins(:categories)
+                              .where(categories: { id: @selected_category_id })
+                              .distinct
+    end
+
+    @performances = scoped_performances.page(params[:page]).per(15)
   end
 
   # GET /performances/1
@@ -59,6 +70,6 @@ class PerformancesController < ApplicationController
     end
 
     def performance_params
-      params.require(:performance).permit(:date, :end_date, :name, :location, :description, :is_featured)
+      params.require(:performance).permit(:date, :end_date, :name, :location, :description, :is_featured, category_ids: [])
     end
 end

@@ -16,6 +16,7 @@ three:
   date: 2020-02-08
   name: Slnko v horách
   location: Tokio
+  is_featured: true
   assembly: one
 
 four:
@@ -34,4 +35,16 @@ six:
   date: 2009-02-09
   name: Bali a tancujúce ženy
   location: Bali
+  assembly: one
+
+seven:
+  date: 2020-03-10
+  name: Workshop 2020
+  location: Žilina
+  assembly: one
+
+eight:
+  date: 2020-04-20
+  name: Nezaradené podujatie 2020
+  location: Košice
   assembly: one

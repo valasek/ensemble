@@ -126,8 +126,8 @@ sk:
     view: Pozrieť
     view_item: pozrieť %{item}
     visit_record_on_external_path: Visit record on external path
-    was_successfully_created: was successfully created
-    was_successfully_updated: was successfully updated
+    was_successfully_created: bol/a úspešne vytvorený/á
+    was_successfully_updated: bol/a úspešne aktualizovaný/á
     x_items_more:
       one: one more item
       other: "%{count} more items"
@@ -141,6 +141,8 @@ sk:
     you_missed_something_check_form: You might have missed something. Please check the form.
     field_translations:
       member: "Člen"
+      performance: "Podujatie"
+      category: "Kategória"
       subdomain: Doména
       assembly: "Súbor"
       year: "Rok"
@@ -152,6 +154,7 @@ sk:
       date: "Dátum"
       end_date: "Dátum do"
       is_featured: "Dôležité"
+      provider: "Poskytovateľ"
     resource_translations:
       assembly:
         one: "Súbor"
@@ -171,3 +174,15 @@ sk:
       assembly_year:
         one: "Rok"
         other: "Roky"
+      category:
+        one: "Kategória"
+        other: "Kategórie"
+      performance_category:
+        one: "Kategória podujatia"
+        other: "Kategórie podujatí"
+
+  activerecord:
+    attributes:
+      performance_category:
+        performance: "Podujatie"
+        category: "Kategória"

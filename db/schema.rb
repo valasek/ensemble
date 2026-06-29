@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.1].define(version: 2026_05_17_184311) do
+ActiveRecord::Schema[8.1].define(version: 2026_06_29_120001) do
   create_table "action_text_rich_texts", force: :cascade do |t|
     t.text "body"
     t.datetime "created_at", null: false
@@ -67,6 +67,15 @@ ActiveRecord::Schema[8.1].define(version: 2026_05_17_184311) do
     t.index ["assembly_id"], name: "index_assembly_years_on_assembly_id"
   end
 
+  create_table "categories", force: :cascade do |t|
+    t.integer "assembly_id", null: false
+    t.datetime "created_at", null: false
+    t.string "name", null: false
+    t.datetime "updated_at", null: false
+    t.index ["assembly_id", "name"], name: "index_categories_on_assembly_id_and_name", unique: true
+    t.index ["assembly_id"], name: "index_categories_on_assembly_id"
+  end
+
   create_table "member_of_assemblies", force: :cascade do |t|
     t.integer "assembly_id", null: false
     t.datetime "created_at", null: false
@@ -86,6 +95,16 @@ ActiveRecord::Schema[8.1].define(version: 2026_05_17_184311) do
     t.datetime "updated_at", null: false
     t.index ["assembly_id", "name"], name: "index_members_on_assembly_id_and_name"
     t.index ["assembly_id"], name: "index_members_on_assembly_id"
+  end
+
+  create_table "performance_categories", force: :cascade do |t|
+    t.integer "category_id", null: false
+    t.datetime "created_at", null: false
+    t.integer "performance_id", null: false
+    t.datetime "updated_at", null: false
+    t.index ["category_id"], name: "index_performance_categories_on_category_id"
+    t.index ["performance_id", "category_id"], name: "index_performance_categories_on_performance_id_and_category_id", unique: true
+    t.index ["performance_id"], name: "index_performance_categories_on_performance_id"
   end
 
   create_table "performances", force: :cascade do |t|
@@ -121,8 +140,11 @@ ActiveRecord::Schema[8.1].define(version: 2026_05_17_184311) do
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "assembly_years", "assemblies"
+  add_foreign_key "categories", "assemblies"
   add_foreign_key "member_of_assemblies", "assemblies"
   add_foreign_key "member_of_assemblies", "members"
   add_foreign_key "members", "assemblies"
+  add_foreign_key "performance_categories", "categories"
+  add_foreign_key "performance_categories", "performances"
   add_foreign_key "performances", "assemblies"
 end

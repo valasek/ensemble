@@ -4,7 +4,7 @@
 
 ## Roadmap
 
-Priradiť užívateľa na súbor
+Možnosť exportu prod DB na lokálny vývoj
 
 Podujatia
 - Podujatie má na konci prílohy. Fotografie, doklady
@@ -14,7 +14,6 @@ Nová kategória, repertoár
 - Názov, rok premiéry, rok, choreograf, hudba, dĺžka, popis a videá, fotografie
 
 Ostatné:
-- Pridať Administráciu za užívateľské prihlásenie
 - Pridať export a import
 - MCP server
 

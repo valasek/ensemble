@@ -18,6 +18,11 @@
             <%= performance.location %>
           <% end %>
         </p>
+        <% if performance.category_names.present? %>
+          <p class="text-sm text-base-content/70">
+            Kategórie: <%= performance.category_names %>
+          </p>
+        <% end %>
       </div>
     </a>
   <% end %>
@@ -28,13 +33,15 @@
   <table class="table table-zebra w-full">
     <colgroup>
       <col class="w-1/4">
-      <col class="w-1/2">
+      <col class="w-1/3">
+      <col class="w-1/4">
       <col class="w-1/4">
     </colgroup>
     <thead>
       <tr>
         <th>Dátum</th>
         <th>Názov</th>
+        <th>Kategórie</th>
         <th>Miesto</th>
       </tr>
     </thead>
@@ -52,6 +59,7 @@
             <% end %>
           </td>
           <td class="whitespace-nowrap text-xl"><%= performance.name %></td>
+          <td><%= performance.category_names %></td>
           <td><%= performance.location %></td>
         </tr>
       <% end %>

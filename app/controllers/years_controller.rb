@@ -33,8 +33,22 @@ class YearsController < ApplicationController
     @assembly_year = @assembly.assembly_years.find_by(year: @year)
     member_ids = @assembly.member_of_assemblies.where(year: @year).pluck(:member_id)
     @members = @assembly.members.where(id: member_ids).sorted_by_name
-    @performances = @assembly.performances.where("strftime('%Y', date) = ?", @year.to_s).order(date: :asc)
-    @featured_performances = @performances.select(&:is_featured?)
+
+    @selected_category_id = params[:category_id].presence
+    @category_options = @assembly.categories.order(:name)
+
+    yearly_performances = @assembly.performances
+                               .where("strftime('%Y', date) = ?", @year.to_s)
+                               .includes(:categories)
+                               .order(date: :asc)
+
+    @featured_performances = yearly_performances.select(&:is_featured?)
+
+    @performances = if @selected_category_id.present?
+      yearly_performances.joins(:categories).where(categories: { id: @selected_category_id }).distinct
+    else
+      yearly_performances
+    end
   end
 
   private

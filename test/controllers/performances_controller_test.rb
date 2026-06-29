@@ -12,6 +12,22 @@ class PerformancesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "should filter index by category" do
+    get assembly_performances_url(@assembly), params: { category_id: categories(:two).id }
+
+    assert_response :success
+    assert_includes @response.body, performances(:seven).name
+    assert_not_includes @response.body, performances(:one).name
+    assert_not_includes @response.body, performances(:eight).name
+  end
+
+  test "should keep selected category in filter form" do
+    get assembly_performances_url(@assembly), params: { category_id: categories(:one).id }
+
+    assert_response :success
+    assert_includes @response.body, "selected=\"selected\" value=\"#{categories(:one).id}\""
+  end
+
   test "should get show" do
     get assembly_performance_url(@assembly, @performance)
     assert_response :success
@@ -24,9 +40,17 @@ class PerformancesControllerTest < ActionDispatch::IntegrationTest
 
   test "should create performance" do
     assert_difference("Performance.count") do
-      post assembly_performances_url(@assembly), params: { performance: { name: "New Show", date: "2026-06-01", location: "Bratislava" } }
+      post assembly_performances_url(@assembly), params: {
+        performance: {
+          name: "New Show",
+          date: "2026-06-01",
+          location: "Bratislava",
+          category_ids: [ categories(:one).id ]
+        }
+      }
     end
     assert_redirected_to assembly_performance_url(@assembly, Performance.last)
+    assert_equal [ categories(:one).id ], Performance.last.category_ids
   end
 
   test "should not create performance with invalid params" do
