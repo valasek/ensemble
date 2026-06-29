@@ -21,9 +21,13 @@
   },
 
   // Mount Windows SSH keys (${localEnv:USERPROFILE} = C:\Users\<you> on Windows + Docker Desktop)
-  "mounts": [
-    "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
-  ],
+  //"mounts": [
+  //  "source=${localEnv:USERPROFILE}/.ssh,target=/root/.ssh,type=bind,consistency=cached"
+  //],
+  // Mount MacOS SSH keys
+  "remoteEnv": {
+    "SSH_AUTH_SOCK": "/run/host-services/ssh-auth.sock"
+  },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [3000, 7700],

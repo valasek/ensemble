@@ -31,13 +31,13 @@
     <%# Desktop %>
     <div class="hidden lg:flex items-center gap-2">
       <% if user_signed_in? %>
-        <%= link_to "Administration", "/admin", class: "btn btn-ghost btn-sm" %>
+        <%= link_to "Administrácia", "/admin", class: "btn btn-ghost btn-sm" %>
         <%= link_to "Sign out", destroy_user_session_path,
               data: { turbo_method: :delete },
               class: "btn btn-ghost btn-sm" %>
       <% else %>
-        <%= link_to "Sign in", new_user_session_path, class: "btn btn-ghost btn-sm" %>
-        <%= link_to "Sign up free", new_user_registration_path, class: "btn btn-primary btn-sm" %>
+        <%= link_to "Prihlásiť sa", new_user_session_path, class: "btn btn-ghost btn-sm" %>
+        <%= link_to "Zaregistrovať sa zadarmo", new_user_registration_path, class: "btn btn-primary btn-sm" %>
       <% end %>
     </div>
 
