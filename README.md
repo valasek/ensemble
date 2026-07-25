@@ -151,6 +151,8 @@ docker exec -it 290055864fd3 bash
 
 SVG Icons: https://heroicons.com
 
+AVO update locales `bin/rails g avo:locales`
+
 Start app with `bin/dev`
 
 Runn local ci: `bin/ci`
