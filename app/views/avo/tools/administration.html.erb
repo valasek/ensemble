@@ -1,0 +1,72 @@
+<div class="flex flex-col gap-4">
+  <%= render ui.panel(title: "Správa dát") do |panel| %>
+    <% panel.with_card(title: "Reindexácia dát", description: "Spustí údržbu Meilisearch indexov po vačšej zmene dát.") do %>
+      <div class="flex flex-col gap-4 px-6 py-6">
+        <p class="text-sm text-slate-600">
+          Znovu vytvorí indexy vyhľadávania pre členov a podujatia.
+        </p>
+
+        <div>
+          <%= a_button url: avo.administration_reindex_all_data_path,
+            method: :post,
+            color: :primary,
+            icon: "tabler/outline/search",
+            data: { turbo_confirm: "Týmto sa vymažú a znovu vytvoria všetky Meilisearch dáta. Akcia trvá cca 20 sekúnd, počkaj na dokončenie. Pokračovať?" } do %>
+            Preindexovať všetky dáta
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= render ui.panel do |panel| %>
+    <% panel.with_card(title: "Export databázy", description: "Stiahne export primárnej SQLite databázy aktuálneho prostredia.") do %>
+      <div class="flex flex-col gap-4 px-6 py-6">
+        <p class="text-sm text-slate-600">
+          V produkcii ide o export hlavnej aplikačnej databázy. Cache, queue a cable databázy sa do tohto exportu nezahrňujú.
+        </p>
+
+        <div>
+          <%= a_button url: avo.administration_export_database_path,
+            method: :post,
+            color: :primary,
+            icon: "tabler/outline/download",
+            form: { data: { turbo: false } },
+            data: { turbo_confirm: "Vytvorit export primarnej databazy?" } do %>
+            Exportovať databázu
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+  <%= render ui.panel do |panel| %>
+    <% panel.with_card(title: "Import databázy", description: "Nahraje SQLite súbor a prepíše lokálnu vývojovú databázu.") do %>
+      <div class="flex flex-col gap-4 px-6 py-6">
+        <p class="text-sm text-amber-700">
+          Upozornenie: táto operácia je destruktívna. Pred importom sa vytvorí záloha aktuálnej lokálnej databázy do tmp/database_import_backups.
+        </p>
+
+        <% if Rails.env.development? %>
+          <p class="text-sm text-slate-600">
+            Použite export z produkcie len vtedy, keď chcete lokálne obnoviť primárnu aplikačnú databázu.
+          </p>
+
+          <%= form_with url: avo.administration_import_database_path, multipart: true, class: "flex flex-col gap-4" do %>
+            <%= file_field_tag :database_file, accept: ".sqlite3,.db,application/vnd.sqlite3", class: "block w-full rounded-md border border-gray-300 px-3 py-2 text-sm" %>
+
+            <div>
+              <%= submit_tag "Importovať databázu zo súboru",
+                class: "btn btn-error",
+                data: { turbo_confirm: "Týmto prepisete lokálnu vývojovú databázu. Pokračovať?" } %>
+            </div>
+          <% end %>
+        <% else %>
+          <p class="text-sm text-slate-600">
+            Import databázy je z bezpečnostných dôvodov povolený iba na vývojovom prostredí.
+          </p>
+        <% end %>
+      </div>
+    <% end %>
+  <% end %>
+</div>

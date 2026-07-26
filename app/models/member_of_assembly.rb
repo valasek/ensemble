@@ -5,14 +5,14 @@ class MemberOfAssembly < ApplicationRecord
   belongs_to :assembly
 
   validates :year, presence: true, numericality: { only_integer: true }
-  validates :member_id, uniqueness: { scope: [ :assembly_id, :year, :group ], message: "already in this assembly and group for this year and group" }
+  validates :member_id, uniqueness: { scope: [ :assembly_id, :year ], message: "already in this assembly for this year" }
 
     def avo_title
-    "#{member.name}, #{year}, #{group}"
+    "#{member.name}, #{year}"
     end
 
     def self.ransackable_attributes(auth_object = nil)
-      [ "year", "group", "member_id", "assembly_id" ]
+      [ "year", "member_id", "assembly_id" ]
     end
 
     def self.ransackable_associations(auth_object = nil)

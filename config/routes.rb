@@ -1,5 +1,11 @@
 Rails.application.routes.draw do
-  mount_avo
+  mount_avo do
+    get "administration", to: "tools#administration", as: :administration
+    post "administration/reindex_all_data", to: "tools#reindex_all_data", as: :administration_reindex_all_data
+    post "administration/export_database", to: "tools#export_database", as: :administration_export_database
+    post "administration/import_database", to: "tools#import_database", as: :administration_import_database
+  end
+
   # mount Avo::Engine, at: "/admin"
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
   devise_for :users, controllers: {

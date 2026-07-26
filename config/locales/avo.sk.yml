@@ -261,8 +261,8 @@ sk:
         one: "Podujatie"
         other: "Podujatia"
       member_of_assembly:
-        one: "Člen v skupinách"
-        other: "Členovia v skupinách"
+        one: "Člen v rokoch"
+        other: "Členovia v rokoch"
       assembly_year:
         one: "Rok"
         other: "Roky"

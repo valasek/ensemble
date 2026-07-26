@@ -17,13 +17,12 @@ class MemberOfAssemblyTest < ActiveSupport::TestCase
     assert_not record.valid?
   end
 
-  test "member cannot appear in same assembly, year, and group twice" do
+  test "member cannot appear in same assembly and year twice" do
     existing = member_of_assemblies(:one)
     duplicate = MemberOfAssembly.new(
       member: existing.member,
       assembly: existing.assembly,
-      year: existing.year,
-      group: existing.group
+      year: existing.year
     )
     assert_not duplicate.valid?
     assert_not_empty duplicate.errors[:member_id]
