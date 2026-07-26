@@ -1,49 +1,36 @@
 <div class="min-h-screen bg-base-100">
-
   <section>
-    <div class="max-w-3xl mx-auto px-6 py-15 space-y-6">
+    <div class="max-w-5xl mx-auto px-4 pt-6 sm:px-6 space-y-6">
+      <%= render "shared/page_header", title: @member.name, back_path: assembly_members_path(@assembly), back_label: "Členovia" %>
 
-      <div class="flex items-center gap-4">
-        <%= link_to assembly_members_path(@assembly), class: "btn btn-ghost btn-sm" do %>
-          &larr; Späť
-        <% end %>
-      </div>
+      <div class="space-y-4">
+        <p class="text-base-content/60 text-sm -mt-1">
+          Člen/ka: <span class="font-medium text-base-content"><%= @assembly.name %></span>
+        </p>
 
-      <div class="card">
-        <div class="card-body gap-4">
-
-          <h1 class="card-title text-3xl font-bold"><%= @member.name %></h1>
-
-          <p class="text-base-content/60 text-sm">
-            Člen/ka: <span class="font-medium text-base-content"><%= @assembly.name %></span>
-          </p>
-
-          <% memberships = @member.member_of_assemblies.order(:year) %>
-          <% if memberships.any? %>
-            <h2 class="text-lg font-semibold">Pôsobenie v <%= @assembly.name %></h2>
-            <div class="overflow-x-auto rounded-box">
-              <table class="table table-zebra">
-                <thead>
+        <% memberships = @member.member_of_assemblies.order(:year) %>
+        <% if memberships.any? %>
+          <h2 class="text-lg font-semibold">Pôsobenie v <%= @assembly.name %></h2>
+          <div class="overflow-x-auto">
+            <table class="table table-zebra">
+              <thead>
+                <tr>
+                  <th>Rok</th>
+                </tr>
+              </thead>
+              <tbody>
+                <% memberships.each do |moa| %>
                   <tr>
-                    <th>Rok</th>
-                    <th>Skupina</th>
+                    <td><%= moa.year %></td>
                   </tr>
-                </thead>
-                <tbody>
-                  <% memberships.each do |moa| %>
-                    <tr>
-                      <td><%= moa.year %></td>
-                      <td><%= moa.group.presence || "—" %></td>
-                    </tr>
-                  <% end %>
-                </tbody>
-              </table>
-            </div>
-          <% else %>
-            <p class="text-base-content/60">Žiadne záznamy o pôsobení.</p>
-          <% end %>
+                <% end %>
+              </tbody>
+            </table>
+          </div>
+        <% else %>
+          <p class="text-base-content/60">Žiadne záznamy o pôsobení.</p>
+        <% end %>
 
-        </div>
       </div>
 
     </div>

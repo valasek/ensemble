@@ -1,15 +1,9 @@
 <div class="min-h-screen bg-base-100">
-
-  <section>
-    <div class="max-w-4xl mx-auto px-6 py-15 text-center space-y-8">
-      <h1 class="text-4xl md:text-5xl font-bold">
-        Rok <%= @year %>
-      </h1>
-      <%= link_to "← Späť na prehľad rokov", assembly_years_path(@assembly), class: "btn btn-ghost btn-sm" %>
-    </div>
+  <section class="mx-auto max-w-4xl px-4 pt-6 sm:px-6">
+    <%= render "shared/page_header", title: "Rok #{@year}", back_path: assembly_years_path(@assembly), back_label: "Roky" %>
   </section>
 
-  <main class="px-6 space-y-12 pb-16">
+  <main class="mx-auto max-w-4xl px-4 pb-16 sm:px-6 space-y-12">
 
     <% if @assembly_year&.description&.present? %>
       <section data-controller="expand">

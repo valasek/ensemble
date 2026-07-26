@@ -1,0 +1,29 @@
+<header class="print:hidden mb-6">
+  <div class="relative flex items-center justify-center min-h-14 rounded-box border border-base-300 bg-base-200/80 px-2 shadow-sm backdrop-blur">
+    <div class="absolute left-2 top-1/2 -translate-y-1/2">
+      <%= link_to back_path, class: "btn btn-ghost btn-sm md:btn-md", aria: { label: back_label || "Späť" } do %>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+          <path fill-rule="evenodd" d="M11.78 15.78a.75.75 0 0 1-1.06 0l-5.25-5.25a.75.75 0 0 1 0-1.06l5.25-5.25a.75.75 0 1 1 1.06 1.06L7.81 9.25h8.44a.75.75 0 0 1 0 1.5H7.81l3.97 3.97a.75.75 0 0 1 0 1.06Z" clip-rule="evenodd" />
+        </svg>
+        <span class="hidden sm:inline"><%= back_label || "Späť" %></span>
+      <% end %>
+    </div>
+
+    <h1 class="max-w-[65%] truncate px-2 text-center text-lg font-bold sm:text-2xl"><%= title %></h1>
+
+    <div class="absolute right-2 top-1/2 -translate-y-1/2">
+      <details class="dropdown dropdown-end">
+        <summary class="btn btn-ghost btn-sm md:btn-md list-none" aria-label="Otvorí menu stránky">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="h-5 w-5">
+            <path d="M10 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
+          </svg>
+        </summary>
+        <ul class="menu menu-sm dropdown-content z-20 mt-2 w-60 rounded-box border border-base-300 bg-base-100 p-2 shadow">
+          <li>
+            <%= link_to "Exportovať stránku do PDF", "#", onclick: "window.print(); return false;" %>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </div>
+</header>
