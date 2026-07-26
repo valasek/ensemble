@@ -1,4 +1,9 @@
 2026:
+  - date: 2026-07-26
+    items:
+      - "Zjednotenie nadpisov pre podujatie, rok i člena s možnosťou návratu na predchádzajúcu stránku a tlače stránky do PDF."
+      - "Administrátor má možnosť indexácie dát, exportu a importu DB."
+      - "Bezpečnosť: Aktualizácia SW na najnovšiu verziu"
   - date: 2026-06-30
     items:
       - "Pre predstavenie je možno nastaviť 1 alebo viac kategórií. Nastavovanie je možné v administrácií. Podľa kategórií je možné filtrovať predstavenia."
