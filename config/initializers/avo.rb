@@ -24,7 +24,7 @@ Avo.configure do |config|
   end
 
   ## == Authorization ==
-  # config.is_admin_method = :is_admin
+  config.is_admin_method = :admin_for_avo?
   # config.is_developer_method = :is_developer
   # config.authorization_methods = {
   #   index: 'index?',

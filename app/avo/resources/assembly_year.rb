@@ -1,5 +1,6 @@
 class Avo::Resources::AssemblyYear < Avo::BaseResource
   self.includes = [ :assembly ]
+  self.title = :year
   self.search = {
     query: -> { query.ransack(year_eq: params[:q]).result(distinct: false) }
   }

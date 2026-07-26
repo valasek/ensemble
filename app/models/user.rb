@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  SUPERADMIN_EMAIL = "valasek@gmail.com".freeze
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
@@ -12,5 +14,9 @@ class User < ApplicationRecord
       user.email = auth.info.email
       user.password = Devise.friendly_token[0, 20]
     end
+  end
+
+  def admin_for_avo?
+    assembly.present? || email == SUPERADMIN_EMAIL
   end
 end

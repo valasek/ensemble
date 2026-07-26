@@ -31,7 +31,9 @@
     <%# Desktop %>
     <div class="hidden lg:flex items-center gap-2">
       <% if user_signed_in? %>
-        <%= link_to "Administrácia", "/admin", class: "btn btn-ghost btn-sm" %>
+        <% if current_user.admin_for_avo? %>
+          <%= link_to "Administrácia", "/admin", class: "btn btn-ghost btn-sm" %>
+        <% end %>
         <%= link_to "Odhlásiť sa", destroy_user_session_path,
               data: { turbo_method: :delete },
               class: "btn btn-ghost btn-sm" %>
@@ -60,7 +62,9 @@
         <li class="menu-title">Navigácia</li>
         <li><%= link_to "Domov", root_path, class: "text-base-content" %></li>
         <% if user_signed_in? %>
-          <li><%= link_to "Administrácia", "/admin", class: "text-base-content" %></li>
+          <% if current_user.admin_for_avo? %>
+            <li><%= link_to "Administrácia", "/admin", class: "text-base-content" %></li>
+          <% end %>
           <li>
             <%= link_to "Odhlásiť sa", destroy_user_session_path,
                   data: { turbo_method: :delete },

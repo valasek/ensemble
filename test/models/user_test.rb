@@ -33,4 +33,22 @@ class UserTest < ActiveSupport::TestCase
     assert_not user.valid?
     assert_not_empty user.errors[:email]
   end
+
+  test "admin_for_avo? is true when user has assembly" do
+    assert users(:one).admin_for_avo?
+  end
+
+  test "admin_for_avo? is false when user has no assembly and is not superadmin" do
+    assert_not users(:two).admin_for_avo?
+  end
+
+  test "admin_for_avo? is true for superadmin email without assembly" do
+    superadmin = User.new(
+      email: User::SUPERADMIN_EMAIL,
+      password: "password123",
+      assembly: nil
+    )
+
+    assert superadmin.admin_for_avo?
+  end
 end
