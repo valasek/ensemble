@@ -3,7 +3,7 @@
     items:
       - "Zjednotenie nadpisov pre podujatie, rok i člena s možnosťou návratu na predchádzajúcu stránku a tlače stránky do PDF."
       - "Administrátor má možnosť indexácie dát, exportu a importu DB."
-      - "Možnosť pridať interný popis, ktorý sa zobrazuje iba správcovi dát."
+      - "Možnosť pridať interný popis podujatia, ktorý sa zobrazuje iba správcovi dát."
       - "Bezpečnosť: Aktualizácia SW na najnovšiu verziu"
   - date: 2026-06-30
     items:
