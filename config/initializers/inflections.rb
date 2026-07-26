@@ -14,3 +14,18 @@
 # ActiveSupport::Inflector.inflections(:en) do |inflect|
 #   inflect.acronym "RESTful"
 # end
+
+# Avo (see app/avo/resources) calls `String#singularize` without a locale
+# argument when it derives the singular "item" name for has_many association
+# panels (e.g. the "Create new %{item}" / "Attach %{item}" buttons). That
+# method always uses the `:en` inflection rules no matter what `I18n.locale`
+# is set to. Because of that, translated plural nouns from
+# config/locales/avo.sk.yml get run through English singularization and come
+# out wrong (e.g. "Podujatia" -> "Podujatium", "Kategórie" -> "Kategórie"
+# unchanged). Registering the Slovak plural/singular pairs as irregular
+# inflections in the :en scope is what fixes this, since that's the only
+# scope Avo's `.singularize` call ever looks at.
+ActiveSupport::Inflector.inflections(:en) do |inflect|
+  inflect.irregular "podujatie", "podujatia"
+  inflect.irregular "kategóriu", "kategórie"
+end
