@@ -7,6 +7,7 @@ class Performance < ApplicationRecord
   has_many :categories, through: :performance_categories
 
   has_rich_text :description
+  has_rich_text :private_description
 
   def self.meilisearch_import
     includes(:assembly, :rich_text_description)

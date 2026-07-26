@@ -31,6 +31,13 @@
             <%= @performance.description %>
           </div>
         <% end %>
+
+        <% if current_user&.admin_for_avo? && @performance.private_description.to_plain_text.present? %>
+          <div class="prose prose-lg max-w-none border-t border-base-300 pt-4">
+            <h3>Interný popis</h3>
+            <%= @performance.private_description %>
+          </div>
+        <% end %>
       </div>
 
     </div>

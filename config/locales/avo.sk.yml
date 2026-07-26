@@ -241,6 +241,7 @@ sk:
       group: "Skupina"
       name: "Názov"
       description: "Popis"
+      private_description: "Interný popis"
       production: "Popis"
       location: "Miesto"
       date: "Dátum"

@@ -33,6 +33,26 @@ class PerformancesControllerTest < ActionDispatch::IntegrationTest
     assert_response :success
   end
 
+  test "shows private description to avo admins" do
+    @performance.update!(private_description: "Admin-only performance note")
+
+    get assembly_performance_url(@assembly, @performance)
+
+    assert_response :success
+    assert_includes @response.body, "Admin-only performance note"
+  end
+
+  test "hides private description from non-admin users" do
+    sign_out users(:one)
+    sign_in users(:two)
+    @performance.update!(private_description: "Admin-only performance note")
+
+    get assembly_performance_url(@assembly, @performance)
+
+    assert_response :success
+    assert_not_includes @response.body, "Admin-only performance note"
+  end
+
   test "should get new" do
     get new_assembly_performance_url(@assembly)
     assert_response :success

@@ -16,6 +16,7 @@ class Avo::Resources::Performance < Avo::BaseResource
           as: :has_many,
           through: :performance_categories
     field :description, as: :trix
+    field :private_description, as: :trix
     field :assembly, as: :belongs_to
   end
 end
