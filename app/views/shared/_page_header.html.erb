@@ -18,9 +18,9 @@
             <path d="M10 3.75a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Zm0 5.25a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3Z" />
           </svg>
         </summary>
-        <ul class="menu menu-sm dropdown-content z-20 mt-2 w-60 rounded-box border border-base-300 bg-base-100 p-2 shadow">
+        <ul class="menu menu-sm dropdown-content z-20 mt-2 w-60 rounded-box border border-base-300 bg-base-100 p-2 shadow text-base-content">
           <li>
-            <%= link_to "Exportovať stránku do PDF", "#", onclick: "window.print(); return false;" %>
+            <%= link_to "Exportovať stránku do PDF", "#", class: "text-base-content hover:bg-base-200 focus:bg-base-200", onclick: "window.print(); return false;" %>
           </li>
         </ul>
       </details>

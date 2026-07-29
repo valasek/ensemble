@@ -6,7 +6,7 @@
       <div class="space-y-6">
         <div class="flex flex-wrap gap-4 text-sm text-base-content/70">
           <span>
-            <span class="font-semibold text-base-content">Dátum:</span>
+            <span class="font-semibold">Dátum:</span>
             <%= @performance.date.strftime("%d. %m. %Y") %>
             <% if @performance.end_date.present? && @performance.end_date != @performance.date %>
               – <%= @performance.end_date.strftime("%d. %m. %Y") %>
@@ -14,7 +14,7 @@
           </span>
           <% if @performance.location.present? %>
             <span>
-              <span class="font-semibold text-base-content">Miesto:</span>
+              <span class="font-semibold">Miesto:</span>
               <%= @performance.location %>
             </span>
           <% end %>

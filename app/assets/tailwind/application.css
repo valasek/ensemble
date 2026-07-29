@@ -10,7 +10,8 @@
 @plugin "@tailwindcss/typography";
 
 @layer base {
-  a {
+  a.card,
+  a.card:visited {
     color: inherit;
   }
 

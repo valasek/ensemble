@@ -60,17 +60,17 @@
           <%= form_with url: assembly_year_path(@assembly, @year), method: :get, class: "flex items-end gap-3 flex-wrap" do %>
             <div class="form-control w-full max-w-sm">
               <label class="label" for="year_category_id">
-                <span class="label-text mb-4">Filter podľa kategórie</span>
+                <span class="label-text mb-1 text-base-content">Filter podľa kategórie</span>
               </label>
               <%= select_tag :category_id,
                              options_from_collection_for_select(@category_options, :id, :name, @selected_category_id),
                              include_blank: "Všetky kategórie",
-                             class: "select select-bordered w-full",
+                             class: "select select-bordered w-full text-base-content",
                              id: "year_category_id" %>
             </div>
             <%= submit_tag "Filtrovať", class: "btn btn-primary" %>
             <% if @selected_category_id.present? %>
-              <%= link_to "Zrušiť filter", assembly_year_path(@assembly, @year), class: "btn btn-ghost" %>
+              <%= link_to "Zrušiť filter", assembly_year_path(@assembly, @year), class: "btn btn-ghost text-base-content" %>
             <% end %>
           <% end %>
         </div>

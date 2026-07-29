@@ -7,24 +7,24 @@
 
       <%= render "shared/instant_search" %>
 
-      <%= form_with url: assembly_performances_path(@assembly), method: :get, class: "flex justify-center items-end gap-3 flex-wrap" do %>
-        <div class="form-control w-full max-w-sm">
+      <%= form_with url: assembly_performances_path(@assembly), method: :get, class: "mx-auto flex w-full max-w-sm flex-col items-stretch gap-3 sm:max-w-2xl sm:flex-row sm:flex-wrap sm:items-end sm:justify-center" do %>
+        <div class="form-control w-full sm:max-w-sm">
           <label class="label" for="category_id">
-            <span class="label-text mb-4">Filter podľa kategórie</span>
+            <span class="label-text mb-1">Filter podľa kategórie</span>
           </label>
           <%= select_tag :category_id,
                          options_from_collection_for_select(@category_options, :id, :name, @selected_category_id),
                          include_blank: "Všetky kategórie",
-                         class: "select select-bordered w-full",
+                         class: "select select-bordered w-full text-base-content",
                          id: "category_id" %>
         </div>
-        <%= submit_tag "Filtrovať", class: "btn btn-primary" %>
+        <%= submit_tag "Filtrovať", class: "btn btn-primary w-full sm:w-auto" %>
         <% if @selected_category_id.present? %>
-          <%= link_to "Zrušiť filter", assembly_performances_path(@assembly), class: "btn btn-ghost" %>
+          <%= link_to "Zrušiť filter", assembly_performances_path(@assembly), class: "btn btn-ghost w-full sm:w-auto" %>
         <% end %>
       <% end %>
 
-      <div class="badge badge-primary badge-outline badge-lg">
+      <div class="badge badge-primary badge-outline badge-lg text-primary-content">
         <%= number_with_delimiter(@performances.total_count, delimiter: " ") %> podujatí
       </div>
 

@@ -3,23 +3,21 @@
   <% performances.each do |performance| %>
     <a href="<%= assembly_performance_path(assembly, performance) %>"
        data-turbo-frame="_top"
-       class="block card bg-base-200 shadow-sm hover:shadow transition-shadow">
-      <div class="card-body p-4 gap-1">
-        <p class="text-sm text-base-content/60">
+       class="block card bg-base-200 text-base-content shadow-sm transition-shadow hover:shadow">
+      <div class="card-body gap-2 p-4">
+        <p class="text-sm text-base-content/70">
           <% if performance.end_date.present? %>
             <%= performance.date.strftime("%d. %m. %Y") %> &ndash; <%= performance.end_date.strftime("%d. %m. %Y") %>
           <% else %>
             <%= performance.date.strftime("%d. %m. %Y") %>
           <% end %>
         </p>
-        <p class="text-sm text-base-content/60">
-          <span class="card-title text-xl"><%= performance.name %></span>
-          <% if performance.location.present? %>
-            <%= performance.location %>
-          <% end %>
-        </p>
+        <p class="card-title text-base leading-snug sm:text-lg"><%= performance.name %></p>
+        <% if performance.location.present? %>
+          <p class="text-sm text-base-content/80"><%= performance.location %></p>
+        <% end %>
         <% if performance.category_names.present? %>
-          <p class="text-sm text-base-content/70">
+          <p class="text-sm text-base-content/80">
             Kategórie: <%= performance.category_names %>
           </p>
         <% end %>

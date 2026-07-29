@@ -1,4 +1,21 @@
-<div class="overflow-x-auto rounded-box">
+<!-- MOBILE: stacked cards -->
+<div class="md:hidden space-y-3">
+  <% members.each do |member| %>
+    <a href="<%= assembly_member_path(assembly, member) %>"
+       data-turbo-frame="_top"
+       class="block card bg-base-200 text-base-content shadow-sm transition-shadow hover:shadow">
+      <div class="card-body gap-2 p-4">
+        <p class="card-title text-base leading-snug sm:text-lg"><%= member.name %></p>
+        <div class="text-sm text-base-content/80">
+          <%= render "members/year_timeline", years: member.member_of_assemblies.map(&:year).sort %>
+        </div>
+      </div>
+    </a>
+  <% end %>
+</div>
+
+<!-- DESKTOP: table -->
+<div class="hidden md:block overflow-x-auto rounded-box">
   <table class="table table-zebra">
     <thead>
       <tr>
@@ -8,14 +25,14 @@
     </thead>
     <tbody>
       <% members.each do |member| %>
-        <tr class="hover:bg-base-300 cursor-pointer">
+        <tr class="hover:bg-base-300 cursor-pointer text-base-content">
           <td class="font-medium">
-            <%= link_to assembly_member_path(assembly, member), data: { turbo_frame: "_top" }, class: "font-medium hover:underline block w-full" do %>
+            <%= link_to assembly_member_path(assembly, member), data: { turbo_frame: "_top" }, class: "block w-full font-medium text-base-content hover:underline" do %>
               <b><%= member.name %></b>
             <% end %>
           </td>
           <td>
-            <%= link_to assembly_member_path(assembly, member), data: { turbo_frame: "_top" }, class: "block w-full" do %>
+            <%= link_to assembly_member_path(assembly, member), data: { turbo_frame: "_top" }, class: "block w-full text-base-content" do %>
               <%= render "members/year_timeline", years: member.member_of_assemblies.map(&:year).sort %>
             <% end %>
           </td>
