@@ -4,6 +4,7 @@ class Category < ApplicationRecord
   has_many :performances, through: :performance_categories
 
   validates :name, presence: true, uniqueness: { scope: :assembly_id }
+  validates :assembly, presence: true
 
   def avo_title
     name

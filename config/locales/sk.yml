@@ -1,0 +1,14 @@
+sk:
+  activerecord:
+    errors:
+      models:
+        category:
+          attributes:
+            assembly:
+              required: "je povinný"
+      messages:
+        blank: "nesmie byť prázdne"
+        required: "je povinný"
+    attributes:
+      category:
+        assembly: "Súbor"
