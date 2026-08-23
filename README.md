@@ -1,6 +1,6 @@
 # Ensemble
 
-...
+Project was stopped due to other solution. If anyone is interested, feel free us reuse source or contact me if needed.
 
 ## Roadmap
 
